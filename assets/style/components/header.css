@@ -1,0 +1,58 @@
+/* Header Pic Section */
+#header-pic nav {
+  --bs-breadcrumb-divider: url(./Svgs/breadcrumbs-svgrepo-com.svg width: 10; height: 10;);
+}
+
+#header-pic .carousel {
+  position: relative;
+}
+
+#header-pic .carousel-caption {
+  position: absolute;
+  top: 40%;
+}
+
+#header-pic .carousel-caption.home {
+  position: absolute;
+  top: 35%;
+}
+
+#header-pic .carousel-caption h1 {
+  color: var(--white-color);
+}
+
+#header-pic .carousel-inner img {
+  width: 100%;
+  height: 80vh;
+}
+
+/* Responsive */
+@media screen and (max-width: 990px) {
+  #header-pic .carousel-inner img {
+    height: 60vh;
+  }
+
+  #header-pic .carousel-caption.home {
+    top: 30%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  #header-pic .carousel-caption.home h1 {
+    font-size: 18px;
+  }
+  #header-pic .carousel-caption.home p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  #header-pic .carousel-caption.home button {
+    padding: 8px;
+    font-size: 14px;
+  }
+  #header-pic .carousel-inner img {
+    height: 40vh;
+  }
+  #header-pic .carousel-caption.home {
+    top: 15%;
+  }
+}
