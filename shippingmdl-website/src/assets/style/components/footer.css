@@ -1,0 +1,105 @@
+/** Footer Section */
+footer {
+  background-color: var(--primary-color) !important;
+  padding: 60px 0 20px 0;
+  height: 85%;
+}
+
+footer h3 {
+  color: var(--white-color);
+}
+
+#socials i {
+  color: var(--grey-color);
+  font-size: 30px;
+  margin: 0 8px;
+}
+
+footer a,
+footer p {
+  text-decoration: none;
+  color: var(--grey-color);
+}
+
+footer i,
+footer a:hover,
+#socials i:hover {
+  color: var(--secondary-color);
+}
+
+footer #newsletter {
+  padding: 70px 0;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  height: 40vh;
+  border-radius: 50px;
+}
+
+#newsletter span {
+  color: var(--primary-color);
+}
+
+#newsletter input {
+  width: 40%;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+  width: 10%;
+  border-radius: 50px;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+/* Copyright Section */
+#copyright div {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  word-spacing: 2px;
+  padding: 20px 0;
+  border-top: 1px solid var(--white-color);
+}
+
+/** Responsive Footer */
+@media screen and (max-width: 990px) {
+  footer #newsletter {
+    height: 25vh;
+    padding: 65px 0;
+  }
+
+  #newsletter input {
+    width: 50%;
+    padding: 10px 20px;
+  }
+
+  #newsletter button {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  footer #newsletter {
+    height: 30vh;
+    padding: 55px 15px;
+  }
+
+  #newsletter input {
+    width: 60%;
+    padding: 8px 15px;
+  }
+
+  #newsletter button {
+    width: 30%;
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+
+  footer .col {
+    margin-bottom: 15px;
+  }
+}

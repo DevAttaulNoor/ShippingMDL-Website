@@ -1,0 +1,51 @@
+/* ---------------- Services Page CSS ---------------- */
+.service:nth-child(even) {
+  border: none;
+  flex-direction: row;
+}
+
+.service:nth-child(odd) {
+  border: none;
+  flex-direction: row-reverse;
+}
+
+.service:nth-child(even) .card-body {
+  border-top: 5px solid var(--secondary-color);
+  margin-left: 4%;
+  height: fit-content;
+}
+
+.service:nth-child(odd) .card-body {
+  border-top: 5px solid var(--secondary-color);
+  margin-right: 4%;
+  height: fit-content;
+}
+
+/* About Service Section */
+#all-services .card {
+  border: none;
+  text-align: justify;
+}
+
+#all-services .card-title {
+  line-height: 70px;
+  border-bottom: 5px solid var(--secondary-color);
+}
+
+@media screen and (max-width: 990px) {
+  .service:nth-child(even),
+  .service:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  .service:nth-child(even) img,
+  .service:nth-child(odd) img {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+
+  .service:nth-child(even) .card-body,
+  .service:nth-child(odd) .card-body {
+    margin: 0;
+  }
+}

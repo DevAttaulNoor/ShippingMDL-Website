@@ -1,0 +1,66 @@
+/* ---------------- Blog Page CSS ---------------- */
+#blog .card {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+#blog .card-img {
+  width: 40%;
+  z-index: 1;
+}
+
+#blog .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+#blog .card-body h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+#blog .card-body a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+#blog .card-body a:hover {
+  color: var(--secondary-color);
+  transition: 0.2s ease;
+}
+
+#blog h1 {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  font-size: 4em;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: var(--grey-color);
+}
+
+@media screen and (max-width: 990px) {
+  #blog .card {
+    flex-direction: column;
+  }
+
+  #blog .card-img {
+    width: 100%;
+    z-index: 1;
+  }
+
+  #blog .card-body {
+    padding: 0;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
