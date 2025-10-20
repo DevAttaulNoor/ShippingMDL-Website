@@ -3,36 +3,35 @@ import { Routes } from "@constants/Routes"
 import { ReactIcons } from "@constants/ReactIcons"
 import logo from '/images/logos/logo.png'
 
+const navlinks = [
+    {
+        title: Routes.HOME.title,
+        path: Routes.HOME.path,
+    },
+    {
+        title: Routes.ABOUT.title,
+        path: Routes.ABOUT.path,
+    },
+    {
+        title: Routes.BLOGS.title,
+        path: Routes.BLOGS.path,
+    },
+    {
+        title: Routes.SERVICES.title,
+        path: Routes.SERVICES.path,
+    },
+    {
+        title: Routes.CONTACT.title,
+        path: Routes.CONTACT.path,
+    },
+];
+
 export const Header = () => {
-    const navlinks = [
-        {
-            title: Routes.HOME.title,
-            path: Routes.HOME.path,
-        },
-        {
-            title: Routes.ABOUT.title,
-            path: Routes.ABOUT.path,
-        },
-        {
-            title: Routes.BLOGS.title,
-            path: Routes.BLOGS.path,
-        },
-        {
-            title: Routes.SERVICES.title,
-            path: Routes.SERVICES.path,
-        },
-        {
-            title: Routes.CONTACT.title,
-            path: Routes.CONTACT.path,
-        },
-    ]
-
-
     return (
-        <header>
+        <header className="fixed max-w-outerContainer w-full flex items-center justify-between px-10 py-5 text-white bg-blue-500">
             <Link
                 to={Routes.HOME.path}
-                className=""
+                className="flex-[0.1]"
             >
                 <img
                     src={logo}
@@ -41,21 +40,26 @@ export const Header = () => {
                 />
             </Link>
 
-            <div className="flex items-center gap-1.5">
+            <div className="flex items-center gap-6">
                 {navlinks.map((item, index) => (
                     <NavLink
                         key={index}
                         to={item.path}
-                        className={''}
+                        className={({ isActive }) => `${isActive ? 'underline' : ''} text-lg font-medium underline-offset-4 hover:underline`}
                     >
                         {item.title}
                     </NavLink>
                 ))}
             </div>
 
-            <span>
-                {ReactIcons.Phone}
-            </span>
+            <div className="flex-[0.1] flex items-center justify-end">
+                <span
+                    onClick={() => { console.log('Call clicked') }}
+                    className="text-xl p-1.5 rounded-full cursor-pointer"
+                >
+                    {ReactIcons.Phone}
+                </span>
+            </div>
         </header>
     )
 }

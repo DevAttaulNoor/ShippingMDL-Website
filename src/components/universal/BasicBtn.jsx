@@ -1,8 +1,17 @@
+import { Link } from "react-router"
+
 export const BasicBtn = ({ btnStyleClass = '', btnData }) => {
-    return (
+    return btnData.path ? (
+        <Link
+            to={btnData.path}
+            className={`${btnStyleClass}`}
+        >
+            {btnData.text}
+        </Link>
+    ) : (
         <button
             onClick={btnData.onClick}
-            className={`${btnStyleClass}`}
+            className={`${btnStyleClass} cursor-pointer`}
         >
             {btnData.text}
         </button>
