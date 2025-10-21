@@ -1,21 +1,23 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
-import '@assets/style/customSwiper.css';
-import { Pagination } from 'swiper/modules';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
 
-export const SwiperCarousel = ({ swiperContainerStyle = '', swiperStates, swiperSlideData }) => {
+export const SwiperCarousel = ({ swiperContainerStyle = '', swiperStates, children }) => {
     return (
         <Swiper
-            slidesPerView={swiperStates.slidesPerView}
-            spaceBetween={swiperStates.spaceBetween}
+            loop={swiperStates.loop}
+            autoplay={swiperStates.autoplay}
             pagination={swiperStates.pagination}
-            modules={[Pagination]}
-            className={`${swiperContainerStyle}`}
+            spaceBetween={swiperStates.spaceBetween}
+            slidesPerView={swiperStates.slidesPerView}
+            modules={[Autoplay, Pagination]}
+            className={`${swiperContainerStyle} w-full h-full`}
         >
-            {swiperSlideData.map((slide, index) => (
-                <SwiperSlide key={index}>
-                    {slide.content}
+            {React.Children.map(children, (child, index) => (
+                <SwiperSlide key={index} className='flex items-center justify-center text-center'>
+                    {child}
                 </SwiperSlide>
             ))}
         </Swiper>

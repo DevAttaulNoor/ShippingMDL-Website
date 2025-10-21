@@ -6,7 +6,7 @@ export const Newsletter = () => {
     const [email, setEmail] = useState('');
 
     return (
-        <div className="flex items-center justify-between p-10 gap-16 text-white bg-blue-950">
+        <div className="flex items-center justify-between innerContainerPadding py-10 gap-15 text-white bg-blue-950">
             <div className="flex flex-col gap-3">
                 <h1 className="text-4xl font-semibold">Join Our Newsletter</h1>
                 <p className="text-xl opacity-75">

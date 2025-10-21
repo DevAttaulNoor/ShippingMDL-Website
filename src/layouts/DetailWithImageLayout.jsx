@@ -1,6 +1,6 @@
 export const DetailWithImageLayout = ({ detailContainerStyleClass = '', rightsideData, leftsideData }) => {
     return (
-        <div className={`${detailContainerStyleClass} flex gap-2`}>
+        <div className={`${detailContainerStyleClass} grid grid-cols-2 gap-20`}>
             {rightsideData}
 
             {leftsideData}

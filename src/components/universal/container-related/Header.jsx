@@ -28,7 +28,7 @@ const navlinks = [
 
 export const Header = () => {
     return (
-        <header className="fixed max-w-outerContainer w-full flex items-center justify-between px-10 py-5 text-white bg-blue-500">
+        <header className="fixed max-w-outerContainer w-full flex items-center justify-between py-5 innerContainerPadding z-20 text-white bg-blue-500">
             <Link
                 to={Routes.HOME.path}
                 className="flex-[0.1]"
