@@ -1,6 +1,10 @@
+import { InnerContainer } from "@layouts/InnerContainer"
+
 const Contact = () => {
     return (
-        <div>Contact</div>
+        <InnerContainer>
+            Contact
+        </InnerContainer>
     )
 }
 

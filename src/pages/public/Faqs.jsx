@@ -1,6 +1,10 @@
+import { InnerContainer } from "@layouts/InnerContainer"
+
 const Faqs = () => {
     return (
-        <div>Faqs</div>
+        <InnerContainer>
+            Faqs
+        </InnerContainer>
     )
 }
 

@@ -1,6 +1,10 @@
+import { InnerContainer } from "@layouts/InnerContainer"
+
 const PrivacyPolicy = () => {
     return (
-        <div>PrivacyPolicy</div>
+        <InnerContainer>
+            PrivacyPolicy
+        </InnerContainer>
     )
 }
 

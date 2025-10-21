@@ -57,7 +57,7 @@ export const Routes = {
     },
     SERVICE_LAND_FREIGHT: {
         title: 'Land Freight',
-        path: 'services/land-freight',
+        path: '/services/land-freight',
         meta: {
             title: 'Land Freight Services | Marine Dynamics Logistics',
             description: 'Marine Dynamic Logistics offers dependable land freight services, ensuring safe, timely, and cost-efficient transportation solutions across major routes and destinations.',
@@ -65,7 +65,7 @@ export const Routes = {
     },
     SERVICE_SEA_FREIGHT: {
         title: 'Sea Freight',
-        path: 'services/sea-freight',
+        path: '/services/sea-freight',
         meta: {
             title: 'Sea Freight Services | Marine Dynamics Logistics',
             description: 'Marine Dynamic Logistics provides comprehensive sea freight solutions, handling international shipping with efficiency, reliability, and competitive pricing.',
@@ -73,7 +73,7 @@ export const Routes = {
     },
     SERVICE_AIR_FREIGHT: {
         title: 'Air Freight',
-        path: 'services/air-freight',
+        path: '/services/air-freight',
         meta: {
             title: 'Air Freight Services | Marine Dynamics Logistics',
             description: 'Marine Dynamic Logistics delivers fast and secure air freight solutions, ensuring your goods reach global destinations on time with optimized delivery schedules.',
@@ -81,7 +81,7 @@ export const Routes = {
     },
     SERVICE_CUSTOM_CLEARANCE: {
         title: 'Custom Clearance',
-        path: 'services/custom-clearance',
+        path: '/services/custom-clearance',
         meta: {
             title: 'Custom Clearance Services | Marine Dynamics Logistics',
             description: 'Marine Dynamic Logistics simplifies customs clearance processes with expert handling, ensuring your shipments move smoothly across borders without delays.',
@@ -89,7 +89,7 @@ export const Routes = {
     },
     SERVICE_DG_CARGO: {
         title: 'DG Cargo',
-        path: 'services/dg-cargo',
+        path: '/services/dg-cargo',
         meta: {
             title: 'DG Cargo Services | Marine Dynamics Logistics',
             description: 'Marine Dynamic Logistics provides safe and compliant DG Cargo transportation, ensuring the secure handling and delivery of hazardous and dangerous goods.',
@@ -97,7 +97,7 @@ export const Routes = {
     },
     SERVICE_TRANSIT_TRADE: {
         title: 'Transit Trade',
-        path: 'services/transit-trade',
+        path: '/services/transit-trade',
         meta: {
             title: 'Transit Trade Services | Marine Dynamics Logistics',
             description: 'Marine Dynamic Logistics offers reliable transit trade services, facilitating smooth cross-border movement of goods through efficient coordination and documentation.',

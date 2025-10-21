@@ -1,6 +1,10 @@
+import { InnerContainer } from "@layouts/InnerContainer"
+
 const TermsCondition = () => {
     return (
-        <div>TermsCondition</div>
+        <InnerContainer>
+            Terms and Conditions
+        </InnerContainer>
     )
 }
 
