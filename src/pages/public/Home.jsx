@@ -1,11 +1,11 @@
 import { Routes } from "@constants/Routes"
-import { Card } from "@components/universal/Card"
 import { InnerContainer } from "@layouts/InnerContainer"
-import { BasicBtn } from "@components/universal/BasicBtn"
-import { SwiperCarousel } from "@components/universal/SwiperCarousel"
+import { BasicBtn } from "@components/atomic/buttons/BasicBtn"
+import { SwiperCarousel } from "@components/atomic/SwiperCarousel"
+import { ServiceCard } from "@components/compound/cards/ServiceCard"
 import { DetailWithImageLayout } from "@layouts/DetailWithImageLayout"
-import { DetailSection } from "@components/universal/detailsection-related/DetailSection"
-import { ImageSection } from "@components/universal/detailsection-related/ImageSection"
+import { DetailSection } from "@components/compound/detailsection-related/DetailSection"
+import { ImageSection } from "@components/compound/detailsection-related/ImageSection"
 
 const qualitiesData = [
     {
@@ -139,7 +139,7 @@ const Home = () => {
 
             {/* Services Section */}
             <section className="grid grid-cols-2 innerContainerPadding gap-15">
-                <Card
+                <ServiceCard
                     cardContainerStyle='h-96'
                     cardData={{
                         bgImage: '/images/components/serviceSection/land-freight.png',
@@ -154,7 +154,7 @@ const Home = () => {
                     }}
                 />
 
-                <Card
+                <ServiceCard
                     cardContainerStyle='h-96'
                     cardData={{
                         bgImage: '/images/components/serviceSection/sea-freight.png',
@@ -169,7 +169,7 @@ const Home = () => {
                     }}
                 />
 
-                <Card
+                <ServiceCard
                     cardContainerStyle='h-96'
                     cardData={{
                         bgImage: '/images/components/serviceSection/air-freight.png',
@@ -184,7 +184,7 @@ const Home = () => {
                     }}
                 />
 
-                <Card
+                <ServiceCard
                     cardContainerStyle='h-96'
                     cardData={{
                         bgImage: '/images/components/serviceSection/custom-clearance.png',
@@ -199,7 +199,7 @@ const Home = () => {
                     }}
                 />
 
-                <Card
+                <ServiceCard
                     cardContainerStyle='h-96'
                     cardData={{
                         bgImage: '/images/components/serviceSection/dg-cargo.png',
@@ -214,7 +214,7 @@ const Home = () => {
                     }}
                 />
 
-                <Card
+                <ServiceCard
                     cardContainerStyle='h-96'
                     cardData={{
                         bgImage: '/images/components/serviceSection/transit-trade.png',

@@ -1,6 +1,6 @@
-import { BasicBtn } from "./BasicBtn"
+import { BasicBtn } from "../../atomic/buttons/BasicBtn"
 
-export const Card = ({ cardContainerStyle = '', cardData }) => {
+export const ServiceCard = ({ cardContainerStyle = '', cardData }) => {
     return (
         <div
             style={{ backgroundImage: `url(${cardData.bgImage})` }}

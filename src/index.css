@@ -40,6 +40,10 @@
     @apply relative max-w-outerContainer w-full h-full flex flex-col mx-auto shadow-2xl overflow-hidden;
   }
 
+  .innerContainerStyle {
+    @apply flex flex-col gap-20;
+  }
+
   .innerContainerPadding {
     @apply px-16;
   }

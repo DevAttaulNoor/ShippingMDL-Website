@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { BasicBtn } from "../BasicBtn";
-import { InputField } from "../InputField"
+import { BasicBtn } from "../../atomic/buttons/BasicBtn";
+import { InputField } from "../../atomic/fields/InputField"
 
 export const Newsletter = () => {
     const [email, setEmail] = useState('');

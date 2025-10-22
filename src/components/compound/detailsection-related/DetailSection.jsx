@@ -1,4 +1,4 @@
-import { BasicBtn } from "../BasicBtn"
+import { BasicBtn } from "../../atomic/buttons/BasicBtn"
 
 export const DetailSection = ({ detailContainerStyleClass = '', detailData }) => {
     return (
