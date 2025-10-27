@@ -14,7 +14,7 @@ const blogsData = [
         title: 'The Future of Shipping',
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique consequuntur alias, aut vero ipsum laudantium nemo est quaerat distinctio nesciunt, dolore nisi veritatis odio dolorem reiciendis ea a eius unde laboriosam eos dolores accusamus deleniti cum. Praesentium animi, nisi voluptates tenetur blanditiis totam quas, velit molestias officiis vitae architecto tempora. Soluta iure aut atque facilis voluptate minus. Vero magni quidem dignissimos beatae voluptatem laboriosam modi ab dolorum voluptates impedit. Libero, dolorum officiis tenetur temporibus voluptatem veritatis natus, sed vel officia ullam, qui praesentium a maxime.",
         btnData: {
-            path: Routes.BLOG.path,
+            path: '/blogs/the-future-of-shipping',
             text: 'Continue Reading',
             btnStyleClass: 'w-fit basicBtnStyle'
         },
@@ -29,7 +29,7 @@ const blogsData = [
         title: 'Understanding International Shipping',
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique consequuntur alias, aut vero ipsum laudantium nemo est quaerat distinctio nesciunt, dolore nisi veritatis odio dolorem reiciendis ea a eius unde laboriosam eos dolores accusamus deleniti cum. Praesentium animi, nisi voluptates tenetur blanditiis totam quas, velit molestias officiis vitae architecto tempora. Soluta iure aut atque facilis voluptate minus. Vero magni quidem dignissimos beatae voluptatem laboriosam modi ab dolorum voluptates impedit. Libero, dolorum officiis tenetur temporibus voluptatem veritatis natus, sed vel officia ullam, qui praesentium a maxime.",
         btnData: {
-            path: Routes.BLOG.path,
+            path: '/blogs/understanding-international-shipping',
             text: 'Continue Reading',
             btnStyleClass: 'w-fit basicBtnStyle'
         },
@@ -44,7 +44,7 @@ const blogsData = [
         title: 'Optimizing Supply Chain Efficiency',
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique consequuntur alias, aut vero ipsum laudantium nemo est quaerat distinctio nesciunt, dolore nisi veritatis odio dolorem reiciendis ea a eius unde laboriosam eos dolores accusamus deleniti cum. Praesentium animi, nisi voluptates tenetur blanditiis totam quas, velit molestias officiis vitae architecto tempora. Soluta iure aut atque facilis voluptate minus. Vero magni quidem dignissimos beatae voluptatem laboriosam modi ab dolorum voluptates impedit. Libero, dolorum officiis tenetur temporibus voluptatem veritatis natus, sed vel officia ullam, qui praesentium a maxime.",
         btnData: {
-            path: Routes.BLOG.path,
+            path: '/blogs/optimizing-supply-chain-efficiency',
             text: 'Continue Reading',
             btnStyleClass: 'w-fit basicBtnStyle'
         },
@@ -59,7 +59,7 @@ const blogsData = [
         title: 'The Environmental Impact of Shipping',
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique consequuntur alias, aut vero ipsum laudantium nemo est quaerat distinctio nesciunt, dolore nisi veritatis odio dolorem reiciendis ea a eius unde laboriosam eos dolores accusamus deleniti cum. Praesentium animi, nisi voluptates tenetur blanditiis totam quas, velit molestias officiis vitae architecto tempora. Soluta iure aut atque facilis voluptate minus. Vero magni quidem dignissimos beatae voluptatem laboriosam modi ab dolorum voluptates impedit. Libero, dolorum officiis tenetur temporibus voluptatem veritatis natus, sed vel officia ullam, qui praesentium a maxime.",
         btnData: {
-            path: Routes.BLOG.path,
+            path: '/blogs/environmental-impact-of-shipping',
             text: 'Continue Reading',
             btnStyleClass: 'w-fit basicBtnStyle'
         },
@@ -74,7 +74,7 @@ const blogsData = [
         title: 'Navigating Shipping Regulations and Compliance',
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique consequuntur alias, aut vero ipsum laudantium nemo est quaerat distinctio nesciunt, dolore nisi veritatis odio dolorem reiciendis ea a eius unde laboriosam eos dolores accusamus deleniti cum. Praesentium animi, nisi voluptates tenetur blanditiis totam quas, velit molestias officiis vitae architecto tempora. Soluta iure aut atque facilis voluptate minus. Vero magni quidem dignissimos beatae voluptatem laboriosam modi ab dolorum voluptates impedit. Libero, dolorum officiis tenetur temporibus voluptatem veritatis natus, sed vel officia ullam, qui praesentium a maxime.",
         btnData: {
-            path: Routes.BLOG.path,
+            path: '/blogs/navigating-shipping-regulations',
             text: 'Continue Reading',
             btnStyleClass: 'w-fit basicBtnStyle'
         },
@@ -89,7 +89,7 @@ const blogsData = [
         title: 'Choosing the Right Shipping Method for Your Business',
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique consequuntur alias, aut vero ipsum laudantium nemo est quaerat distinctio nesciunt, dolore nisi veritatis odio dolorem reiciendis ea a eius unde laboriosam eos dolores accusamus deleniti cum. Praesentium animi, nisi voluptates tenetur blanditiis totam quas, velit molestias officiis vitae architecto tempora. Soluta iure aut atque facilis voluptate minus. Vero magni quidem dignissimos beatae voluptatem laboriosam modi ab dolorum voluptates impedit. Libero, dolorum officiis tenetur temporibus voluptatem veritatis natus, sed vel officia ullam, qui praesentium a maxime.",
         btnData: {
-            path: Routes.BLOG.path,
+            path: '/blogs/choosing-right-shipping-method',
             text: 'Continue Reading',
             btnStyleClass: 'w-fit basicBtnStyle'
         },
