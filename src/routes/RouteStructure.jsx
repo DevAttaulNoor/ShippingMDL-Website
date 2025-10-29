@@ -12,7 +12,7 @@ const Blog = lazy(() => import("@pages/public/Blogs/Blog"));
 const Services = lazy(() => import("@pages/public/Services/Services"));
 const Service = lazy(() => import("@pages/public/Services/Service"));
 const Faqs = lazy(() => import("@pages/public/Faqs"));
-const PrivacyPolicy = lazy(() => import("@pages/public/PrivacyPolicy"));
+const Policy = lazy(() => import("@pages/public/Policy"));
 const TermsCondition = lazy(() => import("@pages/public/TermsCondition"));
 
 export const RouteStructure = createBrowserRouter([{
@@ -27,7 +27,7 @@ export const RouteStructure = createBrowserRouter([{
         { path: Routes.SERVICES.path, element: <Services /> },
         { path: Routes.SERVICE.path, element: <Service /> },
         { path: Routes.FAQ.path, element: <Faqs /> },
-        { path: Routes.PRIVACY_POLICY.path, element: <PrivacyPolicy /> },
+        { path: Routes.PRIVACY_POLICY.path, element: <Policy /> },
         { path: Routes.TERMS_CONDITION.path, element: <TermsCondition /> },
     ]
 }]);

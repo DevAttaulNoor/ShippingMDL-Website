@@ -30,7 +30,8 @@
   }
 
   input,
-  button {
+  button,
+  textarea {
     @apply outline-none;
   }
 }

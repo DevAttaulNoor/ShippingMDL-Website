@@ -11,7 +11,7 @@ export const Breadcrumb = ({ breadcrumbData }) => {
                 >
                     {index !== 0 && (
                         <span className="text-xl">
-                            {ReactIcons.Slash}
+                            {ReactIcons.SLASH}
                         </span>
                     )}
 

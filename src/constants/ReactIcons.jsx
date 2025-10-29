@@ -1,12 +1,13 @@
 import { MdMail } from "react-icons/md";
 import { HiSlash } from "react-icons/hi2";
-import { FaCalendarDays } from "react-icons/fa6";
 import { FaPhoneAlt, FaBuilding } from "react-icons/fa";
+import { FaAngleDown, FaCalendarDays } from "react-icons/fa6";
 
 export const ReactIcons = {
-    Mail: <MdMail />,
-    Slash: <HiSlash />,
-    Phone: <FaPhoneAlt />,
-    Days: <FaCalendarDays />,
-    Building: <FaBuilding />,
+    MAIL: <MdMail />,
+    SLASH: <HiSlash />,
+    DOWN: <FaAngleDown />,
+    PHONE: <FaPhoneAlt />,
+    BUILDING: <FaBuilding />,
+    CALENDER: <FaCalendarDays />,
 }

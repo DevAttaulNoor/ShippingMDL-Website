@@ -1,6 +1,7 @@
 export const InputField = ({ inputStyleClass = '', inputData }) => {
     return (
         <input
+            id={inputData.id && `${inputData.id}`}
             type={inputData.type}
             name={inputData.name}
             value={inputData.value}

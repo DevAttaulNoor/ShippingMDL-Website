@@ -71,17 +71,17 @@ const serviceLinks = [
 const contactLinks = [
     {
         title: 'Address',
-        icon: ReactIcons.Building,
+        icon: ReactIcons.BUILDING,
         onClick: () => { console.log('Address Clicked') }
     },
     {
         title: 'Email',
-        icon: ReactIcons.Mail,
+        icon: ReactIcons.MAIL,
         onClick: () => { console.log('Email Clicked') }
     },
     {
         title: 'Phone',
-        icon: ReactIcons.Phone,
+        icon: ReactIcons.PHONE,
         onClick: () => { console.log('Phone Clicked') }
     }
 ];

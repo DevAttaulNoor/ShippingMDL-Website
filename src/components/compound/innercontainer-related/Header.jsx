@@ -57,7 +57,7 @@ export const Header = () => {
                     onClick={() => { console.log('Call clicked') }}
                     className="text-xl p-1.5 rounded-full cursor-pointer"
                 >
-                    {ReactIcons.Phone}
+                    {ReactIcons.PHONE}
                 </span>
             </div>
         </header>

@@ -5,7 +5,7 @@ export const InputWithLabel = ({ containerStyleClass = '', labelData, inputData 
         <div className={`${containerStyleClass}`}>
             <label
                 htmlFor={labelData.htmlFor}
-                className=''
+                className='text-lg font-medium'
             >
                 {labelData.text}
             </label>
