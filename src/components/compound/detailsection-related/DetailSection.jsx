@@ -1,5 +1,5 @@
 import { HeadingWithLine } from "../HeadingWithLine"
-import { BasicBtn } from "../../atomic/buttons/BasicBtn"
+import { BasicBtn } from "@components/atomic/buttons/BasicBtn"
 
 export const DetailSection = ({ detailContainerStyleClass = '', detailData }) => {
     return (

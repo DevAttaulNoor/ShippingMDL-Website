@@ -59,7 +59,7 @@
   }
 
   .descriptionStyle {
-    @apply text-xl font-light opacity-75;
+    @apply text-sm font-light opacity-75 md:text-base xl:text-lg 2xl:text-xl;
   }
 
   .basicBtnStyle {
