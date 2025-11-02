@@ -10,14 +10,14 @@ export const Breadcrumb = ({ breadcrumbData }) => {
                     className="flex items-center"
                 >
                     {index !== 0 && (
-                        <span className="text-xl">
+                        <span className="text-lg">
                             {ReactIcons.SLASH}
                         </span>
                     )}
 
                     <Link
                         to={item.path}
-                        className="text-lg font-medium text-white hover:text-blue-500"
+                        className="font-medium text-white hover:text-custom-blue"
                     >
                         {item.title}
                     </Link>

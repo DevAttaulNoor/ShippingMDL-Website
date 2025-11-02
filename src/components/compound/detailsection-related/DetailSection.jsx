@@ -1,10 +1,13 @@
+import { HeadingWithLine } from "../HeadingWithLine"
 import { BasicBtn } from "../../atomic/buttons/BasicBtn"
 
 export const DetailSection = ({ detailContainerStyleClass = '', detailData }) => {
     return (
         <div className={`${detailContainerStyleClass} flex flex-col gap-4`}>
             {detailData.title && (
-                <h1 className="text-5xl font-semibold">{detailData.title}</h1>
+                <HeadingWithLine
+                    title={detailData?.title}
+                />
             )}
 
             {detailData.description && (
@@ -12,7 +15,7 @@ export const DetailSection = ({ detailContainerStyleClass = '', detailData }) =>
                     {detailData.description.map((desc, index) => (
                         <p
                             key={index}
-                            className="text-xl font-light opacity-75"
+                            className="descriptionStyle"
                         >
                             {desc}
                         </p>

@@ -88,7 +88,7 @@ const contactLinks = [
 
 export const Footer = () => {
     return (
-        <footer className="grid grid-cols-6 py-8 gap-10 innerContainerPadding text-white bg-blue-500">
+        <footer className="grid grid-cols-6 py-8 gap-10 innerContainerPadding text-white bg-custom-blue">
             <div className="col-span-2 flex flex-col gap-3.5">
                 <img
                     src={logo}

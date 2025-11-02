@@ -6,6 +6,7 @@ import { BasicBtn } from "@components/atomic/buttons/BasicBtn"
 import { HeroSection } from "@components/compound/HeroSection"
 import { InputField } from "@components/atomic/fields/InputField"
 import { TextareaField } from "@components/atomic/fields/TextareaField"
+import { HeadingWithLine } from "@components/compound/HeadingWithLine"
 
 const contactDetailData = [
     {
@@ -62,8 +63,10 @@ const Contact = () => {
             />
 
             {/* Contact Detail Section */}
-            <section className="flex flex-col innerContainerPadding gap-10">
-                <h1 className="text-center text-5xl font-semibold">Visit Our Main Office</h1>
+            <section className="innerContainerStyle innerContainerPadding">
+                <HeadingWithLine
+                    title={'Visit Our Main Office'}
+                />
 
                 <div className="flex gap-15">
                     <div className="flex flex-col gap-5">
@@ -98,11 +101,10 @@ const Contact = () => {
             </section>
 
             {/* Contact Form Section */}
-            <section className="flex flex-col innerContainerPadding gap-10">
-                <div className="flex flex-col items-center text-center gap-2">
-                    <h1 className="text-5xl font-semibold">Contact Us</h1>
-                    <p className="text-xl opacity-75">If you our having trouble please don’t hasitate to Contact us!</p>
-                </div>
+            <section className="innerContainerStyle innerContainerPadding">
+                <HeadingWithLine
+                    title={"Contact Us"}
+                />
 
                 <div className="flex flex-col gap-3.5">
                     <InputField

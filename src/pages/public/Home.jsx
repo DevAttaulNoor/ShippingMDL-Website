@@ -1,6 +1,6 @@
 import { Routes } from "@constants/Routes"
 import { InnerContainer } from "@layouts/InnerContainer"
-import { BasicBtn } from "@components/atomic/buttons/BasicBtn"
+import { HeroSection } from "@components/compound/HeroSection"
 import { SwiperCarousel } from "@components/atomic/SwiperCarousel"
 import { ServiceCard } from "@components/compound/cards/ServiceCard"
 import { DetailWithImageLayout } from "@layouts/DetailWithImageLayout"
@@ -56,27 +56,18 @@ const Home = () => {
     return (
         <InnerContainer>
             {/* Hero Section */}
-            <section
-                style={{ backgroundImage: 'url(/images/components/heroSection/home.jpg)' }}
-                className="w-full h-[640px] flex flex-col items-center justify-center text-center innerContainerPadding py-10 gap-3.5 bg-cover bg-center bg-no-repeat text-white"
-            >
-                <h1 className="text-5xl font-semibold">
-                    We Make the Strongest Services All Over the World
-                </h1>
-
-                <p className="w-2/3 text-lg opacity-85">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptate
-                    atque vitae cupiditate, ipsam incidunt fuga consequatur commodi soluta iure odit ratione
-                    quos unde pariatur quaerat exercitationem maxime laborum autem!
-                </p>
-
-                <BasicBtn
-                    btnStyleClass='w-fit basicBtnStyle'
-                    btnData={{
-                        text: Routes.SERVICES.title,
-                        path: Routes.SERVICES.path
-                    }}
-                />
-            </section>
+            <HeroSection
+                heroData={{
+                    bgImage: '/images/components/heroSection/home.jpg',
+                    title: 'We make Strongest Services all over the World',
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptate atque vitae cupiditate, ipsam incidunt fuga consequatur commodi soluta iure odit ratione quos unde pariatur quaerat exercitationem maxime laborum autem!"
+                }}
+                btnData={{
+                    btnStyleClass: 'w-fit basicBtnStyle',
+                    text: Routes.SERVICES.title,
+                    path: Routes.SERVICES.path
+                }}
+            />
 
             {/* Aboutus Section */}
             <DetailWithImageLayout
@@ -109,7 +100,7 @@ const Home = () => {
 
             {/* Qualities Section */}
             <SwiperCarousel
-                swiperContainerStyle="!py-16 text-white bg-blue-950"
+                swiperContainerStyle="!py-16 text-white bg-custom-blue"
                 swiperStates={{
                     loop: true,
                     slidesPerView: 4,

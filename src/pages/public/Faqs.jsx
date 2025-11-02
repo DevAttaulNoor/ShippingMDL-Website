@@ -35,7 +35,8 @@ const Faqs = () => {
             <HeroSection
                 heroData={{
                     bgImage: '/images/components/heroSection/home.jpg',
-                    title: 'Frequently Asked Questions'
+                    title: 'Frequently Asked Questions',
+                    description: "Find quick answers to the most common questions about our logistics and freight services. Explore the FAQs below to understand our process, policies, and support options with ease."
                 }}
                 breadcrumbData={[
                     {
@@ -50,9 +51,7 @@ const Faqs = () => {
             />
 
             {/* Faqs Section */}
-            <section className="flex flex-col innerContainerPadding gap-10">
-                <h1 className="text-center text-5xl font-semibold">Frequently Asked Questions</h1>
-
+            <section className="innerContainerPadding">
                 <Accordion
                     accordionData={accordionData}
                 />

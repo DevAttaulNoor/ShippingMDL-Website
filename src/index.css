@@ -22,6 +22,11 @@
   --font-size-8xl: 34px;
   --font-size-9xl: 36px;
   --font-size-10xl: 40px;
+
+  /* Colors */
+  --color-custom-gray: #909090;
+  --color-custom-blue: #002147;
+  --color-custom-green: #b0cf25;
 }
 
 @layer base {
@@ -42,14 +47,22 @@
   }
 
   .innerContainerStyle {
-    @apply flex flex-col gap-20;
+    @apply flex flex-col xs:gap-8 sm:gap-10 md:gap-12 lg:gap-14 xl:gap-16 2xl:gap-20;
   }
 
   .innerContainerPadding {
-    @apply px-16;
+    @apply xs:px-6 sm:px-8 md:px-10 lg:px-12 xl:px-14 2xl:px-16;
+  }
+
+  .titleStyle {
+    @apply text-5xl font-semibold;
+  }
+
+  .descriptionStyle {
+    @apply text-xl font-light opacity-75;
   }
 
   .basicBtnStyle {
-    @apply px-6 py-3 font-medium rounded-3xl transition-colors duration-300 text-white bg-green-500 hover:bg-green-600;
+    @apply px-6 py-3 font-medium rounded-3xl transition-colors duration-300 text-white bg-custom-green hover:bg-custom-green/85;
   }
 }

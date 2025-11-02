@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { Routes } from "@constants/Routes"
 import { InnerContainer } from "@layouts/InnerContainer"
 import { HeroSection } from "@components/compound/HeroSection"
+import { HeadingWithLine } from "@components/compound/HeadingWithLine"
 
 const Service = () => {
     const { slug } = useParams();
@@ -42,12 +43,14 @@ const Service = () => {
 
             {/* About the Service Section */}
             <section className="flex flex-col innerContainerPadding gap-5">
-                <h1 className="text-center text-5xl font-semibold">{serviceData?.title}</h1>
+                <HeadingWithLine
+                    title={serviceData?.title}
+                />
 
                 {serviceData?.description.map((desc, index) => (
                     <p
                         key={index}
-                        className="text-lg"
+                        className="descriptionStyle"
                     >
                         {desc}
                     </p>

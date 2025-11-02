@@ -22,9 +22,9 @@ export const Accordion = ({ accordionData }) => {
                     <div key={index}>
                         <button
                             onClick={() => toggleAccordion(index)}
-                            className={`w-full flex items-center justify-between p-4 font-medium border-b transition-colors cursor-pointer  border-gray-200 text-gray-500 hover:text-black ${isLastItem && !isOpen && "border-b-0"}`}
+                            className={`w-full flex items-center justify-between p-4 border-b transition-colors cursor-pointer border-custom-blue/20 hover:text-white hover:bg-custom-blue ${isOpen && 'text-white bg-custom-blue'} ${isLastItem && !isOpen && "border-b-0"}`}
                         >
-                            <span>{item.question}</span>
+                            <span className="text-lg font-medium">{item.question}</span>
                             <span className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}>
                                 {ReactIcons.DOWN}
                             </span>
