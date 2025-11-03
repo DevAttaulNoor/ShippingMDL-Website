@@ -1,0 +1,21 @@
+/* Swiper Carousel Style */
+.swiper-slide {
+  transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.12);
+  cursor: pointer;
+}
+
+/* Pagination Bullets */
+.swiper-pagination-bullet {
+  background-color: #b0cf25 !important;
+  opacity: 0.4 !important;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b0cf25 !important;
+  opacity: 1 !important;
+}

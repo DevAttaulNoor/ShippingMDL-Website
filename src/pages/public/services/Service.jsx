@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { Routes } from "@constants/Routes"
 import { InnerContainer } from "@layouts/InnerContainer"
 import { HeroSection } from "@components/compound/HeroSection"
-import { HeadingWithLine } from "@components/compound/HeadingWithLine"
+import { HeadingWithLine } from "@components/compound/headings/HeadingWithLine"
 
 const Service = () => {
     const { slug } = useParams();
@@ -42,7 +42,7 @@ const Service = () => {
             />
 
             {/* About the Service Section */}
-            <section className="flex flex-col innerContainerPadding gap-5">
+            <section className="sectionStyle innerContainerPadding">
                 <HeadingWithLine
                     title={serviceData?.title}
                 />

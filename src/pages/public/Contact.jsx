@@ -6,7 +6,7 @@ import { BasicBtn } from "@components/atomic/buttons/BasicBtn"
 import { HeroSection } from "@components/compound/HeroSection"
 import { InputField } from "@components/atomic/fields/InputField"
 import { TextareaField } from "@components/atomic/fields/TextareaField"
-import { HeadingWithLine } from "@components/compound/HeadingWithLine"
+import { HeadingWithLine } from "@components/compound/headings/HeadingWithLine"
 
 const contactDetailData = [
     {
@@ -63,7 +63,7 @@ const Contact = () => {
             />
 
             {/* Contact Detail Section */}
-            <section className="innerContainerStyle innerContainerPadding">
+            <section className="sectionStyle innerContainerPadding">
                 <HeadingWithLine
                     title={'Visit Our Main Office'}
                 />
@@ -101,7 +101,7 @@ const Contact = () => {
             </section>
 
             {/* Contact Form Section */}
-            <section className="innerContainerStyle innerContainerPadding">
+            <section className="sectionStyle innerContainerPadding">
                 <HeadingWithLine
                     title={"Contact Us"}
                 />

@@ -6,6 +6,7 @@ import { ServiceCard } from "@components/compound/cards/ServiceCard"
 import { DetailWithImageLayout } from "@layouts/DetailWithImageLayout"
 import { DetailSection } from "@components/compound/detailsection-related/DetailSection"
 import { ImageSection } from "@components/compound/detailsection-related/ImageSection"
+import { HeadingWithDescription } from "@components/compound/headings/HeadingWithDescription"
 
 const qualitiesData = [
     {
@@ -52,6 +53,51 @@ const qualitiesData = [
     },
 ];
 
+const servicesData = [
+    {
+        bgImage: '/images/components/serviceSection/land-freight.png',
+        title: 'Land Freight',
+        description:
+            'Reliable overland transportation solutions ensuring secure, cost-effective, and on-time delivery of your goods across major national and regional routes.',
+        path: Routes.SERVICE_LAND_FREIGHT.path,
+    },
+    {
+        bgImage: '/images/components/serviceSection/sea-freight.png',
+        title: 'Sea Freight',
+        description:
+            'Comprehensive ocean freight solutions with global coverage, efficient routing, and cost-optimized shipping for all cargo sizes and types.',
+        path: Routes.SERVICE_SEA_FREIGHT.path,
+    },
+    {
+        bgImage: '/images/components/serviceSection/air-freight.png',
+        title: 'Air Freight',
+        description:
+            'Fast, secure, and dependable air freight services designed to move your cargo globally with precision and efficiency.',
+        path: Routes.SERVICE_AIR_FREIGHT.path,
+    },
+    {
+        bgImage: '/images/components/serviceSection/custom-clearance.png',
+        title: 'Custom Clearance',
+        description:
+            'Expert customs brokerage and clearance support to ensure smooth, compliant, and delay-free import and export operations.',
+        path: Routes.SERVICE_CUSTOM_CLEARANCE.path,
+    },
+    {
+        bgImage: '/images/components/serviceSection/dg-cargo.png',
+        title: 'DG Cargo',
+        description:
+            'Safe and compliant handling of dangerous goods cargo with certified processes that meet international transport regulations.',
+        path: Routes.SERVICE_DG_CARGO.path,
+    },
+    {
+        bgImage: '/images/components/serviceSection/transit-trade.png',
+        title: 'Transit Trade',
+        description:
+            'Seamless cross-border transit trade solutions ensuring efficient documentation, routing, and delivery across global logistics corridors.',
+        path: Routes.SERVICE_TRANSIT_TRADE.path,
+    },
+];
+
 const Home = () => {
     return (
         <InnerContainer>
@@ -85,8 +131,10 @@ const Home = () => {
                         detailData={{
                             title: 'About our Company',
                             description: [
-                                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam a autem vel labore rerum consectetur aliquam quaerat totam assumenda quia, error neque et omnis modi maiores, eaque molestiae porro quos ad sequi! Dignissimos velit dolorum, assumenda aspernatur fugiat quos repellendus enim, alias delectus aliquid a perferendis recusandae architecto.',
-                                'Adipisci corrupti eligendi porro alias, cupiditate officiis nihil dolor nulla at, quae ducimus atque odit voluptates sit. Ratione, eum. Nostrum quasi autem debitis facere nesciunt dolores magni explicabo rem, ut quod totam suscipit, Eos quo repellat impedit accusantium, sint voluptatibus repellendus necessitatibus placeat ipsum iusto praesentium, vero, fugiat accusamus.'
+                                'Marine Dynamic Logistics is a Karachi-based freight forwarding and logistics company dedicated to delivering seamless, efficient, and secure cargo solutions across the globe. Strategically located in Pakistan’s commercial and maritime hub, we take pride in supporting international trade with reliable end-to-end logistics services tailored to meet diverse industry needs.',
+                                'As a proud PIFFA-certified freight forwarder, Marine Dynamic Logistics upholds the highest standards of professionalism, compliance, and operational excellence. Our team consists of experienced logistics specialists who combine expertise with advanced systems to ensure smooth cargo movement from origin to destination.',
+                                'With strong global partnerships, a client-first approach, and a deep understanding of regional trade dynamics, Marine Dynamic Logistics guarantees timely deliveries, transparent operations, and cost-effective logistics strategies.',
+                                'Whether it’s managing standard cargo, high-value shipments, time-critical freight, or specialized DG consignments, we strive to provide the most trusted and efficient logistics solutions in Pakistan and beyond.'
                             ],
                             btnData: {
                                 btnStyleClass: 'w-fit basicBtnStyle',
@@ -99,126 +147,73 @@ const Home = () => {
             />
 
             {/* Qualities Section */}
-            <SwiperCarousel
-                swiperContainerStyle="!py-16 text-white bg-custom-blue"
-                swiperStates={{
-                    loop: true,
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                    pagination: false,
-                    autoplay: {
-                        delay: 2000,
-                        disableOnInteraction: false,
-                    }
-                }}
-            >
-                {qualitiesData.map((item, index) => (
-                    <div
-                        key={index}
-                        className="flex flex-col items-center gap-2"
-                    >
-                        <img
-                            src={item.imgData.src}
-                            alt={item.imgData.alt}
-                            className="w-28 object-contain invert"
-                        />
+            <section className="sectionStyle">
+                <HeadingWithDescription
+                    containerStyle='text-center'
+                    heading={{
+                        title: 'Our Qualities'
+                    }}
+                    description={"We deliver excellence through commitment, innovation, and trusted logistics solutions."}
+                />
 
-                        <h5 className='text-lg font-medium'>{item.title}</h5>
-                    </div>
-                ))}
-            </SwiperCarousel>
+                <SwiperCarousel
+                    swiperContainerStyle="carouselPadding text-white bg-custom-blue"
+                    swiperStates={{
+                        loop: true,
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                        pagination: true,
+                        autoplay: {
+                            delay: 2000,
+                            disableOnInteraction: false,
+                        }
+                    }}
+                >
+                    {qualitiesData.map((item, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center gap-2"
+                        >
+                            <img
+                                src={item.imgData.src}
+                                alt={item.imgData.alt}
+                                className="w-28 object-contain invert"
+                            />
+
+                            <h5 className='text-lg font-medium'>{item.title}</h5>
+                        </div>
+                    ))}
+                </SwiperCarousel>
+            </section>
 
             {/* Services Section */}
-            <section className="grid grid-cols-2 innerContainerPadding gap-15">
-                <ServiceCard
-                    cardContainerStyle='h-96'
-                    cardData={{
-                        bgImage: '/images/components/serviceSection/land-freight.png',
-                        title: 'Land Freight',
-                        description:
-                            'Reliable overland transportation solutions ensuring secure, cost-effective, and on-time delivery of your goods across major national and regional routes.',
-                        btnData: {
-                            text: 'Learn More',
-                            path: Routes.SERVICE_LAND_FREIGHT.path,
-                            btnStyleClass: 'w-fit basicBtnStyle'
-                        }
+            <section className="sectionStyle">
+                <HeadingWithDescription
+                    containerStyle='text-center'
+                    heading={{
+                        title: 'Our Logistics Services'
                     }}
+                    description={"Delivering end-to-end freight forwarding and supply chain solutions across land, sea, air and cross-border routes with efficiency."}
                 />
 
-                <ServiceCard
-                    cardContainerStyle='h-96'
-                    cardData={{
-                        bgImage: '/images/components/serviceSection/sea-freight.png',
-                        title: 'Sea Freight',
-                        description:
-                            'Comprehensive ocean freight solutions with global coverage, efficient routing, and cost-optimized shipping for all cargo sizes and types.',
-                        btnData: {
-                            text: 'Learn More',
-                            path: Routes.SERVICE_SEA_FREIGHT.path,
-                            btnStyleClass: 'w-fit basicBtnStyle'
-                        }
-                    }}
-                />
-
-                <ServiceCard
-                    cardContainerStyle='h-96'
-                    cardData={{
-                        bgImage: '/images/components/serviceSection/air-freight.png',
-                        title: 'Air Freight',
-                        description:
-                            'Fast, secure, and dependable air freight services designed to move your cargo globally with precision and efficiency.',
-                        btnData: {
-                            text: 'Learn More',
-                            path: Routes.SERVICE_AIR_FREIGHT.path,
-                            btnStyleClass: 'w-fit basicBtnStyle'
-                        }
-                    }}
-                />
-
-                <ServiceCard
-                    cardContainerStyle='h-96'
-                    cardData={{
-                        bgImage: '/images/components/serviceSection/custom-clearance.png',
-                        title: 'Custom Clearance',
-                        description:
-                            'Expert customs brokerage and clearance support to ensure smooth, compliant, and delay-free import and export operations.',
-                        btnData: {
-                            text: 'Learn More',
-                            path: Routes.SERVICE_CUSTOM_CLEARANCE.path,
-                            btnStyleClass: 'w-fit basicBtnStyle'
-                        }
-                    }}
-                />
-
-                <ServiceCard
-                    cardContainerStyle='h-96'
-                    cardData={{
-                        bgImage: '/images/components/serviceSection/dg-cargo.png',
-                        title: 'DG Cargo',
-                        description:
-                            'Safe and compliant handling of dangerous goods cargo with certified processes that meet international transport regulations.',
-                        btnData: {
-                            text: 'Learn More',
-                            path: Routes.SERVICE_DG_CARGO.path,
-                            btnStyleClass: 'w-fit basicBtnStyle'
-                        }
-                    }}
-                />
-
-                <ServiceCard
-                    cardContainerStyle='h-96'
-                    cardData={{
-                        bgImage: '/images/components/serviceSection/transit-trade.png',
-                        title: 'Transit Trade',
-                        description:
-                            'Seamless cross-border transit trade solutions ensuring efficient documentation, routing, and delivery across global logistics corridors.',
-                        btnData: {
-                            text: 'Learn More',
-                            path: Routes.SERVICE_TRANSIT_TRADE.path,
-                            btnStyleClass: 'w-fit basicBtnStyle'
-                        }
-                    }}
-                />
+                <div className="grid grid-cols-2 innerContainerPadding gap-16">
+                    {servicesData.map((data, index) => (
+                        <ServiceCard
+                            key={index}
+                            cardContainerStyle='h-96'
+                            cardData={{
+                                bgImage: data.bgImage,
+                                title: data.title,
+                                description: data.description,
+                                btnData: {
+                                    text: 'Learn More',
+                                    path: data.path,
+                                    btnStyleClass: 'w-fit basicBtnStyle'
+                                }
+                            }}
+                        />
+                    ))}
+                </div>
             </section>
         </InnerContainer>
     )

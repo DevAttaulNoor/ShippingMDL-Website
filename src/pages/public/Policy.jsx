@@ -1,7 +1,7 @@
 import { Routes } from "@constants/Routes";
 import { InnerContainer } from "@layouts/InnerContainer";
 import { HeroSection } from "@components/compound/HeroSection";
-import { HeadingWithLine } from "@components/compound/HeadingWithLine";
+import { HeadingWithLine } from "@components/compound/headings/HeadingWithLine";
 
 const policyData = [
     {
