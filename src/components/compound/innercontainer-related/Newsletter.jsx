@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { HeadingWithLine } from "../headings/HeadingWithLine";
 import { BasicBtn } from "@components/atomic/buttons/BasicBtn";
 import { InputField } from "@components/atomic/fields/InputField";
 
@@ -8,8 +9,13 @@ export const Newsletter = () => {
     return (
         <div className="flex items-center justify-between innerContainerPadding py-10 gap-15 text-white bg-custom-green">
             <div className="flex flex-col gap-3">
-                <h1 className="text-4xl font-semibold">Join Our Newsletter</h1>
-                <p className="descriptionStyle">
+                <HeadingWithLine
+                    title={'Join Our Newsletter'}
+                    lineStyle='bg-custom-blue'
+                    headingStyle='text-4xl'
+                />
+
+                <p className="text-sm font-light md:text-base xl:text-lg 2xl:text-xl">
                     Subscribe to Marine Dynamics Logistics’ newsletter for expert logistics
                     insights, company news, and exclusive updates on global freight and
                     transportation solutions.

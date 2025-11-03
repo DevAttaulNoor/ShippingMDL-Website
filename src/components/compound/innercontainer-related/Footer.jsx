@@ -99,37 +99,34 @@ export const Footer = () => {
                 <p className="text-justify">Marine Dynamic Logistics is a trusted shipping and freight forwarding company delivering efficient, reliable, and cost-effective logistics solutions specialized in land, sea, and air freight, ensuring seamless transportation for businesses of all sizes.</p>
             </div>
 
-            <div className="w-fit flex flex-col gap-2">
+            <div className="flex flex-col gap-2">
                 {mainLinks.map((item, index) => (
                     <NavLink
                         key={index}
                         to={item.path}
-                        className={({ isActive }) => `${isActive ? 'underline' : ''} underline-offset-4 hover:underline`}
-                    >
+                        className={({ isActive }) => `relative w-fit font-medium after:block after:h-0.5 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 after:bg-custom-green ${isActive ? 'after:w-full' : 'after:w-0'} hover:after:w-full`}                    >
                         {item.title}
                     </NavLink>
                 ))}
             </div>
 
-            <div className="w-fit flex flex-col gap-2">
+            <div className="flex flex-col gap-2">
                 {privacyLinks.map((item, index) => (
                     <NavLink
                         key={index}
                         to={item.path}
-                        className={({ isActive }) => `${isActive ? 'underline' : ''} underline-offset-4 hover:underline`}
-                    >
+                        className={({ isActive }) => `relative w-fit font-medium after:block after:h-0.5 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 after:bg-custom-green ${isActive ? 'after:w-full' : 'after:w-0'} hover:after:w-full`}                    >
                         {item.title}
                     </NavLink>
                 ))}
             </div>
 
-            <div className="w-fit flex flex-col gap-2">
+            <div className="flex flex-col gap-2">
                 {serviceLinks.map((item, index) => (
                     <NavLink
                         key={index}
                         to={item.path}
-                        className={({ isActive }) => `${isActive ? 'underline' : ''} underline-offset-4 hover:underline`}
-                    >
+                        className={({ isActive }) => `relative w-fit font-medium after:block after:h-0.5 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 after:bg-custom-green ${isActive ? 'after:w-full' : 'after:w-0'} hover:after:w-full`}                    >
                         {item.title}
                     </NavLink>
                 ))}
@@ -142,7 +139,7 @@ export const Footer = () => {
                     {contactLinks.map((item, index) => (
                         <div
                             key={index}
-                            className="flex items-center gap-2 cursor-pointer underline-offset-4 hover:underline"
+                            className="flex items-center gap-2 cursor-pointer"
                         >
                             <span className="text-lg">
                                 {item.icon}

@@ -45,7 +45,7 @@ export const Header = () => {
                     <NavLink
                         key={index}
                         to={item.path}
-                        className={({ isActive }) => `${isActive ? 'underline' : ''} text-lg font-medium underline-offset-4 hover:underline`}
+                        className={({ isActive }) => `relative text-lg font-medium after:block after:h-0.5 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 after:bg-custom-green ${isActive ? 'after:w-full' : 'after:w-0'} hover:after:w-full`}
                     >
                         {item.title}
                     </NavLink>
