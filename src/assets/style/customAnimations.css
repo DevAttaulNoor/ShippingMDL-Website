@@ -1,0 +1,15 @@
+@keyframes spin-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-clockwise {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: spin-clockwise 5s infinite linear;
+}
