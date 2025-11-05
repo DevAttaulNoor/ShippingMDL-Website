@@ -1,4 +1,4 @@
-import { Link } from "react-router"
+import { NavLink } from "react-router"
 import { ReactIcons } from "@constants/ReactIcons"
 
 export const Breadcrumb = ({ breadcrumbData }) => {
@@ -15,12 +15,12 @@ export const Breadcrumb = ({ breadcrumbData }) => {
                         </span>
                     )}
 
-                    <Link
+                    <NavLink
                         to={item.path}
-                        className="font-medium text-white hover:text-custom-blue"
+                        className={({ isActive }) => `relative font-medium ${isActive ? 'text-custom-green' : 'text-white'} hover:text-custom-green`}
                     >
                         {item.title}
-                    </Link>
+                    </NavLink>
                 </div>
             ))}
         </nav>

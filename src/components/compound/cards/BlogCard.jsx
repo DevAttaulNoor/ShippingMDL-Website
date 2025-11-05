@@ -1,4 +1,4 @@
-import { BasicBtn } from "@components/atomic/buttons/BasicBtn"
+import { AnimatedBtn } from "@components/atomic/buttons/AnimatedBtn"
 
 export const BlogCard = ({ cardData }) => {
     return (
@@ -15,9 +15,18 @@ export const BlogCard = ({ cardData }) => {
 
             <div className="flex-[0.6] flex flex-col gap-4">
                 <h2 className="titleStyle">{cardData.title}</h2>
-                <p className="descriptionStyle">{cardData.description}</p>
+                <div className="flex flex-col gap-4">
+                    {cardData.description.map((desc, index) => (
+                        <p
+                            key={index}
+                            className="descriptionStyle"
+                        >
+                            {desc}
+                        </p>
+                    ))}
+                </div>
 
-                <BasicBtn
+                <AnimatedBtn
                     btnData={cardData.btnData}
                     btnStyleClass={cardData.btnData.btnStyleClass}
                 />

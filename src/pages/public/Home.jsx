@@ -109,7 +109,6 @@ const Home = () => {
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptate atque vitae cupiditate, ipsam incidunt fuga consequatur commodi soluta iure odit ratione quos unde pariatur quaerat exercitationem maxime laborum autem!"
                 }}
                 btnData={{
-                    btnStyleClass: 'w-fit basicBtnStyle',
                     text: Routes.SERVICES.title,
                     path: Routes.SERVICES.path
                 }}
@@ -137,7 +136,6 @@ const Home = () => {
                                 'Whether it’s managing standard cargo, high-value shipments, time-critical freight, or specialized DG consignments, we strive to provide the most trusted and efficient logistics solutions in Pakistan and beyond.'
                             ],
                             btnData: {
-                                btnStyleClass: 'w-fit basicBtnStyle',
                                 text: 'Read More',
                                 path: Routes.ABOUT.path
                             }
@@ -196,11 +194,11 @@ const Home = () => {
                     description={"Delivering end-to-end freight forwarding and supply chain solutions across land, sea, air and cross-border routes with efficiency."}
                 />
 
-                <div className="grid grid-cols-2 innerContainerPadding gap-16">
+                <div className="grid grid-cols-3 innerContainerPadding gap-8">
                     {servicesData.map((data, index) => (
                         <ServiceCard
                             key={index}
-                            cardContainerStyle='h-96'
+                            cardContainerStyle='h-60'
                             cardData={{
                                 bgImage: data.bgImage,
                                 title: data.title,
@@ -208,7 +206,7 @@ const Home = () => {
                                 btnData: {
                                     text: 'Learn More',
                                     path: data.path,
-                                    btnStyleClass: 'w-fit basicBtnStyle'
+                                    btnStyleClass: 'underline-offset-1 decoration-custom-green hover:underline'
                                 }
                             }}
                         />

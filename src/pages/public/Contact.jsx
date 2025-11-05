@@ -168,7 +168,6 @@ const Contact = () => {
                                 message: ''
                             })
                         }}
-                        btnStyleClass="basicBtnStyle"
                     />
 
                     <BasicBtn
@@ -176,7 +175,6 @@ const Contact = () => {
                             text: 'Submit',
                             onClick: () => console.log('Form submitted')
                         }}
-                        btnStyleClass="basicBtnStyle"
                     />
                 </div>
             </section>

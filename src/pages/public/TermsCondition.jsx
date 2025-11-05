@@ -110,7 +110,7 @@ const TermsCondition = () => {
                     >
                         <HeadingWithLine
                             title={item.title}
-                            headingStyle="text-5xl text-custom-blue"
+                            headingStyle="text-custom-blue"
                         />
 
                         <p className="descriptionStyle">{item.description}</p>

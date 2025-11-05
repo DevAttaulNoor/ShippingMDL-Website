@@ -1,7 +1,7 @@
 import { MdMail } from "react-icons/md";
 import { HiSlash } from "react-icons/hi2";
 import { FaPhoneAlt, FaBuilding } from "react-icons/fa";
-import { FaAngleDown, FaCalendarDays } from "react-icons/fa6";
+import { FaAngleDown, FaCalendarDays, FaArrowRightLong } from "react-icons/fa6";
 
 export const ReactIcons = {
     MAIL: <MdMail />,
@@ -9,5 +9,6 @@ export const ReactIcons = {
     DOWN: <FaAngleDown />,
     PHONE: <FaPhoneAlt />,
     BUILDING: <FaBuilding />,
+    RIGHT: <FaArrowRightLong />,
     CALENDER: <FaCalendarDays />,
 }

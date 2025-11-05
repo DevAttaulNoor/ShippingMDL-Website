@@ -12,13 +12,10 @@ export const Newsletter = () => {
                 <HeadingWithLine
                     title={'Join Our Newsletter'}
                     lineStyle='bg-custom-blue'
-                    headingStyle='text-4xl'
                 />
 
                 <p className="text-sm font-light md:text-base xl:text-lg 2xl:text-xl">
-                    Subscribe to Marine Dynamics Logistics’ newsletter for expert logistics
-                    insights, company news, and exclusive updates on global freight and
-                    transportation solutions.
+                    Subscribe to Marine Dynamics Logistics’ newsletter for expert logistics insights, company news, and exclusive updates on global freight and transportation solutions.
                 </p>
             </div>
 
@@ -39,7 +36,7 @@ export const Newsletter = () => {
                         text: 'Sign Up',
                         onClick: () => { console.log('Signup Button Clicked') }
                     }}
-                    btnStyleClass='px-6 py-3 font-medium rounded-r-3xl transition-colors duration-300 text-white bg-custom-blue hover:bg-custom-blue/85'
+                    btnStyleClass='btnStyle rounded-r-3xl text-white bg-custom-blue hover:bg-custom-blue/85'
                 />
             </div>
         </div>

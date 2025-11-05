@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Routes } from "@constants/Routes";
 import { InnerContainer } from "@layouts/InnerContainer"
 import { HeroSection } from "@components/compound/HeroSection";
+import { HeadingWithLine } from "@components/compound/headings/HeadingWithLine";
 
 const Blog = () => {
     const { slug } = useParams();
@@ -40,19 +41,24 @@ const Blog = () => {
                 ]}
             />
 
-            {/* About the Blog Section */}
-            <section className="flex flex-col innerContainerPadding gap-5">
-                <h1 className="text-center text-5xl font-semibold">{blogData?.date}</h1>
-                <h1 className="text-center text-5xl font-semibold">{blogData?.title}</h1>
+            {/* Blog Section */}
+            <section className="sectionStyle innerContainerPadding">
+                <HeadingWithLine
+                    title={blogData?.title}
+                />
 
                 {blogData?.description.map((desc, index) => (
                     <p
                         key={index}
-                        className="text-lg"
+                        className="descriptionStyle"
                     >
                         {desc}
                     </p>
                 ))}
+
+                <p className="text-end text-sm opacity-75 italic text-custom-blue">
+                    Published: {blogData?.date}
+                </p>
             </section>
         </InnerContainer>
     )

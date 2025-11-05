@@ -1,5 +1,5 @@
 import { HeadingWithLine } from "../headings/HeadingWithLine"
-import { BasicBtn } from "@components/atomic/buttons/BasicBtn"
+import { AnimatedBtn } from "@components/atomic/buttons/AnimatedBtn"
 
 export const DetailSection = ({ detailContainerStyleClass = '', detailData }) => {
     return (
@@ -24,7 +24,7 @@ export const DetailSection = ({ detailContainerStyleClass = '', detailData }) =>
             )}
 
             {detailData.btnData && (
-                <BasicBtn
+                <AnimatedBtn
                     btnData={detailData.btnData}
                     btnStyleClass={detailData.btnData.btnStyleClass}
                 />
