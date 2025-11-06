@@ -57,6 +57,7 @@ const About = () => {
             {/* About the President Section */}
             <section className="innerContainerPadding">
                 <DetailWithImageLayout
+                    detailContainerStyleClass="flex-col-reverse"
                     rightsideData={
                         <DetailSection
                             detailData={{

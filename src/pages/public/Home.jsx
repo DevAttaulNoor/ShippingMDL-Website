@@ -132,8 +132,6 @@ const Home = () => {
                             description: [
                                 'Marine Dynamic Logistics is a Karachi-based freight forwarding and logistics company dedicated to delivering seamless, efficient, and secure cargo solutions across the globe. Strategically located in Pakistan’s commercial and maritime hub, we take pride in supporting international trade with reliable end-to-end logistics services tailored to meet diverse industry needs.',
                                 'As a proud PIFFA-certified freight forwarder, Marine Dynamic Logistics upholds the highest standards of professionalism, compliance, and operational excellence. Our team consists of experienced logistics specialists who combine expertise with advanced systems to ensure smooth cargo movement from origin to destination.',
-                                'With strong global partnerships, a client-first approach, and a deep understanding of regional trade dynamics, Marine Dynamic Logistics guarantees timely deliveries, transparent operations, and cost-effective logistics strategies.',
-                                'Whether it’s managing standard cargo, high-value shipments, time-critical freight, or specialized DG consignments, we strive to provide the most trusted and efficient logistics solutions in Pakistan and beyond.'
                             ],
                             btnData: {
                                 text: 'Read More',
@@ -147,7 +145,7 @@ const Home = () => {
             {/* Qualities Section */}
             <section className="sectionStyle">
                 <HeadingWithDescription
-                    containerStyle='text-center'
+                    containerStyle='text-center innerContainerPadding'
                     heading={{
                         title: 'Our Qualities'
                     }}
@@ -158,12 +156,40 @@ const Home = () => {
                     swiperContainerStyle="carouselPadding text-white bg-custom-blue"
                     swiperStates={{
                         loop: true,
-                        slidesPerView: 4,
-                        spaceBetween: 20,
                         pagination: true,
                         autoplay: {
                             delay: 2000,
                             disableOnInteraction: false,
+                        },
+                        breakpoints: {
+                            0: {
+                                slidesPerView: 1,
+                                spaceBetween: 5,
+                            },
+                            450: {
+                                slidesPerView: 2,
+                                spaceBetween: 10,
+                            },
+                            640: {
+                                slidesPerView: 3,
+                                spaceBetween: 10,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                                spaceBetween: 15,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 15,
+                            },
+                            1280: {
+                                slidesPerView: 4,
+                                spaceBetween: 20,
+                            },
+                            1440: {
+                                slidesPerView: 5,
+                                spaceBetween: 20,
+                            },
                         }
                     }}
                 >
@@ -185,7 +211,7 @@ const Home = () => {
             </section>
 
             {/* Services Section */}
-            <section className="sectionStyle">
+            <section className="sectionStyle innerContainerPadding">
                 <HeadingWithDescription
                     containerStyle='text-center'
                     heading={{
@@ -194,7 +220,7 @@ const Home = () => {
                     description={"Delivering end-to-end freight forwarding and supply chain solutions across land, sea, air and cross-border routes with efficiency."}
                 />
 
-                <div className="grid grid-cols-3 innerContainerPadding gap-8">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 md:gap-6 lg:gap-7 xl:grid-cols-3 xl:gap-8 2xl:gap-10">
                     {servicesData.map((data, index) => (
                         <ServiceCard
                             key={index}

@@ -5,12 +5,12 @@ export const HeroSection = ({ heroData, btnData, breadcrumbData }) => {
     return (
         <div
             style={{ backgroundImage: `url(${heroData.bgImage})` }}
-            className="w-full h-[640px] flex flex-col items-center justify-center text-center innerContainerPadding py-10 gap-4 bg-cover bg-center bg-no-repeat text-white"
+            className="w-full h-[360px] flex flex-col items-center justify-end xs:justify-center text-center innerContainerPadding py-6 gap-4 bg-cover bg-center bg-no-repeat text-white xs:py-8 sm:h-[400px] md:h-[440px] lg:h-[480px] xl:h-[520px] xl:py-10 2xl:h-[560px]"
         >
-            <h1 className="text-5xl font-semibold">{heroData.title}</h1>
+            <h1 className="titleStyle">{heroData.title}</h1>
 
             {heroData?.description && (
-                <h5 className="w-[75%]">{heroData?.description}</h5>
+                <h5 className="text-sm md:w-[75%] md:text-base xl:text-lg 2xl:text-xl">{heroData?.description}</h5>
             )}
 
             {breadcrumbData && (

@@ -1,7 +1,6 @@
 import { NavLink } from "react-router"
 import { Routes } from "@constants/Routes"
 import { ReactIcons } from "@constants/ReactIcons"
-import logo from '/images/logos/logo.png'
 
 const mainLinks = [
     {
@@ -88,15 +87,15 @@ const contactLinks = [
 
 export const Footer = () => {
     return (
-        <footer className="grid grid-cols-6 py-8 gap-10 innerContainerPadding text-white bg-custom-blue">
-            <div className="col-span-2 flex flex-col gap-3.5">
+        <footer className="grid grid-rows-1 py-4 gap-4 innerContainerPadding text-white bg-custom-blue xl:grid-cols-6 2xl:py-10 2xl:gap-10">
+            <div className="col-span-1 flex flex-col gap-3.5 xl:col-span-2">
                 <img
-                    src={logo}
+                    src={'/images/logos/logo.png'}
                     alt="Logo of Marine Dynamics Logistics"
                     className="max-w-36 object-contain"
                 />
 
-                <p className="text-justify">Marine Dynamic Logistics is a trusted shipping and freight forwarding company delivering efficient, reliable, and cost-effective logistics solutions specialized in land, sea, and air freight, ensuring seamless transportation for businesses of all sizes.</p>
+                <p className="tracking-tighter">Marine Dynamic Logistics is a trusted shipping and freight forwarding company delivering efficient, reliable, and cost-effective logistics solutions specialized in land, sea, and air freight, ensuring seamless transportation for businesses of all sizes.</p>
             </div>
 
             <div className="flex flex-col gap-2">

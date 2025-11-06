@@ -1,7 +1,6 @@
 import { Link, NavLink } from "react-router"
 import { Routes } from "@constants/Routes"
 import { ReactIcons } from "@constants/ReactIcons"
-import logo from '/images/logos/logo.png'
 
 const navlinks = [
     {
@@ -28,31 +27,35 @@ const navlinks = [
 
 export const Header = () => {
     return (
-        <header className="fixed max-w-outerContainer w-full flex items-center justify-between py-5 innerContainerPadding z-20 text-white bg-custom-blue">
+        <header className="fixed max-w-outerContainer w-full flex items-center justify-between py-3 innerContainerPadding z-20 text-white bg-custom-blue sm:py-4 xl:py-5">
             <Link
                 to={Routes.HOME.path}
-                className="flex-[0.1]"
+                className="w-20"
             >
                 <img
-                    src={logo}
+                    src={'/images/logos/logo.png'}
                     alt='logo of Marine Dynamics Logistics'
                     className="w-full h-full object-contain"
                 />
             </Link>
 
-            <div className="flex items-center gap-6">
+            <div className="flex sm:hidden">
+                <span className="text-3xl cursor-pointer">{ReactIcons.MENU_HAMBURGER}</span>
+            </div>
+
+            <div className="hidden items-center gap-4 sm:flex sm:gap-4.5 md:gap-5 lg:gap-5.5 xl:gap-6">
                 {navlinks.map((item, index) => (
                     <NavLink
                         key={index}
                         to={item.path}
-                        className={({ isActive }) => `relative text-lg font-medium after:block after:h-0.5 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 after:bg-custom-green ${isActive ? 'after:w-full' : 'after:w-0'} hover:after:w-full`}
+                        className={({ isActive }) => `relative text-base font-medium after:block after:h-0.5 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 after:bg-custom-green ${isActive ? 'after:w-full' : 'after:w-0'} hover:after:w-full md:text-lg`}
                     >
                         {item.title}
                     </NavLink>
                 ))}
             </div>
 
-            <div className="flex-[0.1] flex items-center justify-end">
+            <div className="flex-[0.1] hidden items-center justify-end sm:flex">
                 <span
                     onClick={() => { console.log('Call clicked') }}
                     className="text-xl p-1.5 rounded-full cursor-pointer"

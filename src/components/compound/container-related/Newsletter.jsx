@@ -7,7 +7,7 @@ export const Newsletter = () => {
     const [email, setEmail] = useState('');
 
     return (
-        <div className="flex items-center justify-between innerContainerPadding py-10 gap-15 text-white bg-custom-green">
+        <div className="flex flex-col items-center justify-between innerContainerPadding py-8 gap-6 text-white bg-custom-green sm:gap-8 md:flex-row md:py-10 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-16">
             <div className="flex flex-col gap-3">
                 <HeadingWithLine
                     title={'Join Our Newsletter'}
@@ -19,7 +19,7 @@ export const Newsletter = () => {
                 </p>
             </div>
 
-            <div className="flex shrink-0">
+            <div className="flex">
                 <InputField
                     inputData={{
                         type: 'email',
@@ -28,7 +28,7 @@ export const Newsletter = () => {
                         value: email,
                         onChange: e => setEmail(e.target.value),
                     }}
-                    inputStyleClass="w-72 px-4 py-3 rounded-l-3xl text-black bg-white placeholder:text-black/75"
+                    inputStyleClass="w-full text-sm px-4 rounded-l-3xl text-black bg-white placeholder:text-black/75 md:w-72 md:text-base md:py-3"
                 />
 
                 <BasicBtn
