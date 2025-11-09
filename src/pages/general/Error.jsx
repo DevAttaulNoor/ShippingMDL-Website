@@ -10,7 +10,7 @@ const Error = ({ errorData }) => {
             <HeroSection
                 heroData={{
                     bgImage: '/images/dummy.png',
-                    title: errorData.status + ' ' + errorData.statusText
+                    title: errorData?.status + ' ' + errorData?.statusText
                 }}
                 breadcrumbData={[
                     {
@@ -18,8 +18,8 @@ const Error = ({ errorData }) => {
                         title: Routes.HOME.title
                     },
                     {
-                        path: errorData.statusText,
-                        title: errorData.statusText
+                        path: errorData?.statusText,
+                        title: errorData?.statusText
                     },
                 ]}
             />
@@ -31,9 +31,9 @@ const Error = ({ errorData }) => {
                 </div>
 
                 <div className="flex flex-col items-center text-center gap-4">
-                    <h1 className="titleStyle">{errorData.status} Oops!</h1>
+                    <h1 className="titleStyle">{errorData?.status} Oops!</h1>
                     <p className="descriptionStyle">
-                        {errorData.error.message}
+                        {errorData?.error?.message}
                         <br />
                         Please try again or go back.
                     </p>

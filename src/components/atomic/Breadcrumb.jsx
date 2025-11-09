@@ -16,6 +16,7 @@ export const Breadcrumb = ({ breadcrumbData }) => {
                     )}
 
                     <NavLink
+                        end
                         to={item.path}
                         className={({ isActive }) => `relative font-medium ${isActive ? 'text-custom-green' : 'text-white'} hover:text-custom-green`}
                     >

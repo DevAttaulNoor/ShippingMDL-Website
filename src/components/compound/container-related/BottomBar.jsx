@@ -2,7 +2,7 @@ export const BottomBar = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <div className="text-center py-3 innerContainerPadding border-t-2 border-t-custom-green text-white bg-custom-blue">
+        <div className="text-xs text-center py-3 innerContainerPadding border-t-2 border-t-custom-green text-white bg-custom-blue sm:text-sm lg:text-base">
             &copy; {currentYear} Marine Dynamic Logistics. All rights reserved.
         </div>
     );
