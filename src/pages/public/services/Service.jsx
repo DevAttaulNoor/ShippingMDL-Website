@@ -42,7 +42,7 @@ const Service = () => {
             />
 
             {/* About the Service Section */}
-            <section className="sectionStyle innerContainerPadding">
+            <section className="flex flex-col gap-2 innerContainerPadding md:gap-3 xl:gap-4">
                 <HeadingWithLine
                     title={serviceData?.title}
                 />

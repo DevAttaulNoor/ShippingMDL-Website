@@ -47,7 +47,7 @@
   }
 
   .innerContainerStyle {
-    @apply flex flex-col gap-8 xs:gap-10 sm:gap-12 md:gap-14 lg:gap-16 xl:gap-20 2xl:gap-24;
+    @apply flex flex-col gap-6 xs:gap-8 sm:gap-10 md:gap-12 lg:gap-14 xl:gap-16 2xl:gap-18;
   }
 
   .innerContainerPadding {

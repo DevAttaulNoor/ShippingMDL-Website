@@ -30,11 +30,11 @@ export const Header = () => {
         <header className="fixed top-0 left-0 w-full z-20 text-white bg-custom-blue flex flex-col transition-all duration-300">
             <nav
                 onMouseLeave={() => setOpen(prev => ({ ...prev, serviceNav: false }))}
-                className="flex items-center justify-between innerContainerPadding py-3 border-b-2 border-b-custom-green shadow-lg md:py-3.5 lg:py-4 xl:py-4.5 2xl:py-5"
+                className="flex items-center justify-between innerContainerPadding py-3 border-b-2 shadow-lg border-b-custom-green md:py-3.5 lg:py-4 xl:py-4.5 2xl:py-5"
             >
                 <NavLink
                     to={Routes.HOME.path}
-                    className="w-20"
+                    className="max-w-20 sm:flex-[0.1]"
                 >
                     <img
                         src="/images/logos/logo.png"
@@ -50,7 +50,7 @@ export const Header = () => {
                     {ReactIcons.MENU_HAMBURGER}
                 </span>
 
-                <div className="hidden items-center gap-3 sm:flex sm:gap-4 md:gap-5">
+                <div className="hidden items-center justify-center gap-3 sm:flex sm:flex-[0.8] sm:gap-4 md:gap-5">
                     {navLinks.map((item, index) => (
                         <NavLink
                             end
@@ -65,12 +65,14 @@ export const Header = () => {
                     ))}
                 </div>
 
-                <span
-                    onClick={() => console.log('Call clicked')}
-                    className="hidden text-xl p-1.5 rounded-full cursor-pointer sm:flex"
-                >
-                    {ReactIcons.PHONE}
-                </span>
+                <div className="hidden justify-end sm:flex sm:flex-[0.1]">
+                    <span
+                        onClick={() => console.log('Call clicked')}
+                        className="text-xl p-1.5 rounded-full cursor-pointer"
+                    >
+                        {ReactIcons.PHONE}
+                    </span>
+                </div>
             </nav>
 
             <nav
