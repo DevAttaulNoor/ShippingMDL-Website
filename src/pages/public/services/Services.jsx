@@ -71,7 +71,7 @@ const Services = () => {
             />
 
             {/* Services Section */}
-            <section className="sectionStyle">
+            <section className="sectionStyle innerContainerPadding">
                 <HeadingWithDescription
                     containerStyle='text-center'
                     heading={{
@@ -80,20 +80,16 @@ const Services = () => {
                     description={"Delivering end-to-end freight forwarding and supply chain solutions across land, sea, air and cross-border routes with efficiency."}
                 />
 
-                <div className="grid grid-cols-2 innerContainerPadding gap-16">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 md:gap-6 lg:gap-7 xl:grid-cols-3 xl:gap-8 2xl:gap-10">
                     {servicesData.map((data, index) => (
                         <ServiceCard
                             key={index}
-                            cardContainerStyle='h-96'
+                            cardContainerStyle='h-56 xs:w-[80%] xs:mx-auto xs:h-60 sm:w-full md:h-72 xl:h-80 2xl:h-96'
                             cardData={{
                                 bgImage: data.bgImage,
+                                path: data.path,
                                 title: data.title,
                                 description: data.description,
-                                btnData: {
-                                    text: 'Learn More',
-                                    path: data.path,
-                                    btnStyleClass: 'w-fit basicBtnStyle'
-                                }
                             }}
                         />
                     ))}

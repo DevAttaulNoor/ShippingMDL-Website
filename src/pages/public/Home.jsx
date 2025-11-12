@@ -103,6 +103,7 @@ const Home = () => {
         <InnerContainer>
             {/* Hero Section */}
             <HeroSection
+                containerStyle="justify-end xs:justify-center"
                 heroData={{
                     bgImage: '/images/components/heroSection/home.jpg',
                     title: 'We make Strongest Services all over the World',
@@ -196,7 +197,7 @@ const Home = () => {
                     {qualitiesData.map((item, index) => (
                         <div
                             key={index}
-                            className="flex flex-col items-center gap-2"
+                            className="flex flex-col items-center py-3 gap-2 sm:py-2.5 md:py-2 lg:py-1.5 xl:py-1 2xl:py-0"
                         >
                             <img
                                 src={item.imgData.src}
@@ -224,16 +225,12 @@ const Home = () => {
                     {servicesData.map((data, index) => (
                         <ServiceCard
                             key={index}
-                            cardContainerStyle='h-60'
+                            cardContainerStyle='h-56 xs:w-[80%] xs:mx-auto xs:h-60 sm:w-full md:h-72 xl:h-80 2xl:h-96'
                             cardData={{
                                 bgImage: data.bgImage,
+                                path: data.path,
                                 title: data.title,
                                 description: data.description,
-                                btnData: {
-                                    text: 'Learn More',
-                                    path: data.path,
-                                    btnStyleClass: 'underline-offset-1 decoration-custom-green hover:underline'
-                                }
                             }}
                         />
                     ))}

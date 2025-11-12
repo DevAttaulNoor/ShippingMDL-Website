@@ -30,7 +30,7 @@ export const Header = () => {
         <header className="fixed top-0 left-0 w-full z-20 text-white bg-custom-blue flex flex-col transition-all duration-300">
             <nav
                 onMouseLeave={() => setOpen(prev => ({ ...prev, serviceNav: false }))}
-                className="flex items-center justify-between innerContainerPadding py-3 border-b-2 border-b-custom-green shadow-lg"
+                className="flex items-center justify-between innerContainerPadding py-3 border-b-2 border-b-custom-green shadow-lg md:py-3.5 lg:py-4 xl:py-4.5 2xl:py-5"
             >
                 <NavLink
                     to={Routes.HOME.path}
@@ -76,7 +76,7 @@ export const Header = () => {
             <nav
                 onMouseEnter={() => setOpen(prev => ({ ...prev, serviceNav: true }))}
                 onMouseLeave={() => setOpen(prev => ({ ...prev, serviceNav: false }))}
-                className={`${open.serviceNav ? 'max-h-24 py-3 opacity-100 border-b-2 border-b-custom-green shadow-lg' : 'max-h-0 opacity-0 border-b-0'} flex justify-center items-center gap-3 overflow-hidden transition-all duration-300 sm:gap-4 md:gap-5`}
+                className={`${open.serviceNav ? 'max-h-24 py-3 opacity-100 border-b-2 shadow-lg border-b-custom-green md:py-3.5 lg:py-4 xl:py-4.5 2xl:py-5' : 'max-h-0 opacity-0 border-b-0'} flex justify-center items-center gap-3 overflow-hidden transition-all duration-300 sm:gap-4 md:gap-5`}
             >
                 {servicesLinks.map((item, index) => (
                     <NavLink
