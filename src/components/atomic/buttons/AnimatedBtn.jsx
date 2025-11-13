@@ -1,14 +1,14 @@
 import { Link } from "react-router";
 import { ReactIcons } from "@constants/ReactIcons";
 
-export const AnimatedBtn = ({ btnStyleClass = '', btnData }) => {
+export const AnimatedBtn = ({ btnStyleClass = 'text-custom-blue', btnData }) => {
     const content = (
         <>
             <div className="relative flex items-center gap-2.5 z-[5]">
                 {btnData.text}
 
                 <span className="transform -translate-x-1 transition-all duration-300 group-hover:translate-x-0">
-                    {ReactIcons.RIGHT}
+                    {btnData.icon ? btnData.icon : ReactIcons.RIGHT}
                 </span>
             </div>
 
@@ -19,14 +19,14 @@ export const AnimatedBtn = ({ btnStyleClass = '', btnData }) => {
     return btnData.path ? (
         <Link
             to={btnData.path}
-            className={`${btnStyleClass} group relative btnStyle flex items-center text-custom-blue active:scale-95`}
+            className={`${btnStyleClass} group relative btnStyle flex items-center active:scale-95`}
         >
             {content}
         </Link>
     ) : (
         <button
             onClick={btnData.onClick}
-            className={`${btnStyleClass} group relative btnStyle flex items-center text-custom-blue active:scale-95`}
+            className={`${btnStyleClass} group relative btnStyle flex items-center active:scale-95`}
         >
             {content}
         </button>

@@ -4,16 +4,28 @@ export const BasicBtn = ({ btnStyleClass = 'rounded-3xl text-white bg-custom-gre
     return btnData.path ? (
         <Link
             to={btnData.path}
-            className={`btnStyle ${btnStyleClass}`}
+            className={`flex items-center gap-2 btnStyle ${btnStyleClass}`}
         >
-            {btnData.text}
+            {btnData.text && (
+                <p>{btnData.text}</p>
+            )}
+
+            {btnData.icon && (
+                <span>{btnData.icon}</span>
+            )}
         </Link>
     ) : (
         <button
             onClick={btnData.onClick}
-            className={`btnStyle ${btnStyleClass}`}
+            className={`flex items-center gap-2 btnStyle ${btnStyleClass}`}
         >
-            {btnData.text}
+            {btnData.text && (
+                <p>{btnData.text}</p>
+            )}
+
+            {btnData.icon && (
+                <span>{btnData.icon}</span>
+            )}
         </button>
     )
 }

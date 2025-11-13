@@ -71,6 +71,10 @@
   }
 
   .btnStyle {
-    @apply w-fit text-sm font-medium px-5 py-3 whitespace-nowrap transition-all duration-200 cursor-pointer md:text-base;
+    @apply w-fit text-sm font-medium px-5 py-3 whitespace-nowrap transition-all duration-300 cursor-pointer md:text-base;
+  }
+
+  .basicTextInputStyle {
+    @apply px-3.5 py-2 border rounded-md border-gray-600;
   }
 }

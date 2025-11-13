@@ -5,6 +5,9 @@ import { IoMdClose } from "react-icons/io";
 import { FaPhoneAlt, FaBuilding } from "react-icons/fa";
 import { FaAngleDown, FaCalendarDays, FaArrowRightLong } from "react-icons/fa6";
 
+import { BsFillSendCheckFill } from "react-icons/bs";
+
+
 export const ReactIcons = {
     MAIL: <MdMail />,
     SLASH: <HiSlash />,
@@ -15,4 +18,5 @@ export const ReactIcons = {
     MENU_HAMBURGER: <IoMenu />,
     RIGHT: <FaArrowRightLong />,
     CALENDER: <FaCalendarDays />,
+    SEND_WITH_CHECK: <BsFillSendCheckFill />,
 }
