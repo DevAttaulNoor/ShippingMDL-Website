@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Communication",
+        "image": {
+            "src": "/images/components/qualitySection/communication.png",
+            "alt": "Icon of Communication"
+        }
+    },
+    {
+        "title": "Customer Satisfaction",
+        "image": {
+            "src": "/images/components/qualitySection/customer-satisfaction.png",
+            "alt": "Icon of Customer Satisfaction"
+        }
+    },
+    {
+        "title": "Honesty",
+        "image": {
+            "src": "/images/components/qualitySection/honesty.png",
+            "alt": "Icon of Honesty"
+        }
+    },
+    {
+        "title": "Innovation",
+        "image": {
+            "src": "/images/components/qualitySection/innovation.png",
+            "alt": "Icon of Innovation"
+        }
+    },
+    {
+        "title": "Management",
+        "image": {
+            "src": "/images/components/qualitySection/management.png",
+            "alt": "Icon of Management"
+        }
+    },
+    {
+        "title": "Quality",
+        "image": {
+            "src": "/images/components/qualitySection/quality.png",
+            "alt": "Icon of Quality"
+        }
+    }
+]

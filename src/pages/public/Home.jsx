@@ -1,104 +1,18 @@
 import { Routes } from "@constants/Routes"
+import { useFetch } from "@hooks/useFetch"
 import { InnerContainer } from "@layouts/InnerContainer"
 import { HeroSection } from "@components/compound/HeroSection"
 import { SwiperCarousel } from "@components/atomic/SwiperCarousel"
 import { ServiceCard } from "@components/compound/cards/ServiceCard"
 import { DetailWithImageLayout } from "@layouts/DetailWithImageLayout"
-import { DetailSection } from "@components/compound/detailsection-related/DetailSection"
 import { ImageSection } from "@components/compound/detailsection-related/ImageSection"
+import { DetailSection } from "@components/compound/detailsection-related/DetailSection"
 import { HeadingWithDescription } from "@components/compound/headings/HeadingWithDescription"
 
-const qualitiesData = [
-    {
-        title: 'Communication',
-        imgData: {
-            src: '/images/components/qualitySection/communication.png',
-            alt: 'Icon of Communication'
-        },
-    },
-    {
-        title: 'Customer Satisfaction',
-        imgData: {
-            src: '/images/components/qualitySection/customer-satisfaction.png',
-            alt: 'Icon of Customer Satisfaction'
-        },
-    },
-    {
-        title: 'Honesty',
-        imgData: {
-            src: '/images/components/qualitySection/honesty.png',
-            alt: 'Icon of Honesty'
-        },
-    },
-    {
-        title: 'Innovation',
-        imgData: {
-            src: '/images/components/qualitySection/innovation.png',
-            alt: 'Icon of Innovation'
-        },
-    },
-    {
-        title: 'Management',
-        imgData: {
-            src: '/images/components/qualitySection/management.png',
-            alt: 'Icon of Management'
-        },
-    },
-    {
-        title: 'Quality',
-        imgData: {
-            src: '/images/components/qualitySection/quality.png',
-            alt: 'Icon of Quality'
-        },
-    },
-];
-
-const servicesData = [
-    {
-        bgImage: '/images/components/serviceSection/land-freight.png',
-        title: 'Land Freight',
-        description:
-            'Reliable overland transportation solutions ensuring secure, cost-effective, and on-time delivery of your goods across major national and regional routes.',
-        path: Routes.SERVICE_LAND_FREIGHT.path,
-    },
-    {
-        bgImage: '/images/components/serviceSection/sea-freight.png',
-        title: 'Sea Freight',
-        description:
-            'Comprehensive ocean freight solutions with global coverage, efficient routing, and cost-optimized shipping for all cargo sizes and types.',
-        path: Routes.SERVICE_SEA_FREIGHT.path,
-    },
-    {
-        bgImage: '/images/components/serviceSection/air-freight.png',
-        title: 'Air Freight',
-        description:
-            'Fast, secure, and dependable air freight services designed to move your cargo globally with precision and efficiency.',
-        path: Routes.SERVICE_AIR_FREIGHT.path,
-    },
-    {
-        bgImage: '/images/components/serviceSection/custom-clearance.png',
-        title: 'Custom Clearance',
-        description:
-            'Expert customs brokerage and clearance support to ensure smooth, compliant, and delay-free import and export operations.',
-        path: Routes.SERVICE_CUSTOM_CLEARANCE.path,
-    },
-    {
-        bgImage: '/images/components/serviceSection/dg-cargo.png',
-        title: 'DG Cargo',
-        description:
-            'Safe and compliant handling of dangerous goods cargo with certified processes that meet international transport regulations.',
-        path: Routes.SERVICE_DG_CARGO.path,
-    },
-    {
-        bgImage: '/images/components/serviceSection/transit-trade.png',
-        title: 'Transit Trade',
-        description:
-            'Seamless cross-border transit trade solutions ensuring efficient documentation, routing, and delivery across global logistics corridors.',
-        path: Routes.SERVICE_TRANSIT_TRADE.path,
-    },
-];
-
 const Home = () => {
+    const { data: servicesData } = useFetch("/data/Services.json");
+    const { data: qualitiesData } = useFetch("/data/Qualities.json");
+
     return (
         <InnerContainer>
             {/* Hero Section */}
@@ -194,14 +108,14 @@ const Home = () => {
                         }
                     }}
                 >
-                    {qualitiesData.map((item, index) => (
+                    {qualitiesData?.map((item, index) => (
                         <div
                             key={index}
                             className="flex flex-col items-center py-3 gap-2 sm:py-2.5 md:py-2 lg:py-1.5 xl:py-1 2xl:py-0"
                         >
                             <img
-                                src={item.imgData.src}
-                                alt={item.imgData.alt}
+                                src={item.image.src}
+                                alt={item.image.alt}
                                 className="w-28 object-contain invert"
                             />
 
@@ -222,12 +136,12 @@ const Home = () => {
                 />
 
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 md:gap-6 lg:gap-7 xl:grid-cols-3 xl:gap-8 2xl:gap-10">
-                    {servicesData.map((data, index) => (
+                    {servicesData?.map((data, index) => (
                         <ServiceCard
                             key={index}
                             cardContainerStyle='h-56 xs:w-[80%] xs:mx-auto xs:h-60 sm:w-full md:h-72 xl:h-80 2xl:h-96'
                             cardData={{
-                                bgImage: data.bgImage,
+                                bgImage: data.image?.src,
                                 path: data.path,
                                 title: data.title,
                                 description: data.description,

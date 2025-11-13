@@ -10,7 +10,7 @@ export default defineConfig({
     resolve: {
         alias: {
             "@pages": "/src/pages/",
-            // "@hooks": "/src/hooks/",
+            "@hooks": "/src/hooks/",
             "@assets": "/src/assets/",
             "@routes": "/src/routes/",
             "@layouts": "/src/layouts/",

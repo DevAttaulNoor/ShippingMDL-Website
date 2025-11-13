@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import { ReactIcons } from "@constants/ReactIcons";
 
 export const AnimatedBtn = ({ btnStyleClass = 'text-custom-blue', btnData }) => {
+    const animatedBtnStyle = `${btnStyleClass} group relative btnStyle flex items-center active:scale-95`;
     const content = (
         <>
             <div className="relative flex items-center gap-2.5 z-[5]">
@@ -19,14 +20,14 @@ export const AnimatedBtn = ({ btnStyleClass = 'text-custom-blue', btnData }) => 
     return btnData.path ? (
         <Link
             to={btnData.path}
-            className={`${btnStyleClass} group relative btnStyle flex items-center active:scale-95`}
+            className={animatedBtnStyle}
         >
             {content}
         </Link>
     ) : (
         <button
             onClick={btnData.onClick}
-            className={`${btnStyleClass} group relative btnStyle flex items-center active:scale-95`}
+            className={animatedBtnStyle}
         >
             {content}
         </button>

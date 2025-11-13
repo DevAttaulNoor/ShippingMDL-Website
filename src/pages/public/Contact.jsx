@@ -1,14 +1,13 @@
 import { useState } from "react"
+import { Link } from "react-router"
 import { Routes } from "@constants/Routes"
 import { ReactIcons } from "@constants/ReactIcons"
 import { InnerContainer } from "@layouts/InnerContainer"
+import { BasicBtn } from "@components/atomic/buttons/BasicBtn"
 import { HeroSection } from "@components/compound/HeroSection"
 import { InputField } from "@components/atomic/fields/InputField"
 import { TextareaField } from "@components/atomic/fields/TextareaField"
 import { HeadingWithLine } from "@components/compound/headings/HeadingWithLine"
-import { Link } from "react-router"
-import { AnimatedBtn } from "@components/atomic/buttons/AnimatedBtn"
-import { BasicBtn } from "@components/atomic/buttons/BasicBtn"
 
 const contactDetailData = [
     {

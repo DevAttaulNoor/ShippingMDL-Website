@@ -2,7 +2,10 @@
     {
         "id": 1,
         "path": "/blogs/the-future-of-shipping",
-        "bgImage": "/images/dummy.png",
+        "image": {
+            "src": "/images/dummy.png",
+            "alt": "Image of the Future of Shipping"
+        },
         "date": "2025-02-12",
         "title": "The Future of Shipping",
         "description": [
@@ -14,7 +17,10 @@
     {
         "id": 2,
         "path": "/blogs/understanding-international-shipping",
-        "bgImage": "/images/dummy.png",
+        "image": {
+            "src": "/images/dummy.png",
+            "alt": "Image of the Future of Shipping"
+        },
         "date": "2025-03-07",
         "title": "Understanding International Shipping",
         "description": [
@@ -26,7 +32,10 @@
     {
         "id": 3,
         "path": "/blogs/optimizing-supply-chain-efficiency",
-        "bgImage": "/images/dummy.png",
+        "image": {
+            "src": "/images/dummy.png",
+            "alt": "Image of the Future of Shipping"
+        },
         "date": "2025-05-21",
         "title": "Optimizing Supply Chain Efficiency",
         "description": [
@@ -38,7 +47,10 @@
     {
         "id": 4,
         "path": "/blogs/environmental-impact-of-shipping",
-        "bgImage": "/images/dummy.png",
+        "image": {
+            "src": "/images/dummy.png",
+            "alt": "Image of the Future of Shipping"
+        },
         "date": "2025-06-13",
         "title": "The Environmental Impact of Shipping",
         "description": [
@@ -50,7 +62,10 @@
     {
         "id": 5,
         "path": "/blogs/navigating-shipping-regulations",
-        "bgImage": "/images/dummy.png",
+        "image": {
+            "src": "/images/dummy.png",
+            "alt": "Image of the Future of Shipping"
+        },
         "date": "2025-10-28",
         "title": "Navigating Shipping Regulations and Compliance",
         "description": [
@@ -62,7 +77,10 @@
     {
         "id": 6,
         "path": "/blogs/choosing-right-shipping-method",
-        "bgImage": "/images/dummy.png",
+        "image": {
+            "src": "/images/dummy.png",
+            "alt": "Image of the Future of Shipping"
+        },
         "date": "2025-11-30",
         "title": "Choosing the Right Shipping Method for Your Business",
         "description": [

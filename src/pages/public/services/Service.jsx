@@ -1,28 +1,21 @@
 import { useParams } from "react-router"
-import { useEffect, useState } from "react"
 import { Routes } from "@constants/Routes"
+import { useFetch } from "@hooks/useFetch"
 import { InnerContainer } from "@layouts/InnerContainer"
 import { HeroSection } from "@components/compound/HeroSection"
 import { HeadingWithLine } from "@components/compound/headings/HeadingWithLine"
 
 const Service = () => {
     const { slug } = useParams();
-    const [services, setServices] = useState([]);
-    const serviceData = services?.find(item => item.path === `/services/${slug}`);
-
-    useEffect(() => {
-        fetch("/data/Services.json")
-            .then((res) => res.json())
-            .then((data) => setServices(data))
-            .catch((err) => console.error("Error loading services:", err));
-    }, []);
+    const { data } = useFetch("/data/Services.json");
+    const serviceData = data?.find(item => item.path === `/services/${slug}`);
 
     return (
         <InnerContainer>
             {/* Hero Section */}
             <HeroSection
                 heroData={{
-                    bgImage: serviceData?.bgImage,
+                    bgImage: serviceData?.image?.src,
                     title: serviceData?.title,
                 }}
                 breadcrumbData={[
@@ -47,7 +40,7 @@ const Service = () => {
                     title={serviceData?.title}
                 />
 
-                {serviceData?.description.map((desc, index) => (
+                {serviceData?.paragraphs.map((desc, index) => (
                     <p
                         key={index}
                         className="descriptionStyle"

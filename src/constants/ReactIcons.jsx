@@ -2,11 +2,9 @@ import { MdMail } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
 import { HiSlash } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
+import { BsFillSendCheckFill } from "react-icons/bs";
 import { FaPhoneAlt, FaBuilding } from "react-icons/fa";
 import { FaAngleDown, FaCalendarDays, FaArrowRightLong } from "react-icons/fa6";
-
-import { BsFillSendCheckFill } from "react-icons/bs";
-
 
 export const ReactIcons = {
     MAIL: <MdMail />,

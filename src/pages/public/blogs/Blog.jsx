@@ -1,28 +1,21 @@
 import { useParams } from "react-router";
-import { useEffect, useState } from "react";
 import { Routes } from "@constants/Routes";
+import { useFetch } from "@hooks/useFetch";
 import { InnerContainer } from "@layouts/InnerContainer"
 import { HeroSection } from "@components/compound/HeroSection";
 import { HeadingWithLine } from "@components/compound/headings/HeadingWithLine";
 
 const Blog = () => {
     const { slug } = useParams();
-    const [blogs, setBlogs] = useState([]);
-    const blogData = blogs?.find(item => item.path === `/blogs/${slug}`);
-
-    useEffect(() => {
-        fetch("/data/Blogs.json")
-            .then((res) => res.json())
-            .then((data) => setBlogs(data))
-            .catch((err) => console.error("Error loading blogs:", err));
-    }, []);
+    const { data } = useFetch("/data/Blogs.json")
+    const blogData = data?.find(item => item.path === `/blogs/${slug}`);
 
     return (
         <InnerContainer>
             {/* Hero Section */}
             <HeroSection
                 heroData={{
-                    bgImage: blogData?.bgImage,
+                    bgImage: blogData?.image?.src,
                     title: blogData?.title,
                 }}
                 breadcrumbData={[
