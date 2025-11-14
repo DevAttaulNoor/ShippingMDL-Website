@@ -18,6 +18,8 @@ const footerLinks = [
         title: 'Legal',
         links: [
             { title: Routes.FAQ.title, path: Routes.FAQ.path },
+            { title: Routes.CERTIFICATION.title, path: Routes.CERTIFICATION.path },
+            { title: Routes.GET_A_QUOTE.title, path: Routes.GET_A_QUOTE.path },
             { title: Routes.PRIVACY_POLICY.title, path: Routes.PRIVACY_POLICY.path },
             { title: Routes.TERMS_CONDITION.title, path: Routes.TERMS_CONDITION.path },
         ]

@@ -23,6 +23,22 @@ export const Routes = {
             description: 'Get in touch with Marine Dynamics Logistics for shipping inquiries, logistics partnerships, or customer support. We’re here to help you 24/7.'
         }
     },
+    CERTIFICATION: {
+        title: 'Certification',
+        path: '/certification',
+        meta: {
+            title: 'Certification | Marine Dynamics Logistics',
+            description: 'Explore the certifications and accreditations that validate Marine Dynamics Logistics as a globally trusted marine and freight service provider.'
+        }
+    },
+    GET_A_QUOTE: {
+        title: 'Get a Quote',
+        path: '/get-a-quote',
+        meta: {
+            title: 'Get a Quote | Marine Dynamics Logistics',
+            description: 'Request a customized shipping or logistics quote from Marine Dynamics Logistics. Fast, reliable, and tailored to your needs.'
+        }
+    },
     BLOGS: {
         title: 'Blogs',
         path: '/blogs',
