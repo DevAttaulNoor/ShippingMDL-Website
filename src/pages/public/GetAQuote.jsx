@@ -24,12 +24,6 @@ const GetAQuote = () => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Quote Request:", form);
-        alert("Your quote request has been submitted.");
-    };
-
     return (
         <InnerContainer>
             {/* Hero Section */}
@@ -145,7 +139,7 @@ const GetAQuote = () => {
 
                     <BasicBtn
                         btnData={{
-                            onClick: () => handleSubmit,
+                            onClick: () => {console.log("Quote Request:", form)},
                             text: 'Submit Quote Request',
                             icon: ReactIcons.SEND_WITH_CHECK
                         }}
