@@ -12,7 +12,7 @@ const Faqs = () => {
             {/* Hero Section */}
             <HeroSection
                 heroData={{
-                    bgImage: '/images/components/heroSection/home.jpg',
+                    bgImage: '/images/components/heroSection/faqs.png',
                     title: 'Frequently Asked Questions',
                     description: "Find quick answers to the most common questions about our logistics and freight services. Explore the FAQs below to understand our process, policies, and support options with ease."
                 }}

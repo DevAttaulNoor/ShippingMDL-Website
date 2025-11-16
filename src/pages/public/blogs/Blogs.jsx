@@ -12,7 +12,7 @@ const Blogs = () => {
             {/* Hero Section */}
             <HeroSection
                 heroData={{
-                    bgImage: '/images/components/heroSection/blog.jpg',
+                    bgImage: '/images/components/heroSection/blogs.png',
                     title: 'Blogs'
                 }}
                 breadcrumbData={[

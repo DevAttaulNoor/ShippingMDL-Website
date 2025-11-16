@@ -79,7 +79,7 @@ const Policy = () => {
             {/* Hero Section */}
             <HeroSection
                 heroData={{
-                    bgImage: "/images/components/heroSection/home.jpg",
+                    bgImage: "/images/components/heroSection/privacy-policy.png",
                     title: Routes.PRIVACY_POLICY.title,
                     description: "At MDL, we value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website, use our services, or communicate with us."
                 }}

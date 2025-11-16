@@ -29,7 +29,7 @@ const GetAQuote = () => {
             {/* Hero Section */}
             <HeroSection
                 heroData={{
-                    bgImage: "/images/components/heroSection/home.jpg",
+                    bgImage: "/images/components/heroSection/get-a-qoute.png",
                     title: Routes.GET_A_QUOTE.title,
                 }}
                 breadcrumbData={[
@@ -139,7 +139,7 @@ const GetAQuote = () => {
 
                     <BasicBtn
                         btnData={{
-                            onClick: () => {console.log("Quote Request:", form)},
+                            onClick: () => { console.log("Quote Request:", form) },
                             text: 'Submit Quote Request',
                             icon: ReactIcons.SEND_WITH_CHECK
                         }}

@@ -17,7 +17,7 @@ const Certification = () => {
             {/* Hero Section */}
             <HeroSection
                 heroData={{
-                    bgImage: "/images/components/heroSection/home.jpg",
+                    bgImage: "/images/components/heroSection/certification.png",
                     title: Routes.CERTIFICATION.title,
                 }}
                 breadcrumbData={[

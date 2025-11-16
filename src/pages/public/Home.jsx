@@ -19,7 +19,7 @@ const Home = () => {
             <HeroSection
                 containerStyle="justify-end xs:justify-center"
                 heroData={{
-                    bgImage: '/images/components/heroSection/home.jpg',
+                    bgImage: '/images/components/heroSection/home.png',
                     title: 'We make Strongest Services all over the World',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptate atque vitae cupiditate, ipsam incidunt fuga consequatur commodi soluta iure odit ratione quos unde pariatur quaerat exercitationem maxime laborum autem!"
                 }}

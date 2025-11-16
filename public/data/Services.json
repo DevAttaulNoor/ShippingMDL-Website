@@ -3,7 +3,7 @@
         "id": 1,
         "path": "/services/land-freight",
         "image": {
-            "src": "/images/components/serviceSection/land-freight.png",
+            "src": "/images/components/heroSection/land-freight.png",
             "alt": "Image of Land Freight"
         },
         "title": "Land Freight",
@@ -18,7 +18,7 @@
         "id": 2,
         "path": "/services/sea-freight",
         "image": {
-            "src": "/images/components/serviceSection/sea-freight.png",
+            "src": "/images/components/heroSection/sea-freight.png",
             "alt": "Image of Sea Freight"
         },
         "title": "Sea Freight",
@@ -33,7 +33,7 @@
         "id": 3,
         "path": "/services/air-freight",
         "image": {
-            "src": "/images/components/serviceSection/air-freight.png",
+            "src": "/images/components/heroSection/air-freight.png",
             "alt": "Image of Air Freight"
         },
         "title": "Air Freight",
@@ -48,7 +48,7 @@
         "id": 4,
         "path": "/services/custom-clearance",
         "image": {
-            "src": "/images/components/serviceSection/custom-clearance.png",
+            "src": "/images/components/heroSection/custom-clearance.png",
             "alt": "Image of Customs Clearance"
         },
         "title": "Customs Clearance",
@@ -63,7 +63,7 @@
         "id": 5,
         "path": "/services/dg-cargo",
         "image": {
-            "src": "/images/components/serviceSection/dg-cargo.png",
+            "src": "/images/components/heroSection/dg-cargo.png",
             "alt": "Image of DG Cargo"
         },
         "title": "DG Cargo",
@@ -78,7 +78,7 @@
         "id": 6,
         "path": "/services/transit-trade",
         "image": {
-            "src": "/images/components/serviceSection/transit-trade.png",
+            "src": "/images/components/heroSection/transit-trade.png",
             "alt": "Image of Transit Trade"
         },
         "title": "Transit Trade",
