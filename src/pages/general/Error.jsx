@@ -9,7 +9,7 @@ const Error = ({ errorData }) => {
             {/* Hero Section */}
             <HeroSection
                 heroData={{
-                    bgImage: '/images/dummy.png',
+                    bgImage: '/images/components/heroSection/error.png',
                     title: errorData?.status + ' ' + errorData?.statusText
                 }}
                 breadcrumbData={[
