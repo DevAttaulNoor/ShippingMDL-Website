@@ -32,7 +32,7 @@ const About = () => {
                     rightsideData={
                         <ImageSection
                             imageData={{
-                                src: '/images/dummy.png',
+                                src: '/images/components/detailSection/about-company.png',
                                 alt: 'Image of about our company'
                             }}
                         />
@@ -72,7 +72,7 @@ const About = () => {
                     leftsideData={
                         <ImageSection
                             imageData={{
-                                src: '/images/dummy.png',
+                                src: '/images/components/detailSection/about-president.png',
                                 alt: 'Image of about our president'
                             }}
                         />
@@ -86,7 +86,7 @@ const About = () => {
                     rightsideData={
                         <ImageSection
                             imageData={{
-                                src: '/images/dummy.png',
+                                src: '/images/components/detailSection/about-vision.png',
                                 alt: 'Image of about our vision'
                             }}
                         />

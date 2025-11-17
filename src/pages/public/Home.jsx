@@ -35,7 +35,7 @@ const Home = () => {
                 rightsideData={
                     <ImageSection
                         imageData={{
-                            src: '/images/dummy.png',
+                            src: '/images/components/detailSection/about-company.png',
                             alt: 'Image of about our company'
                         }}
                     />

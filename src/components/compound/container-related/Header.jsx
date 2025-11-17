@@ -30,11 +30,11 @@ export const Header = () => {
         <header className="fixed top-0 left-0 w-full z-20 text-white bg-custom-blue flex flex-col transition-all duration-300">
             <nav
                 onMouseLeave={() => setOpen(prev => ({ ...prev, serviceNav: false }))}
-                className="flex items-center justify-between innerContainerPadding py-3 border-b-2 shadow-lg border-b-custom-green md:py-3.5 lg:py-4 xl:py-4.5 2xl:py-5"
+                className="flex items-center justify-between innerContainerPadding py-3 border-b-2 shadow-lg border-b-custom-green md:py-3.5 lg:py-4 xl:py-3.5 2xl:py-2"
             >
                 <NavLink
                     to={Routes.HOME.path}
-                    className="max-w-20 sm:flex-[0.1]"
+                    className="max-w-20 sm:flex-[0.1] sm:max-w-full"
                 >
                     <img
                         src="/images/logos/logo.png"
