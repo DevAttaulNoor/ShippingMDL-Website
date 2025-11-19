@@ -6,8 +6,11 @@ import { InnerContainer } from "@layouts/InnerContainer"
 import { BasicBtn } from "@components/atomic/buttons/BasicBtn"
 import { HeroSection } from "@components/compound/HeroSection"
 import { InputField } from "@components/atomic/fields/InputField"
+import { DetailWithImageLayout } from "@layouts/DetailWithImageLayout"
 import { TextareaField } from "@components/atomic/fields/TextareaField"
 import { HeadingWithLine } from "@components/compound/headings/HeadingWithLine"
+import { ImageSection } from "@components/compound/detailsection-related/ImageSection"
+import { DetailSection } from "@components/compound/detailsection-related/DetailSection"
 
 const contactDetailData = [
     {
@@ -188,6 +191,38 @@ const Contact = () => {
                         ))}
                     </div>
                 </div>
+            </section>
+
+            {/* Why Contact us Section */}
+            <section className="innerContainerPadding">
+                <DetailWithImageLayout
+                    rightsideData={
+                        <ImageSection
+                            imageData={{
+                                src: '/images/components/detailSection/how-to-contact.png',
+                                alt: 'Image of about our company'
+                            }}
+                        />
+                    }
+
+                    leftsideData={
+                        <DetailSection
+                            detailData={{
+                                title: 'How to Contact Us',
+                                description: [
+                                    'We provide multiple ways for you to reach our logistics experts, ensuring you always receive timely, accurate, and professional support. Whether you need shipment guidance, documentation help, or a customized logistics solution, our team is ready to assist through the channel most convenient for you:'
+                                ],
+                                list: [
+                                    'Speak directly with our support team for quick assistance, shipment inquiries, or immediate guidance.',
+                                    'Send us your detailed requirements, documents, or quote requests and get a fast, professional response.',
+                                    'Connect instantly for real-time answers, shipment updates, and quick clarifications.',
+                                    'Share your shipment details through our online form and receive a tailored quote with route recommendations.',
+                                    'Meet our team in person for consultations, documentation help, or business discussions.',
+                                ]
+                            }}
+                        />
+                    }
+                />
             </section>
         </InnerContainer>
     )

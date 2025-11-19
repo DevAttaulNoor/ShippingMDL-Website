@@ -8,6 +8,9 @@ import { InputField } from "@components/atomic/fields/InputField";
 import { TextareaField } from "@components/atomic/fields/TextareaField";
 import { HeadingWithLine } from "@components/compound/headings/HeadingWithLine";
 import { HeadingWithDescription } from "@components/compound/headings/HeadingWithDescription";
+import { DetailWithImageLayout } from "@layouts/DetailWithImageLayout";
+import { ImageSection } from "@components/compound/detailsection-related/ImageSection";
+import { DetailSection } from "@components/compound/detailsection-related/DetailSection";
 
 const GetAQuote = () => {
     const [form, setForm] = useState({
@@ -44,6 +47,62 @@ const GetAQuote = () => {
                 ]}
             />
 
+            {/* Why Request a Qoute from Us Section */}
+            <section className="innerContainerPadding">
+                <DetailWithImageLayout
+                    rightsideData={
+                        <ImageSection
+                            imageData={{
+                                src: '/images/components/detailSection/about-company.png',
+                                alt: 'Image of about our company'
+                            }}
+                        />
+                    }
+
+                    leftsideData={
+                        <DetailSection
+                            detailData={{
+                                title: 'Why Request a Quote from Us',
+                                description: [
+                                    'At MDL, we understand that every shipment is unique, and accurate logistics planning is critical for smooth, timely deliveries. Requesting a quote from us is the first step in ensuring that your cargo receives expert handling, transparent pricing, and reliable service.',
+                                    'Our quote process is designed to save you time, minimize surprises, and provide complete clarity on costs, transit times, and regulatory requirements. Whether you’re shipping domestically or internationally, we take into account your cargo type, volume, destination, and urgency to provide a quote tailored to your needs.',
+                                    'By requesting a quote, you gain access to:'
+                                ],
+                                list: [
+                                    'Fast response times and personalized attention from our dedicated team.',
+                                    'Guidance on customs, documentation, and regulatory compliance.',
+                                    'Real-time tracking and updates to plan your shipments efficiently.',
+                                    'Flexible solutions for all cargo types, including high-value, fragile, or project shipments.',
+                                ]
+                            }}
+                        />
+                    }
+                />
+            </section>
+
+            {/* How Our Qoute Process Works Section */}
+            <section className="innerContainerPadding">
+                <HeadingWithLine
+                    title="How Our Quote Process Works"
+                />
+
+                <ol className="list-decimal list-inside text-gray-700 space-y-3">
+                    <li>
+                        <strong>Fill Out the Quote Form:</strong> Provide your shipment details, including origin, destination, cargo weight, and any special instructions.
+                    </li>
+                    <li>
+                        <strong>Review by Our Logistics Team:</strong> Our experts carefully evaluate your shipment requirements, customs documentation needs, and service options.
+                    </li>
+                    <li>
+                        <strong>Receive Your Personalized Quote:</strong> You’ll get a detailed, transparent quote that includes pricing, delivery estimates, and optional services.
+                    </li>
+                    <li>
+                        <strong>Confirm & Schedule Shipment:</strong> Once you approve the quote, our team coordinates pickup, transit, and delivery to ensure smooth, on-time shipment.
+                    </li>
+                </ol>
+            </section>
+
+            {/* Get a Qoute Form Section */}
             <section className="innerContainerStyle innerContainerPadding">
                 <HeadingWithDescription
                     heading={{

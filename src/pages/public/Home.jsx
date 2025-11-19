@@ -57,12 +57,12 @@ const Home = () => {
                 }
             />
 
-            {/* Qualities Section */}
+            {/* Core Values Section */}
             <section className="sectionStyle">
                 <HeadingWithDescription
                     containerStyle='text-center innerContainerPadding'
                     heading={{
-                        title: 'Our Qualities'
+                        title: 'Core Values'
                     }}
                     description={"We deliver excellence through commitment, innovation, and trusted logistics solutions."}
                 />
@@ -119,7 +119,10 @@ const Home = () => {
                                 className="w-28 object-contain invert"
                             />
 
-                            <h5 className='text-lg font-medium'>{item.title}</h5>
+                            <div>
+                                <h5 className='text-lg font-medium'>{item.title}</h5>
+                                <p className="text-sm opacity-75">{item.description}</p>
+                            </div>
                         </div>
                     ))}
                 </SwiperCarousel>

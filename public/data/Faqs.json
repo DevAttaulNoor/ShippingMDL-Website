@@ -1,24 +1,182 @@
 [
     {
+        "id": 1,
+        "category": "General Questions",
         "question": "What is MDL abbreviation?",
         "answer": "MDL stands for Modern Development Logistics. It is a logistics and freight forwarding company offering end-to-end transport solutions, including air, sea, and land freight. MDL focuses on delivering efficient, reliable, and cost-effective logistics services for both domestic and international clients."
     },
     {
-        "question": "How many services does MDL provide?",
-        "answer": "MDL provides six core logistics services: Land Freight, Air Freight, Sea Freight, Customs Brokerage, Project Cargo Handling, and Warehousing & Distribution. Each service is managed by experienced professionals to ensure timely delivery, transparency, and seamless operations."
+        "id": 2,
+        "category": "General Questions",
+        "question": "Is MDL a Pakistan-based company?",
+        "answer": "Yes, MDL is a Pakistan-based logistics company with its head office located in Karachi and operational networks across major cities and ports in the country. While based in Pakistan, MDL serves clients worldwide through strategic partnerships and a trusted network of international agents."
     },
     {
+        "id": 3,
+        "category": "General Questions",
+        "question": "When was MDL founded?",
+        "answer": "MDL was founded in 2019 with a vision to modernize the logistics sector in Pakistan by offering efficient, technology-driven supply chain solutions. Since its inception, MDL has rapidly grown into a trusted name in freight forwarding, recognized for reliability, innovation, and customer satisfaction."
+    },
+    {
+        "id": 4,
+        "category": "General Questions",
+        "question": "Does MDL provide insurance for shipments?",
+        "answer": "Yes, MDL offers cargo insurance options to protect your goods against damage, loss, or theft during transit. Insurance is optional and can be arranged based on shipment type and value."
+    },
+    {
+        "id": 5,
+        "category": "General Questions",
         "question": "Does MDL have PIFFA membership?",
         "answer": "Yes, MDL is a proud member of the Pakistan International Freight Forwarders Association (PIFFA). This membership signifies our compliance with global logistics standards, credibility in international freight forwarding, and our commitment to providing professional and ethical logistics solutions."
     },
     {
-        "id": 4,
-        "question": "Is MDL a Pakistan-based company?",
-        "answer": "Yes, MDL is a Pakistan-based logistics company with its head office located in Karachi and operational networks across major cities and ports in the country. While based in Pakistan, MDL serves clients worldwide through strategic partnerships trusted network of international agents."
+        "id": 6,
+        "category": "Services",
+        "question": "How many services does MDL provide?",
+        "answer": "MDL provides six core logistics services: Land Freight, Air Freight, Sea Freight, Customs Brokerage, Project Cargo Handling, and Warehousing & Distribution. Each service is managed by experienced professionals to ensure timely delivery, transparency, and seamless operations."
     },
     {
-        "id": 5,
-        "question": "When was MDL founded?",
-        "answer": "MDL was founded in 2019 with a vision to modernize the logistics sector in Pakistan by offering efficient, technology-driven supply chain solutions. Since its inception, MDL has rapidly grown into a trusted name in freight forwarding, recognized for reliability, innovation, and customer satisfaction."
+        "id": 7,
+        "category": "Services",
+        "question": "Can MDL handle fragile or high-value cargo?",
+        "answer": "Absolutely. We specialize in handling fragile, high-value, and temperature-sensitive goods with proper packaging, handling procedures, and dedicated transport solutions to ensure safe delivery."
+    },
+    {
+        "id": 8,
+        "category": "Services",
+        "question": "Does MDL provide storage and warehousing?",
+        "answer": "Yes, we offer secure warehousing and distribution services, including short-term and long-term storage, inventory management, and timely dispatch of goods to their final destinations."
+    },
+    {
+        "id": 9,
+        "category": "Services",
+        "question": "Does MDL provide project cargo services?",
+        "answer": "Yes, MDL manages complex project cargo shipments, including heavy machinery, oversized equipment, and industrial consignments, ensuring proper handling, transport planning, and delivery."
+    },
+    {
+        "id": 10,
+        "category": "Shipping & Delivery",
+        "question": "How long does it take for shipments to be delivered?",
+        "answer": "Delivery times vary depending on the mode of transport, destination, and customs clearance. Domestic shipments typically take 2-5 days for land freight, while international air shipments take 3-7 days and sea freight may take 2-6 weeks."
+    },
+    {
+        "id": 11,
+        "category": "Shipping & Delivery",
+        "question": "Can MDL deliver shipments internationally?",
+        "answer": "Yes, MDL has a global network of trusted partners, allowing us to deliver shipments to most countries worldwide. We ensure compliance with all international trade and customs regulations."
+    },
+    {
+        "id": 12,
+        "category": "Shipping & Delivery",
+        "question": "Can I schedule a shipment pickup?",
+        "answer": "Yes, customers can request a pickup from their location. Our team coordinates with you to schedule convenient pickup times while ensuring timely dispatch."
+    },
+    {
+        "id": 13,
+        "category": "Shipping & Delivery",
+        "question": "What types of freight can MDL handle?",
+        "answer": "We handle air, sea, and land freight, including general cargo, perishable goods, dangerous goods (DG), oversized or heavy cargo, and project shipments."
+    },
+    {
+        "id": 14,
+        "category": "Customs & Documentation",
+        "question": "Does MDL handle customs clearance?",
+        "answer": "Yes, MDL provides full customs brokerage services, including documentation, tariff classification, duties and taxes calculation, and liaising with customs authorities to ensure smooth import and export processes."
+    },
+    {
+        "id": 15,
+        "category": "Customs & Documentation",
+        "question": "What documents are required for international shipments?",
+        "answer": "Typically, MDL requires a commercial invoice, packing list, bill of lading or airway bill, and any necessary export/import permits. Our team guides clients through document preparation to ensure compliance."
+    },
+    {
+        "id": 16,
+        "category": "Customs & Documentation",
+        "question": "Can MDL provide documentation assistance for restricted goods?",
+        "answer": "Yes, we assist with permits and approvals for restricted or regulated items to ensure full compliance with local and international regulations."
+    },
+    {
+        "id": 17,
+        "category": "Payment & Charges",
+        "question": "What payment methods does MDL accept?",
+        "answer": "MDL accepts bank transfers, online payments, and corporate accounts for regular clients. Payment details are provided with each quote, and invoices are issued for transparency and compliance."
+    },
+    {
+        "id": 18,
+        "category": "Payment & Charges",
+        "question": "How are shipping charges calculated?",
+        "answer": "Shipping charges depend on shipment weight, dimensions, mode of transport, destination, and any additional services like customs clearance, insurance, or special handling requirements."
+    },
+    {
+        "id": 19,
+        "category": "Payment & Charges",
+        "question": "Can I get a quotation before shipment?",
+        "answer": "Yes, MDL provides free, customized quotations based on shipment type, volume, weight, and delivery requirements."
+    },
+    {
+        "id": 20,
+        "category": "Tracking & Technology",
+        "question": "Can I track my shipment online?",
+        "answer": "Yes, MDL provides real-time tracking for all shipments. You can use the tracking number provided in your confirmation email or contact our support team for assistance."
+    },
+    {
+        "id": 21,
+        "category": "Tracking & Technology",
+        "question": "Does MDL provide notifications on shipment status?",
+        "answer": "Yes, we provide timely notifications via email or SMS, keeping you informed about shipment acceptance, transit milestones, customs clearance, and delivery."
+    },
+    {
+        "id": 22,
+        "category": "Tracking & Technology",
+        "question": "Does MDL have a mobile app for tracking?",
+        "answer": "We are developing a mobile app to enhance shipment tracking and notifications. Currently, real-time updates are available via email, SMS, and our customer portal."
+    },
+    {
+        "id": 23,
+        "category": "Tracking & Technology",
+        "question": "Can MDL integrate with company ERP systems?",
+        "answer": "Yes, MDL can provide data integration solutions to help corporate clients sync shipment and tracking information directly into their ERP or logistics management software."
+    },
+    {
+        "id": 24,
+        "category": "General Questions",
+        "question": "Does MDL offer customer support for inquiries?",
+        "answer": "Yes, MDL has a dedicated support team available during business hours to answer inquiries related to shipments, documentation, and quotations."
+    },
+    {
+        "id": 25,
+        "category": "General Questions",
+        "question": "Does MDL provide services for e-commerce businesses?",
+        "answer": "Yes, MDL provides logistics solutions tailored for e-commerce, including fulfillment, last-mile delivery, and international shipping services."
+    },
+    {
+        "id": 26,
+        "category": "Shipping & Delivery",
+        "question": "Does MDL handle temperature-sensitive goods?",
+        "answer": "Yes, we provide specialized handling and transportation for temperature-sensitive cargo including refrigerated and frozen goods, maintaining required conditions throughout the shipment."
+    },
+    {
+        "id": 27,
+        "category": "Services",
+        "question": "Can MDL provide end-to-end logistics solutions?",
+        "answer": "Yes, MDL offers complete supply chain management from pickup, transport, customs clearance, storage, to delivery at the destination."
+    },
+    {
+        "id": 28,
+        "category": "Customs & Documentation",
+        "question": "Can MDL assist with import/export licenses?",
+        "answer": "Yes, our team guides clients through the licensing process required for both imports and exports, ensuring compliance with national and international regulations."
+    },
+    {
+        "id": 29,
+        "category": "Payment & Charges",
+        "question": "Are there hidden charges in MDL services?",
+        "answer": "No, MDL provides transparent pricing with all applicable fees included in the quotation. There are no hidden or unexpected charges."
+    },
+    {
+        "id": 30,
+        "category": "Tracking & Technology",
+        "question": "Does MDL offer shipment history reports?",
+        "answer": "Yes, corporate clients can request detailed shipment history reports for accounting, auditing, and performance tracking purposes."
     }
 ]

@@ -2,7 +2,7 @@ import '@assets/style/customAnimations.css'
 
 const Loading = () => {
     return (
-        <div className="w-full h-screen flex flex-col justify-center items-center gap-6 bg-white text-custom-blue">
+        <div className="w-full h-screen flex flex-col justify-center items-center gap-4 bg-white text-custom-blue">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="602"
@@ -38,9 +38,9 @@ const Loading = () => {
             </svg>
 
             <p className="animate-pulse">
-                Navigating your cargo with excellence...
+                Navigating your Cargo with Excellence
             </p>
-        </div>
+        </div >
     );
 };
 

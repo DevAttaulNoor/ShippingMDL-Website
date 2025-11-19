@@ -1,44 +1,114 @@
 [
     {
-        "title": "Communication",
-        "image": {
-            "src": "/images/components/qualitySection/communication.png",
-            "alt": "Icon of Communication"
-        }
-    },
-    {
-        "title": "Customer Satisfaction",
-        "image": {
-            "src": "/images/components/qualitySection/customer-satisfaction.png",
-            "alt": "Icon of Customer Satisfaction"
-        }
-    },
-    {
-        "title": "Honesty",
-        "image": {
-            "src": "/images/components/qualitySection/honesty.png",
-            "alt": "Icon of Honesty"
-        }
-    },
-    {
-        "title": "Innovation",
-        "image": {
-            "src": "/images/components/qualitySection/innovation.png",
-            "alt": "Icon of Innovation"
-        }
-    },
-    {
-        "title": "Management",
-        "image": {
-            "src": "/images/components/qualitySection/management.png",
-            "alt": "Icon of Management"
-        }
-    },
-    {
-        "title": "Quality",
         "image": {
             "src": "/images/components/qualitySection/quality.png",
             "alt": "Icon of Quality"
-        }
+        },
+        "title": "Integrity",
+        "description": "We conduct our business with honesty, transparency, and accountability. Clients trust us because we always deliver what we promise — ethically and responsibly."
+    },
+    {
+        "image": {
+            "src": "/images/components/qualitySection/quality.png",
+            "alt": "Icon of Quality"
+        },
+        "title": "Reliability",
+        "description": "Time is critical in logistics. We ensure dependable, consistent service backed by strong coordination, expert handling, and precise execution at every stage of the supply chain."
+    },
+    {
+        "image": {
+            "src": "/images/components/qualitySection/quality.png",
+            "alt": "Icon of Quality"
+        },
+        "title": "Customer-Centric Approach",
+        "description": "Our clients are at the heart of everything we do. We listen, understand, and design flexible logistics solutions that meet their unique needs and industry requirements."
+    },
+    {
+        "image": {
+            "src": "/images/components/qualitySection/quality.png",
+            "alt": "Icon of Quality"
+        },
+        "title": "Excellence in Execution",
+        "description": "We take pride in our attention to detail, process optimization, and commitment to delivering top-quality freight forwarding services without compromise."
+    },
+    {
+        "image": {
+            "src": "/images/components/qualitySection/quality.png",
+            "alt": "Icon of Quality"
+        },
+        "title": "Innovation & Technology",
+        "description": "We continually improve by adopting modern logistics technologies, smart tracking systems, and digital processes that enhance visibility and efficiency."
+    },
+    {
+        "image": {
+            "src": "/images/components/qualitySection/quality.png",
+            "alt": "Icon of Quality"
+        },
+        "title": "Safety & Compliance",
+        "description": "We uphold the highest standards of cargo safety, regulatory compliance, and documentation accuracy. As a PIFFA-certified company, we ensure every shipment meets industry and government regulations."
+    },
+    {
+        "image": {
+            "src": "/images/components/qualitySection/quality.png",
+            "alt": "Icon of Quality"
+        },
+        "title": "Collaboration & Global Partnership",
+        "description": "We believe in strong relationships. Our global partner network and teamwork-driven culture allow us to deliver seamless logistics solutions across continents."
+    },
+    {
+        "image": {
+            "src": "/images/components/qualitySection/quality.png",
+            "alt": "Icon of Quality"
+        },
+        "title": "Continuous Improvement",
+        "description": "The logistics industry evolves rapidly — and so do we. We strive to learn, adapt, and upgrade our systems to deliver better, faster, and smarter solutions."
+    },
+    {
+        "image": {
+            "src": "/images/components/qualitySection/quality.png",
+            "alt": "Icon of Quality"
+        },
+        "title": "Transparency",
+        "description": "We believe in open communication, clear pricing, and honest updates at every stage of the shipment lifecycle. No surprises — ever."
+    },
+    {
+        "image": {
+            "src": "/images/components/qualitySection/quality.png",
+            "alt": "Icon of Quality"
+        },
+        "title": "Professionalism",
+        "description": "Our team maintains the highest level of professionalism in communication, documentation, cargo handling, and customer engagement."
+    },
+    {
+        "image": {
+            "src": "/images/components/qualitySection/quality.png",
+            "alt": "Icon of Quality"
+        },
+        "title": "Global Mindset",
+        "description": "We think beyond borders. Our decisions and strategies align with international standards, global trade practices, and cross-border compliance."
+    },
+    {
+        "image": {
+            "src": "/images/components/qualitySection/quality.png",
+            "alt": "Icon of Quality"
+        },
+        "title": "Respect & Ethics",
+        "description": "We treat clients, partners, and colleagues with respect and uphold ethical business practices across all operations."
+    },
+    {
+        "image": {
+            "src": "/images/components/qualitySection/quality.png",
+            "alt": "Icon of Quality"
+        },
+        "title": "Adaptability",
+        "description": "Trade regulations, routes, and market conditions evolve constantly — and so do we. We adapt quickly to ensure uninterrupted services."
+    },
+    {
+        "image": {
+            "src": "/images/components/qualitySection/quality.png",
+            "alt": "Icon of Quality"
+        },
+        "title": "Partnership & Trust",
+        "description": "We build long-term relationships with clients and global partners based on trust, cooperation, and shared success."
     }
 ]

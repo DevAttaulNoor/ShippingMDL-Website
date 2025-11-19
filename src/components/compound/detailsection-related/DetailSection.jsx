@@ -23,6 +23,19 @@ export const DetailSection = ({ detailContainerStyleClass = '', detailData }) =>
                 </div>
             )}
 
+            {detailData.list && (
+                <div className="flex flex-col gap-1 md:gap-2 xl:gap-3">
+                    {detailData.list.map((item, index) => (
+                        <li
+                            key={index}
+                            className="descriptionStyle list-disc ml-8"
+                        >
+                            {item}
+                        </li>
+                    ))}
+                </div>
+            )}
+
             {detailData.btnData && (
                 <AnimatedBtn
                     btnData={detailData.btnData}
