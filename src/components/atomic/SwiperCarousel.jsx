@@ -17,10 +17,7 @@ export const SwiperCarousel = ({ swiperContainerStyle = '', swiperStates, childr
             className={`${swiperContainerStyle} w-full h-full`}
         >
             {children?.map((slide, index) => (
-                <SwiperSlide
-                    key={index}
-                    className="flex items-center justify-center text-center"
-                >
+                <SwiperSlide key={index}>
                     {slide}
                 </SwiperSlide>
             ))}

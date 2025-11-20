@@ -1,11 +1,12 @@
 /* Swiper Carousel Style */
 .swiper-slide {
+  height: auto;
+  cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
 
 .swiper-slide:hover {
-  transform: scale(1.12);
-  cursor: pointer;
+  transform: scale(1.05);
 }
 
 /* Pagination Bullets */

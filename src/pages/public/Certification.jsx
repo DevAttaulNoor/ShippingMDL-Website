@@ -33,7 +33,7 @@ const Certification = () => {
             />
 
             {/* Certificates the Section */}
-            <section className="innerContainerStyle innerContainerPadding">
+            <section className="sectionStyle innerContainerPadding">
                 <HeadingWithDescription
                     heading={{
                         title: "Our Certifications",

@@ -82,28 +82,25 @@ const GetAQuote = () => {
 
             {/* How Our Qoute Process Works Section */}
             <section className="innerContainerPadding">
-                <HeadingWithLine
-                    title="How Our Quote Process Works"
+                <DetailSection
+                    detailData={{
+                        title: "How Our Quote Process Works",
+                        description: [
+                            'Our quote process is designed to be simple, transparent, and efficient — ensuring you receive accurate pricing and professional guidance before your shipment even begins its journey. Here’s what you can expect when you request a quote from MDL:'
+                        ],
+                        list: [
+                            'Fill Out the Quote Form — Submit your shipment details including origin, destination, cargo weight, dimensions, commodity type, and any additional instructions. The more information you provide, the more accurate and customized your quote will be.',
+                            'Review by Our Logistics Experts — Once your request is received, our logistics team analyzes the data, the best shipping routes, checks cargo handling requirements, and reviews compliance needs such as customs clearance, documentation, and restrictions.',
+                            'Receive Your Personalized Quote — You’ll receive a detailed quotation that includes freight costs, handling fees, documentation charges, estimated delivery time, and available service options. Everything is transparent — no hidden charges or unexpected add-ons.',
+                            ' Approve & Schedule Your Shipment — After reviewing the quote, you can confirm your booking. Our team will assist with scheduling pickup, preparing documents, arranging customs procedures, and coordinating the full movement of your cargo from point A to point B.',
+                            ' Shipment Execution & Updates — Once scheduled, your shipment enters operational handling. You’ll receive regular updates, tracking visibility, and direct communication with our support team for any questions or changes needed along the way.'
+                        ]
+                    }}
                 />
-
-                <ol className="list-decimal list-inside text-gray-700 space-y-3">
-                    <li>
-                        <strong>Fill Out the Quote Form:</strong> Provide your shipment details, including origin, destination, cargo weight, and any special instructions.
-                    </li>
-                    <li>
-                        <strong>Review by Our Logistics Team:</strong> Our experts carefully evaluate your shipment requirements, customs documentation needs, and service options.
-                    </li>
-                    <li>
-                        <strong>Receive Your Personalized Quote:</strong> You’ll get a detailed, transparent quote that includes pricing, delivery estimates, and optional services.
-                    </li>
-                    <li>
-                        <strong>Confirm & Schedule Shipment:</strong> Once you approve the quote, our team coordinates pickup, transit, and delivery to ensure smooth, on-time shipment.
-                    </li>
-                </ol>
             </section>
 
             {/* Get a Qoute Form Section */}
-            <section className="innerContainerStyle innerContainerPadding">
+            <section className="sectionStyle innerContainerPadding">
                 <HeadingWithDescription
                     heading={{
                         title: "Get a Quote",
@@ -205,7 +202,7 @@ const GetAQuote = () => {
                     />
                 </div>
             </section>
-        </InnerContainer>
+        </InnerContainer >
     );
 };
 

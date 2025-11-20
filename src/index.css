@@ -50,12 +50,16 @@
     @apply flex flex-col gap-6 xs:gap-8 sm:gap-10 md:gap-12 lg:gap-14 xl:gap-16 2xl:gap-18;
   }
 
+  .sectionYPadding {
+    @apply py-6 xs:py-8 sm:py-10 md:py-12 lg:py-14 xl:py-16 2xl:py-18;
+  }
+
   .innerContainerPadding {
     @apply px-4 xs:px-5 sm:px-7 md:px-8 lg:px-10 xl:px-12 2xl:px-14;
   }
 
   .sectionStyle {
-    @apply flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-14;
+    @apply flex flex-col gap-4 xs:gap-5 sm:gap-6 md:gap-7 lg:gap-8 xl:gap-10 2xl:gap-12;
   }
 
   .titleStyle {
@@ -63,7 +67,7 @@
   }
 
   .descriptionStyle {
-    @apply text-sm font-light opacity-75 md:text-base xl:text-lg 2xl:text-xl;
+    @apply text-sm font-light opacity-75 md:text-base 2xl:text-lg;
   }
 
   .btnStyle {
@@ -75,6 +79,6 @@
   }
 
   .carouselPadding {
-    @apply !py-6 sm:!py-8 md:!py-10 lg:!py-12 xl:!py-14 2xl:!py-16;
+    @apply !py-8 sm:!py-10 lg:!py-12 2xl:!py-14;
   }
 }

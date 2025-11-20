@@ -3,6 +3,7 @@ import { useFetch } from "@hooks/useFetch"
 import { InnerContainer } from "@layouts/InnerContainer"
 import { HeroSection } from "@components/compound/HeroSection"
 import { SwiperCarousel } from "@components/atomic/SwiperCarousel"
+import { QualityCard } from "@components/compound/cards/QualityCard"
 import { DetailWithImageLayout } from "@layouts/DetailWithImageLayout"
 import { ImageSection } from "@components/compound/detailsection-related/ImageSection"
 import { DetailSection } from "@components/compound/detailsection-related/DetailSection"
@@ -136,21 +137,17 @@ const About = () => {
                     }}
                 >
                     {qualitiesData?.map((item, index) => (
-                        <div
+                        <QualityCard
                             key={index}
-                            className="flex flex-col items-center py-3 gap-2 sm:py-2.5 md:py-2 lg:py-1.5 xl:py-1 2xl:py-0"
-                        >
-                            <img
-                                src={item.image.src}
-                                alt={item.image.alt}
-                                className="w-28 object-contain invert"
-                            />
-
-                            <div>
-                                <h5 className='text-lg font-medium'>{item.title}</h5>
-                                <p className="text-sm opacity-75">{item.description}</p>
-                            </div>
-                        </div>
+                            cardData={{
+                                image: {
+                                    src: item.image.src,
+                                    alt: item.image.alt,
+                                },
+                                title: item.title,
+                                description: item.description
+                            }}
+                        />
                     ))}
                 </SwiperCarousel>
             </section>

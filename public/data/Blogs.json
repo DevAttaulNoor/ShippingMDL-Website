@@ -3,7 +3,7 @@
         "id": 1,
         "path": "/blogs/the-future-of-shipping",
         "image": {
-            "src": "/images/dummy.png",
+            "src": "/images/components/detailSection/question-mark.png",
             "alt": "Image of the Future of Shipping"
         },
         "date": "2025-02-12",
@@ -18,7 +18,7 @@
         "id": 2,
         "path": "/blogs/understanding-international-shipping",
         "image": {
-            "src": "/images/dummy.png",
+            "src": "/images/components/detailSection/question-mark.png",
             "alt": "Image of the Future of Shipping"
         },
         "date": "2025-03-07",
@@ -33,7 +33,7 @@
         "id": 3,
         "path": "/blogs/optimizing-supply-chain-efficiency",
         "image": {
-            "src": "/images/dummy.png",
+            "src": "/images/components/detailSection/question-mark.png",
             "alt": "Image of the Future of Shipping"
         },
         "date": "2025-05-21",
@@ -48,7 +48,7 @@
         "id": 4,
         "path": "/blogs/environmental-impact-of-shipping",
         "image": {
-            "src": "/images/dummy.png",
+            "src": "/images/components/detailSection/question-mark.png",
             "alt": "Image of the Future of Shipping"
         },
         "date": "2025-06-13",
@@ -63,7 +63,7 @@
         "id": 5,
         "path": "/blogs/navigating-shipping-regulations",
         "image": {
-            "src": "/images/dummy.png",
+            "src": "/images/components/detailSection/question-mark.png",
             "alt": "Image of the Future of Shipping"
         },
         "date": "2025-10-28",
@@ -78,7 +78,7 @@
         "id": 6,
         "path": "/blogs/choosing-right-shipping-method",
         "image": {
-            "src": "/images/dummy.png",
+            "src": "/images/components/detailSection/question-mark.png",
             "alt": "Image of the Future of Shipping"
         },
         "date": "2025-11-30",

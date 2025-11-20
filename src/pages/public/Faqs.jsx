@@ -65,7 +65,7 @@ const Faqs = () => {
             </section>
 
             {/* Faqs Section */}
-            <section className="innerContainerStyle innerContainerPadding">
+            <section className="sectionStyle innerContainerPadding">
                 <HeadingWithDescription
                     heading={{
                         title: 'Frequently Asked Questions',
@@ -73,35 +73,37 @@ const Faqs = () => {
                     description={"Find quick answers to the most common questions about our logistics and freight services. Explore the FAQs below to understand our process, policies, and support options with ease."}
                 />
 
-                <div className="flex flex-wrap gap-2.5 mx-auto">
-                    {categories.map((cat, index) => (
-                        <button
-                            key={index}
-                            className={`px-4 py-2 rounded-full border transition cursor-pointer hover:text-white hover:bg-custom-green ${selectedCategory === cat ? "bg-custom-green text-white" : "bg-white text-gray-800 border-gray-300"}`}
-                            onClick={() => setSelectedCategory(cat)}
-                        >
-                            {cat}
-                        </button>
-                    ))}
+                <div className="flex flex-col gap-6">
+                    <div className="flex flex-wrap gap-2.5 mx-auto">
+                        {categories.map((cat, index) => (
+                            <button
+                                key={index}
+                                className={`px-4 py-2 rounded-full border transition cursor-pointer hover:text-white hover:bg-custom-green ${selectedCategory === cat ? "bg-custom-green text-white" : "bg-white text-gray-800 border-gray-300"}`}
+                                onClick={() => setSelectedCategory(cat)}
+                            >
+                                {cat}
+                            </button>
+                        ))}
+                    </div>
+
+                    <InputField
+                        inputStyleClass='w-full p-3 border-2 rounded-md border-gray-300 focus:border-custom-green focus:outline-none'
+                        inputData={{
+                            type: "text",
+                            placeholder: "Search your question...",
+                            value: searchQuery,
+                            onChange: e => setSearchQuery(e.target.value)
+                        }}
+                    />
+
+                    <Accordion
+                        accordionData={filteredData}
+                    />
                 </div>
-
-                <InputField
-                    inputStyleClass='w-full p-3 border-2 rounded-md border-gray-300 focus:border-custom-green focus:outline-none'
-                    inputData={{
-                        type: "text",
-                        placeholder: "Search your question...",
-                        value: searchQuery,
-                        onChange: e => setSearchQuery(e.target.value)
-                    }}
-                />
-
-                <Accordion
-                    accordionData={filteredData}
-                />
             </section>
 
             {/* Still Need Help Section */}
-            <section className="flex flex-col items-center text-center py-6 gap-6 innerContainerPadding bg-custom-blue text-white">
+            <section className="sectionStyle sectionYPadding innerContainerPadding bg-custom-blue text-white">
                 <HeadingWithDescription
                     heading={{
                         title: 'Still Need Help?',
@@ -109,7 +111,7 @@ const Faqs = () => {
                     description={"If you can’t find the answer you’re looking for, our logistics experts are here to assist. Reach out to us directly and get personalized support for your shipments, documentation, and other inquiries."}
                 />
 
-                <div className="flex flex-wrap gap-2.5">
+                <div className="flex flex-wrap justify-center gap-2.5">
                     <BasicBtn
                         btnStyleClass="px-6 py-3 rounded-md text-white bg-custom-green"
                         btnData={{

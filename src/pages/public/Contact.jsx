@@ -57,6 +57,38 @@ const Contact = () => {
                 ]}
             />
 
+            {/* Why Contact us Section */}
+            <section className="innerContainerPadding">
+                <DetailWithImageLayout
+                    rightsideData={
+                        <ImageSection
+                            imageData={{
+                                src: '/images/components/detailSection/how-to-contact.png',
+                                alt: 'Image of about our company'
+                            }}
+                        />
+                    }
+
+                    leftsideData={
+                        <DetailSection
+                            detailData={{
+                                title: 'How to Contact Us',
+                                description: [
+                                    'We provide multiple ways for you to reach our logistics experts, ensuring you always receive timely, accurate, and professional support. Whether you need shipment guidance, documentation help, or a customized logistics solution, our team is ready to assist through the channel most convenient for you:'
+                                ],
+                                list: [
+                                    'Speak directly with our support team for quick assistance, shipment inquiries, or immediate guidance.',
+                                    'Send us your detailed requirements, documents, or quote requests and get a fast, professional response.',
+                                    'Connect instantly for real-time answers, shipment updates, and quick clarifications.',
+                                    'Share your shipment details through our online form and receive a tailored quote with route recommendations.',
+                                    'Meet our team in person for consultations, documentation help, or business discussions.',
+                                ]
+                            }}
+                        />
+                    }
+                />
+            </section>
+
             {/* Contact Detail Section */}
             <section className="flex flex-col gap-6 innerContainerPadding xs:gap-8 sm:gap-10 md:flex-row md:gap-0">
                 <div className="flex flex-col p-4 gap-4 rounded-2xl text-white bg-custom-blue sm:p-6 md:w-1/2 md:p-8 md:rounded-r-none md:rounded-l-2xl xl:p-10 2xl:p-12">
@@ -191,38 +223,6 @@ const Contact = () => {
                         ))}
                     </div>
                 </div>
-            </section>
-
-            {/* Why Contact us Section */}
-            <section className="innerContainerPadding">
-                <DetailWithImageLayout
-                    rightsideData={
-                        <ImageSection
-                            imageData={{
-                                src: '/images/components/detailSection/how-to-contact.png',
-                                alt: 'Image of about our company'
-                            }}
-                        />
-                    }
-
-                    leftsideData={
-                        <DetailSection
-                            detailData={{
-                                title: 'How to Contact Us',
-                                description: [
-                                    'We provide multiple ways for you to reach our logistics experts, ensuring you always receive timely, accurate, and professional support. Whether you need shipment guidance, documentation help, or a customized logistics solution, our team is ready to assist through the channel most convenient for you:'
-                                ],
-                                list: [
-                                    'Speak directly with our support team for quick assistance, shipment inquiries, or immediate guidance.',
-                                    'Send us your detailed requirements, documents, or quote requests and get a fast, professional response.',
-                                    'Connect instantly for real-time answers, shipment updates, and quick clarifications.',
-                                    'Share your shipment details through our online form and receive a tailored quote with route recommendations.',
-                                    'Meet our team in person for consultations, documentation help, or business discussions.',
-                                ]
-                            }}
-                        />
-                    }
-                />
             </section>
         </InnerContainer>
     )
