@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Routes } from "@constants/Routes";
 import { useFetch } from "@hooks/useFetch";
+import { useScrollFade } from "@hooks/useScrollFade";
 import { InnerContainer } from "@layouts/InnerContainer";
 import { Accordion } from "@components/atomic/Accordion";
 import { SearchBar } from "@components/compound/SearchBar";
@@ -16,6 +17,7 @@ const Faqs = () => {
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("All");
     const categories = ["All", "Services", "Shipping & Delivery", "Customs & Documentation", "Payment & Charges", "Tracking & Technology", "General Questions"];
+    const fadeAboutCompany = useScrollFade("left");
 
     const filteredData = data?.map(item => {
         const matchedQuestions = item.content.filter(que =>
@@ -46,7 +48,11 @@ const Faqs = () => {
             />
 
             {/* About the Company Section */}
-            <section className="innerContainerPadding">
+            <section
+                ref={fadeAboutCompany.ref}
+                style={fadeAboutCompany.style}
+                className="innerContainerPadding"
+            >
                 <DetailWithImageLayout
                     rightsideData={
                         <ImageSection

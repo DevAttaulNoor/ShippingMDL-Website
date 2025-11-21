@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Routes } from "@constants/Routes";
 import { ReactIcons } from "@constants/ReactIcons";
+import { useScrollFade } from "@hooks/useScrollFade";
 import { InnerContainer } from "@layouts/InnerContainer";
 import { HeroSection } from "@components/compound/HeroSection";
 import { BasicBtn } from "@components/atomic/buttons/BasicBtn";
@@ -21,6 +22,8 @@ const GetAQuote = () => {
         weight: "",
         message: "",
     });
+    const fadeQoute = useScrollFade("left");
+    const fadeQouteProcess = useScrollFade("right");
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
@@ -47,7 +50,11 @@ const GetAQuote = () => {
             />
 
             {/* Why Request a Qoute from Us Section */}
-            <section className="innerContainerPadding">
+            <section
+                ref={fadeQoute.ref}
+                style={fadeQoute.style}
+                className="innerContainerPadding"
+            >
                 <DetailWithImageLayout
                     rightsideData={
                         <ImageSection
@@ -80,7 +87,11 @@ const GetAQuote = () => {
             </section>
 
             {/* How Our Qoute Process Works Section */}
-            <section className="innerContainerPadding">
+            <section
+                ref={fadeQouteProcess.ref}
+                style={fadeQouteProcess.style}
+                className="innerContainerPadding"
+            >
                 <DetailSection
                     detailData={{
                         title: "How Our Quote Process Works",
@@ -231,7 +242,7 @@ const GetAQuote = () => {
                     />
                 </div>
             </section>
-        </InnerContainer >
+        </InnerContainer>
     );
 };
 

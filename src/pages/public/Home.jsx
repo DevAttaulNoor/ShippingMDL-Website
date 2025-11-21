@@ -1,5 +1,6 @@
 import { Routes } from "@constants/Routes"
 import { useFetch } from "@hooks/useFetch"
+import { useScrollFade } from "@hooks/useScrollFade"
 import { InnerContainer } from "@layouts/InnerContainer"
 import { BasicBtn } from "@components/atomic/buttons/BasicBtn"
 import { HeroSection } from "@components/compound/HeroSection"
@@ -14,6 +15,8 @@ import { HeadingWithDescription } from "@components/compound/headings/HeadingWit
 const Home = () => {
     const { data: servicesData } = useFetch("/data/Services.json");
     const { data: qualitiesData } = useFetch("/data/Qualities.json");
+    const fadeExpectUs = useScrollFade("right");
+    const fadeOurLogistics = useScrollFade("left");
 
     return (
         <InnerContainer>
@@ -32,7 +35,11 @@ const Home = () => {
             />
 
             {/* What You Can Expect From Us Section */}
-            <section className="innerContainerPadding">
+            <section
+                ref={fadeExpectUs.ref}
+                style={fadeExpectUs.style}
+                className="innerContainerPadding"
+            >
                 <DetailWithImageLayout
                     rightsideData={
                         <DetailSection
@@ -110,7 +117,11 @@ const Home = () => {
             </section>
 
             {/* How Our Logistics Process Works Section */}
-            <section className="innerContainerPadding">
+            <section
+                ref={fadeOurLogistics.ref}
+                style={fadeOurLogistics.style}
+                className="innerContainerPadding"
+            >
                 <DetailWithImageLayout
                     rightsideData={
                         <ImageSection

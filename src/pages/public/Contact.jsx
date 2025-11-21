@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router"
 import { Routes } from "@constants/Routes"
 import { ReactIcons } from "@constants/ReactIcons"
+import { useScrollFade } from "@hooks/useScrollFade"
 import { InnerContainer } from "@layouts/InnerContainer"
 import { BasicBtn } from "@components/atomic/buttons/BasicBtn"
 import { HeroSection } from "@components/compound/HeroSection"
@@ -36,6 +37,7 @@ const Contact = () => {
         subject: '',
         message: '',
     });
+    const fadeContactUs = useScrollFade("left")
 
     return (
         <InnerContainer>
@@ -58,7 +60,11 @@ const Contact = () => {
             />
 
             {/* Why Contact us Section */}
-            <section className="innerContainerPadding">
+            <section
+                ref={fadeContactUs.ref}
+                style={fadeContactUs.style}
+                className="innerContainerPadding"
+            >
                 <DetailWithImageLayout
                     rightsideData={
                         <ImageSection

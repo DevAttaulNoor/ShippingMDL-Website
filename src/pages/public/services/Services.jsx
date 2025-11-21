@@ -1,5 +1,6 @@
 import { Routes } from "@constants/Routes"
 import { useFetch } from "@hooks/useFetch";
+import { useScrollFade } from "@hooks/useScrollFade";
 import { InnerContainer } from "@layouts/InnerContainer"
 import { HeroSection } from "@components/compound/HeroSection"
 import { BasicBtn } from "@components/atomic/buttons/BasicBtn";
@@ -11,6 +12,9 @@ import { HeadingWithDescription } from "@components/compound/headings/HeadingWit
 
 const Services = () => {
     const { data } = useFetch("/data/Services.json");
+    const fadeWeDeliver = useScrollFade("left");
+    const fadeExpectUs = useScrollFade("right");
+    const fadeOurLogistics = useScrollFade("left");
 
     return (
         <InnerContainer>
@@ -33,7 +37,11 @@ const Services = () => {
             />
 
             {/* What We Deliver Section */}
-            <section className="innerContainerPadding">
+            <section
+                ref={fadeWeDeliver.ref}
+                style={fadeWeDeliver.style}
+                className="innerContainerPadding"
+            >
                 <DetailWithImageLayout
                     rightsideData={
                         <ImageSection
@@ -60,7 +68,11 @@ const Services = () => {
             </section>
 
             {/* What You Can Expect From Us Section */}
-            <section className="innerContainerPadding">
+            <section
+                ref={fadeExpectUs.ref}
+                style={fadeExpectUs.style}
+                className="innerContainerPadding"
+            >
                 <DetailWithImageLayout
                     rightsideData={
                         <DetailSection
@@ -92,7 +104,11 @@ const Services = () => {
             </section>
 
             {/* How Our Logistics Process Works Section */}
-            <section className="innerContainerPadding">
+            <section
+                ref={fadeOurLogistics.ref}
+                style={fadeOurLogistics.style}
+                className="innerContainerPadding"
+            >
                 <DetailWithImageLayout
                     rightsideData={
                         <ImageSection

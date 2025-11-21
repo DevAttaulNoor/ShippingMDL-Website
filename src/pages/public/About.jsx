@@ -1,5 +1,6 @@
 import { Routes } from "@constants/Routes"
 import { useFetch } from "@hooks/useFetch"
+import { useScrollFade } from "@hooks/useScrollFade"
 import { InnerContainer } from "@layouts/InnerContainer"
 import { HeroSection } from "@components/compound/HeroSection"
 import { SwiperCarousel } from "@components/atomic/SwiperCarousel"
@@ -10,7 +11,11 @@ import { DetailSection } from "@components/compound/detailsection-related/Detail
 import { HeadingWithDescription } from "@components/compound/headings/HeadingWithDescription"
 
 const About = () => {
-    const { data: qualitiesData } = useFetch("/data/Qualities.json");
+    const { data } = useFetch("/data/Qualities.json");
+    const fadeAboutCompany = useScrollFade("left");
+    const fadeOurVision = useScrollFade("right");
+    const fadeOurMission = useScrollFade("left");
+    const fadeAboutPresident = useScrollFade("right");
 
     return (
         <InnerContainer>
@@ -33,7 +38,11 @@ const About = () => {
             />
 
             {/* About the Company Section */}
-            <section className="innerContainerPadding">
+            <section
+                ref={fadeAboutCompany.ref}
+                style={fadeAboutCompany.style}
+                className="innerContainerPadding"
+            >
                 <DetailWithImageLayout
                     rightsideData={
                         <ImageSection
@@ -61,7 +70,11 @@ const About = () => {
             </section>
 
             {/* About our Vision Section */}
-            <section className="innerContainerPadding">
+            <section
+                ref={fadeOurVision.ref}
+                style={fadeOurVision.style}
+                className="innerContainerPadding"
+            >
                 <DetailWithImageLayout
                     rightsideData={
                         <DetailSection
@@ -115,7 +128,7 @@ const About = () => {
                         }
                     }}
                 >
-                    {qualitiesData?.map((item, index) => (
+                    {data?.map((item, index) => (
                         <QualityCard
                             key={index}
                             cardData={{
@@ -132,7 +145,11 @@ const About = () => {
             </section>
 
             {/* About our Mission Section */}
-            <section className="innerContainerPadding">
+            <section
+                ref={fadeOurMission.ref}
+                style={fadeOurMission.style}
+                className="innerContainerPadding"
+            >
                 <DetailWithImageLayout
                     rightsideData={
                         <ImageSection
@@ -163,7 +180,11 @@ const About = () => {
             </section>
 
             {/* About the President Section */}
-            <section className="innerContainerPadding">
+            <section
+                ref={fadeAboutPresident.ref}
+                style={fadeAboutPresident.style}
+                className="innerContainerPadding"
+            >
                 <DetailWithImageLayout
                     rightsideData={
                         <DetailSection
