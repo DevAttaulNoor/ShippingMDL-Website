@@ -44,15 +44,7 @@
             "src": "/images/components/qualitySection/quality.png",
             "alt": "Icon of Quality"
         },
-        "title": "Safety & Compliance",
-        "description": "We uphold the highest standards of cargo safety, regulatory compliance, and documentation accuracy. As a PIFFA-certified company, we ensure every shipment meets industry and government regulations."
-    },
-    {
-        "image": {
-            "src": "/images/components/qualitySection/quality.png",
-            "alt": "Icon of Quality"
-        },
-        "title": "Collaboration & Global Partnership",
+        "title": "Global Collaborations",
         "description": "We believe in strong relationships. Our global partner network and teamwork-driven culture allow us to deliver seamless logistics solutions across continents."
     },
     {

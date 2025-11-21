@@ -22,8 +22,8 @@ const Home = () => {
                 containerStyle="justify-end xs:justify-center"
                 heroData={{
                     bgImage: '/images/components/heroSection/home.png',
-                    title: 'We make Strongest Services all over the World',
-                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptate atque vitae cupiditate, ipsam incidunt fuga consequatur commodi soluta iure odit ratione quos unde pariatur quaerat exercitationem maxime laborum autem!"
+                    title: 'We Deliver Reliable Logistics Solutions Across the Globe',
+                    description: "At Marine Dynamic Logistics, we provide seamless end-to-end freight forwarding and supply chain solutions. From air, sea, and land transportation to customs clearance and cargo tracking, our expert team ensures your shipments reach their destination safely, efficiently, and on time, every time."
                 }}
                 btnData={{
                     text: Routes.SERVICES.title,
@@ -64,9 +64,9 @@ const Home = () => {
             </section>
 
             {/* Core Values Section */}
-            <section className="sectionStyle">
+            <section className="sectionStyle pt-6 pb-3 innerContainerPadding text-white bg-custom-blue">
                 <HeadingWithDescription
-                    containerStyle='text-center innerContainerPadding'
+                    containerStyle='text-center'
                     heading={{
                         title: 'Core Values'
                     }}
@@ -74,43 +74,22 @@ const Home = () => {
                 />
 
                 <SwiperCarousel
-                    swiperContainerStyle="carouselPadding text-white bg-custom-blue"
                     swiperStates={{
                         loop: true,
                         pagination: true,
+                        spaceBetween: 0,
                         autoplay: {
                             delay: 2000,
                             disableOnInteraction: false,
                         },
                         breakpoints: {
-                            0: {
-                                slidesPerView: 1,
-                                spaceBetween: 5,
-                            },
-                            450: {
-                                slidesPerView: 2,
-                                spaceBetween: 10,
-                            },
-                            640: {
-                                slidesPerView: 3,
-                                spaceBetween: 10,
-                            },
-                            768: {
-                                slidesPerView: 3,
-                                spaceBetween: 15,
-                            },
-                            1024: {
-                                slidesPerView: 4,
-                                spaceBetween: 15,
-                            },
-                            1280: {
-                                slidesPerView: 4,
-                                spaceBetween: 20,
-                            },
-                            1440: {
-                                slidesPerView: 5,
-                                spaceBetween: 20,
-                            },
+                            0: { slidesPerView: 1 },
+                            450: { slidesPerView: 2 },
+                            640: { slidesPerView: 3 },
+                            768: { slidesPerView: 3 },
+                            1024: { slidesPerView: 4 },
+                            1280: { slidesPerView: 4 },
+                            1440: { slidesPerView: 5 },
                         }
                     }}
                 >

@@ -86,9 +86,9 @@ const About = () => {
             </section>
 
             {/* Core Values Section */}
-            <section className="sectionStyle">
+            <section className="sectionStyle py-6 innerContainerPadding text-white bg-custom-blue">
                 <HeadingWithDescription
-                    containerStyle='text-center innerContainerPadding'
+                    containerStyle='text-center'
                     heading={{
                         title: 'Core Values'
                     }}
@@ -96,43 +96,22 @@ const About = () => {
                 />
 
                 <SwiperCarousel
-                    swiperContainerStyle="carouselPadding text-white bg-custom-blue"
                     swiperStates={{
                         loop: true,
                         pagination: true,
+                        spaceBetween: 0,
                         autoplay: {
                             delay: 2000,
                             disableOnInteraction: false,
                         },
                         breakpoints: {
-                            0: {
-                                slidesPerView: 1,
-                                spaceBetween: 5,
-                            },
-                            450: {
-                                slidesPerView: 2,
-                                spaceBetween: 10,
-                            },
-                            640: {
-                                slidesPerView: 3,
-                                spaceBetween: 10,
-                            },
-                            768: {
-                                slidesPerView: 3,
-                                spaceBetween: 15,
-                            },
-                            1024: {
-                                slidesPerView: 4,
-                                spaceBetween: 15,
-                            },
-                            1280: {
-                                slidesPerView: 4,
-                                spaceBetween: 20,
-                            },
-                            1440: {
-                                slidesPerView: 5,
-                                spaceBetween: 20,
-                            },
+                            0: { slidesPerView: 1 },
+                            450: { slidesPerView: 2 },
+                            640: { slidesPerView: 3 },
+                            768: { slidesPerView: 3 },
+                            1024: { slidesPerView: 4 },
+                            1280: { slidesPerView: 4 },
+                            1440: { slidesPerView: 5 },
                         }
                     }}
                 >

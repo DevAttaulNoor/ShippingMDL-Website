@@ -5,12 +5,11 @@ import { InnerContainer } from "@layouts/InnerContainer";
 import { HeroSection } from "@components/compound/HeroSection";
 import { BasicBtn } from "@components/atomic/buttons/BasicBtn";
 import { InputField } from "@components/atomic/fields/InputField";
-import { TextareaField } from "@components/atomic/fields/TextareaField";
-import { HeadingWithLine } from "@components/compound/headings/HeadingWithLine";
-import { HeadingWithDescription } from "@components/compound/headings/HeadingWithDescription";
 import { DetailWithImageLayout } from "@layouts/DetailWithImageLayout";
+import { TextareaField } from "@components/atomic/fields/TextareaField";
 import { ImageSection } from "@components/compound/detailsection-related/ImageSection";
 import { DetailSection } from "@components/compound/detailsection-related/DetailSection";
+import { HeadingWithDescription } from "@components/compound/headings/HeadingWithDescription";
 
 const GetAQuote = () => {
     const [form, setForm] = useState({
@@ -89,11 +88,41 @@ const GetAQuote = () => {
                             'Our quote process is designed to be simple, transparent, and efficient — ensuring you receive accurate pricing and professional guidance before your shipment even begins its journey. Here’s what you can expect when you request a quote from MDL:'
                         ],
                         list: [
-                            'Fill Out the Quote Form — Submit your shipment details including origin, destination, cargo weight, dimensions, commodity type, and any additional instructions. The more information you provide, the more accurate and customized your quote will be.',
-                            'Review by Our Logistics Experts — Once your request is received, our logistics team analyzes the data, the best shipping routes, checks cargo handling requirements, and reviews compliance needs such as customs clearance, documentation, and restrictions.',
-                            'Receive Your Personalized Quote — You’ll receive a detailed quotation that includes freight costs, handling fees, documentation charges, estimated delivery time, and available service options. Everything is transparent — no hidden charges or unexpected add-ons.',
-                            ' Approve & Schedule Your Shipment — After reviewing the quote, you can confirm your booking. Our team will assist with scheduling pickup, preparing documents, arranging customs procedures, and coordinating the full movement of your cargo from point A to point B.',
-                            ' Shipment Execution & Updates — Once scheduled, your shipment enters operational handling. You’ll receive regular updates, tracking visibility, and direct communication with our support team for any questions or changes needed along the way.'
+                            (
+                                <p>
+                                    <strong className="text-custom-green">Fill Out the Quote Form — </strong>
+                                    Submit your shipment details including origin, destination, cargo weight,
+                                    dimensions, commodity type, and additional instructions.
+                                </p>
+                            ),
+                            (
+                                <p>
+                                    <strong className="text-custom-green">Review by Our Logistics Experts — </strong>
+                                    Once your request is received, our team analyzes the data and reviews
+                                    shipping routes, compliance, and cargo requirements.
+                                </p>
+                            ),
+                            (
+                                <p>
+                                    <strong className="text-custom-green">Receive Your Personalized Quote — </strong>
+                                    You’ll receive a detailed quotation including freight costs, handling
+                                    fees, delivery time, and service options.
+                                </p>
+                            ),
+                            (
+                                <p>
+                                    <strong className="text-custom-green">Approve & Schedule Your Shipment — </strong>
+                                    After reviewing the quote, you can confirm your booking. We assist with
+                                    pickup, documentation, customs, and cargo coordination.
+                                </p>
+                            ),
+                            (
+                                <p>
+                                    <strong className="text-custom-green">Shipment Execution & Updates — </strong>
+                                    You’ll receive updates, tracking visibility, and support throughout the
+                                    shipment.
+                                </p>
+                            ),
                         ]
                     }}
                 />

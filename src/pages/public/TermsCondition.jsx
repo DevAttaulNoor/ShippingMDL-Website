@@ -86,8 +86,7 @@ const TermsCondition = () => {
             <HeroSection
                 heroData={{
                     bgImage: "/images/components/heroSection/terms-and-conditions.png",
-                    title: Routes.TERMS_CONDITION.title,
-                    description: "At MDL, by accessing our website and services, you agree to comply with and be bound by the following Terms and Conditions. Please read them carefully before using our services."
+                    title: Routes.TERMS_CONDITION.title
                 }}
                 breadcrumbData={[
                     {

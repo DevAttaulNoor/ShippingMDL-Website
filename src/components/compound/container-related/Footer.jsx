@@ -84,18 +84,16 @@ export const Footer = () => {
     };
 
     return (
-        <footer className="grid grid-cols-1 py-5 gap-4 innerContainerPadding text-white bg-custom-blue xs:grid-cols-2 xs:py-6 sm:grid-cols-3 sm:py-7 sm:gap-5 md:py-8 lg:grid-cols-6 lg:py-6 lg:gap-8 xl:grid-cols-6 xl:py-10 2xl:gap-8">
+        <footer className="grid grid-cols-1 py-5 gap-4 innerContainerPadding text-white bg-custom-blue xs:grid-cols-2 xs:py-6 sm:grid-cols-3 sm:py-7 sm:gap-5 md:py-8 lg:grid-cols-6 lg:py-6 lg:gap-6 xl:grid-cols-6 xl:py-10 2xl:gap-7">
             <div className="col-span-1 flex flex-col gap-3.5 xs:col-span-2">
                 <img
                     src={"/images/logos/logo.png"}
                     alt="Logo of Marine Dynamics Logistics"
-                    className="max-w-36 object-contain"
+                    className="max-w-24 object-contain sm:max-w-28 lg:max-w-32 2xl:max-w-36"
                 />
-                <p className="tracking-tighter text-sm sm:text-base">
-                    Marine Dynamic Logistics is a trusted shipping and freight forwarding
-                    company delivering efficient, reliable, and cost-effective logistics
-                    solutions specialized in land, sea, and air freight, ensuring seamless
-                    transportation for businesses of all sizes.
+
+                <p className="descriptionStyle">
+                    Marine Dynamic Logistics is a trusted shipping and freight forwarding company delivering efficient, reliable, and cost-effective logistics solutions specialized in land, sea, and air freight, ensuring seamless transportation for businesses of all sizes.
                 </p>
             </div>
 

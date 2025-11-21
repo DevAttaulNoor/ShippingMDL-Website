@@ -3,9 +3,9 @@ import { Routes } from "@constants/Routes";
 import { useFetch } from "@hooks/useFetch";
 import { InnerContainer } from "@layouts/InnerContainer";
 import { Accordion } from "@components/atomic/Accordion";
+import { SearchBar } from "@components/compound/SearchBar";
 import { HeroSection } from "@components/compound/HeroSection";
 import { BasicBtn } from "@components/atomic/buttons/BasicBtn";
-import { InputField } from "@components/atomic/fields/InputField";
 import { DetailWithImageLayout } from "@layouts/DetailWithImageLayout";
 import { ImageSection } from "@components/compound/detailsection-related/ImageSection";
 import { DetailSection } from "@components/compound/detailsection-related/DetailSection";
@@ -15,11 +15,20 @@ const Faqs = () => {
     const { data } = useFetch("/data/Faqs.json");
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("All");
-    const categories = ["All", "Shipping & Delivery", "Customs & Documentation", "Payment & Charges", "Tracking & Technology", "General Questions"];
+    const categories = ["All", "Services", "Shipping & Delivery", "Customs & Documentation", "Payment & Charges", "Tracking & Technology", "General Questions"];
 
-    const filteredData = data?.filter(item =>
+    const filteredData = data?.map(item => {
+        const matchedQuestions = item.content.filter(que =>
+            que.question.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+
+        return {
+            ...item,
+            content: matchedQuestions
+        };
+    }).filter(item =>
         (selectedCategory === "All" || item.category === selectedCategory) &&
-        item.question.toLowerCase().includes(searchQuery.toLowerCase())
+        item.content.length > 0
     );
 
     return (
@@ -86,19 +95,25 @@ const Faqs = () => {
                         ))}
                     </div>
 
-                    <InputField
-                        inputStyleClass='w-full p-3 border-2 rounded-md border-gray-300 focus:border-custom-green focus:outline-none'
+                    <SearchBar
                         inputData={{
                             type: "text",
                             placeholder: "Search your question...",
                             value: searchQuery,
-                            onChange: e => setSearchQuery(e.target.value)
+                            onChange: e => setSearchQuery(e.target.value),
+                            inputStyleClass: 'w-full'
                         }}
                     />
 
-                    <Accordion
-                        accordionData={filteredData}
-                    />
+                    {filteredData?.length == 0 ? (
+                        <p className="titleStyle text-center text-custom-blue">
+                            No results found
+                        </p>
+                    ) : (
+                        <Accordion
+                            accordionData={filteredData}
+                        />
+                    )}
                 </div>
             </section>
 

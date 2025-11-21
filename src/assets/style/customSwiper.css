@@ -2,21 +2,27 @@
 .swiper-slide {
   height: auto;
   cursor: pointer;
+  transform: scale(0.95);
   transition: transform 0.3s ease-in-out;
 }
 
 .swiper-slide:hover {
-  transform: scale(1.05);
+  transform: scale(1);
 }
 
 /* Pagination Bullets */
+.swiper-pagination {
+  margin-top: 5px;
+  position: relative;
+}
+
 .swiper-pagination-bullet {
-  background-color: #b0cf25 !important;
-  opacity: 0.4 !important;
   cursor: pointer;
+  opacity: 0.4 !important;
+  background-color: #b0cf25 !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #b0cf25 !important;
   opacity: 1 !important;
+  background-color: #b0cf25 !important;
 }
