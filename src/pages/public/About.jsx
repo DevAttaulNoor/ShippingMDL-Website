@@ -109,6 +109,7 @@ const About = () => {
                 />
 
                 <SwiperCarousel
+                    swiperContainerStyle="custom"
                     swiperStates={{
                         loop: true,
                         pagination: true,

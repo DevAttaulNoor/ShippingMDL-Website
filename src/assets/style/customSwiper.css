@@ -1,12 +1,12 @@
 /* Swiper Carousel Style */
-.swiper-slide {
+.custom .swiper-slide {
   height: auto;
   cursor: pointer;
   transform: scale(0.95);
   transition: transform 0.3s ease-in-out;
 }
 
-.swiper-slide:hover {
+.custom .swiper-slide:hover {
   transform: scale(1);
 }
 

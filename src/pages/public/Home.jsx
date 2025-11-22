@@ -3,7 +3,6 @@ import { useFetch } from "@hooks/useFetch"
 import { useScrollFade } from "@hooks/useScrollFade"
 import { InnerContainer } from "@layouts/InnerContainer"
 import { BasicBtn } from "@components/atomic/buttons/BasicBtn"
-import { HeroSection } from "@components/compound/HeroSection"
 import { SwiperCarousel } from "@components/atomic/SwiperCarousel"
 import { ServiceCard } from "@components/compound/cards/ServiceCard"
 import { QualityCard } from "@components/compound/cards/QualityCard"
@@ -11,6 +10,21 @@ import { DetailWithImageLayout } from "@layouts/DetailWithImageLayout"
 import { ImageSection } from "@components/compound/detailsection-related/ImageSection"
 import { DetailSection } from "@components/compound/detailsection-related/DetailSection"
 import { HeadingWithDescription } from "@components/compound/headings/HeadingWithDescription"
+
+const heroSectionData = [
+    {
+        id: 1,
+        bgImage: '/images/components/heroSection/air-freight.png',
+    },
+    {
+        id: 2,
+        bgImage: '/images/components/heroSection/sea-freight.png',
+    },
+    {
+        id: 3,
+        bgImage: '/images/components/heroSection/land-freight.png',
+    },
+]
 
 const Home = () => {
     const { data: servicesData } = useFetch("/data/Services.json");
@@ -21,18 +35,34 @@ const Home = () => {
     return (
         <InnerContainer>
             {/* Hero Section */}
-            <HeroSection
-                containerStyle="justify-end xs:justify-center"
-                heroData={{
-                    bgImage: '/images/components/heroSection/home.png',
-                    title: 'We Deliver Reliable Logistics Solutions Across the Globe',
-                    description: "At Marine Dynamic Logistics, we provide seamless end-to-end freight forwarding and supply chain solutions. From air, sea, and land transportation to customs clearance and cargo tracking, our expert team ensures your shipments reach their destination safely, efficiently, and on time, every time."
+            <SwiperCarousel
+                swiperStates={{
+                    slidesPerView: 1,
+                    loop: true,
+                    pagination: false,
+                    spaceBetween: 0,
+                    autoplay: {
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    },
                 }}
-                btnData={{
-                    text: Routes.SERVICES.title,
-                    path: Routes.SERVICES.path
-                }}
-            />
+            >
+                {heroSectionData?.map(item => (
+                    <div
+                        key={item.id}
+                        style={{ backgroundImage: `url(${item.bgImage})` }}
+                        className="w-full h-[360px] flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black/35 before:content-[''] before:z-0 text-white xs:py-8 sm:h-[400px] md:h-[440px] lg:h-[480px] xl:h-[520px] xl:py-10 2xl:h-[560px]"
+                    >
+                        <div className="relative z-10 flex flex-col items-center text-center gap-2.5 innerContainerPadding">
+                            <h1 className="titleStyle z-10">We Deliver Reliable Logistics Solutions Across the Globe</h1>
+
+                            <h5 className="text-sm z-10 md:w-[75%] md:text-base xl:text-lg 2xl:text-xl">
+                                At Marine Dynamic Logistics, we provide seamless end-to-end freight forwarding and supply chain solutions. From air, sea, and land transportation to customs clearance and cargo tracking, our expert team ensures your shipments reach their destination safely, efficiently, and on time, every time.
+                            </h5>
+                        </div>
+                    </div>
+                ))}
+            </SwiperCarousel>
 
             {/* What You Can Expect From Us Section */}
             <section
@@ -81,6 +111,7 @@ const Home = () => {
                 />
 
                 <SwiperCarousel
+                    swiperContainerStyle="custom"
                     swiperStates={{
                         loop: true,
                         pagination: true,
