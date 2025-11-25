@@ -123,10 +123,8 @@ const Home = () => {
                         breakpoints: {
                             0: { slidesPerView: 1 },
                             450: { slidesPerView: 2 },
-                            640: { slidesPerView: 3 },
                             768: { slidesPerView: 3 },
                             1024: { slidesPerView: 4 },
-                            1280: { slidesPerView: 4 },
                             1440: { slidesPerView: 5 },
                         }
                     }}
@@ -222,7 +220,7 @@ const Home = () => {
 
                 <div className="flex flex-wrap justify-center gap-2.5">
                     <BasicBtn
-                        btnStyleClass="px-6 py-3 rounded-md text-white bg-custom-green"
+                        btnStyleClass="rounded-md text-white bg-custom-green"
                         btnData={{
                             text: "Contact Us",
                             path: Routes.CONTACT.path
@@ -230,7 +228,7 @@ const Home = () => {
                     />
 
                     <BasicBtn
-                        btnStyleClass="px-6 py-3 rounded-md text-custom-green bg-white"
+                        btnStyleClass="rounded-md text-custom-green bg-white"
                         btnData={{
                             text: "Request a Quote",
                             path: Routes.GET_A_QUOTE.path

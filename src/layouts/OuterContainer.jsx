@@ -39,7 +39,7 @@ export const OuterContainer = ({ children }) => {
             {topScroll && (
                 <button
                     onClick={handleJumpToTop}
-                    className="fixed bottom-3 right-3 text-xl p-3 rounded-full shadow-2xl border-2 rotate-180 z-10 cursor-pointer border-custom-green text-white bg-custom-blue"
+                    className="fixed bottom-3 right-3 text-base p-2 rounded-full shadow-2xl border-2 rotate-180 z-10 cursor-pointer border-custom-green text-white bg-custom-blue lg:text-lg lg:p-2.5 2xl:text-xl 2xl:p-3"
                 >
                     {ReactIcons.DOWN}
                 </button>

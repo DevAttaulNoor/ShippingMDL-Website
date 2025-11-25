@@ -11,7 +11,7 @@ export const useScrollFade = (direction = "up", duration = 0.5, delay = 0) => {
                     setIsVisible(true);
                     observer.unobserve(ref.current);
                 }
-            }, { threshold: 0.1 }
+            }, { threshold: 0.05 }
         );
 
         if (ref.current) observer.observe(ref.current);
@@ -26,12 +26,12 @@ export const useScrollFade = (direction = "up", duration = 0.5, delay = 0) => {
         opacity: 0,
         transform:
             direction === "up"
-                ? "translateY(30px)"
+                ? "translateY(50px)"
                 : direction === "down"
-                    ? "translateY(-30px)"
+                    ? "translateY(-50px)"
                     : direction === "left"
-                        ? "translateX(30px)"
-                        : "translateX(-30px)",
+                        ? "translateX(50px)"
+                        : "translateX(-50px)",
     };
 
     const style = isVisible

@@ -121,10 +121,8 @@ const About = () => {
                         breakpoints: {
                             0: { slidesPerView: 1 },
                             450: { slidesPerView: 2 },
-                            640: { slidesPerView: 3 },
                             768: { slidesPerView: 3 },
                             1024: { slidesPerView: 4 },
-                            1280: { slidesPerView: 4 },
                             1440: { slidesPerView: 5 },
                         }
                     }}

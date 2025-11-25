@@ -178,7 +178,7 @@ const Services = () => {
 
                 <div className="flex flex-wrap justify-center gap-2.5">
                     <BasicBtn
-                        btnStyleClass="px-6 py-3 rounded-md text-white bg-custom-green"
+                        btnStyleClass="rounded-md text-white bg-custom-green"
                         btnData={{
                             text: "Contact Us",
                             path: Routes.CONTACT.path
@@ -186,7 +186,7 @@ const Services = () => {
                     />
 
                     <BasicBtn
-                        btnStyleClass="px-6 py-3 rounded-md text-custom-green bg-white"
+                        btnStyleClass="rounded-md text-custom-green bg-white"
                         btnData={{
                             text: "Request a Quote",
                             path: Routes.GET_A_QUOTE.path
