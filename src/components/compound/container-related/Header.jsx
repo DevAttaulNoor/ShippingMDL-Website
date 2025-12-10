@@ -21,6 +21,20 @@ export const Header = () => {
     const { data: servicesData } = useFetch("/data/Services.json");
 
     useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 640) {
+                setOpen(prev => ({ ...prev, smallScreenHeader: false }));
+            }
+        };
+
+        // Run once on mount
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    useEffect(() => {
         const handleHeaderBgChange = () => {
             if (window.scrollY >= 150) {
                 setPosition(true);
@@ -36,10 +50,10 @@ export const Header = () => {
     }, []);
 
     return (
-        <header className={`${position ? 'bg-custom-blue' : 'bg-transparent backdrop-blur-xl'} fixed top-0 left-0 w-full flex flex-col transition-all duration-300 z-20 text-white`}>
+        <header className={`fixed top-0 left-0 w-full flex flex-col transition-all duration-300 z-20 text-white`}>
             <nav
                 onMouseLeave={() => setOpen(prev => ({ ...prev, serviceNav: false }))}
-                className="flex items-center justify-between innerContainerPadding py-3 border-b-2 shadow-lg border-b-custom-green md:py-3.5 lg:py-4 xl:py-3.5 2xl:py-2"
+                className={`${position ? 'bg-custom-blue' : 'bg-transparent backdrop-blur-xl'} flex items-center justify-between innerContainerPadding py-3 border-b-2 shadow-lg border-b-custom-green md:py-3.5 lg:py-4 xl:py-3.5 2xl:py-2`}
             >
                 <NavLink
                     to={Routes.HOME.path}
@@ -87,7 +101,7 @@ export const Header = () => {
             <nav
                 onMouseEnter={() => setOpen(prev => ({ ...prev, serviceNav: true }))}
                 onMouseLeave={() => setOpen(prev => ({ ...prev, serviceNav: false }))}
-                className={`${open.serviceNav ? 'max-h-24 py-2.5 opacity-100 border-b-2 shadow-lg border-b-custom-green md:py-3.5 lg:py-4 xl:py-4.5 2xl:py-5' : 'max-h-0 opacity-0 border-b-0'} flex justify-center items-center gap-3 overflow-hidden transition-all duration-300 sm:gap-4 md:gap-5`}
+                className={`${open.serviceNav ? 'max-h-24 py-2.5 opacity-100 border-b-2 shadow-lg border-b-custom-green md:py-3.5 lg:py-4 xl:py-4.5 2xl:py-5' : 'max-h-0 opacity-0 border-b-0'} ${position ? 'bg-custom-blue' : 'bg-transparent backdrop-blur-xl'} flex justify-center items-center gap-3 overflow-hidden transition-all duration-300 sm:gap-4 md:gap-5 `}
             >
                 {servicesData?.map((item, index) => (
                     <NavLink
@@ -108,7 +122,7 @@ export const Header = () => {
                     />
 
                     <div
-                        className={`fixed top-0 right-0 w-1/3 h-full flex flex-col p-3 gap-4 transform transition-transform duration-500 ease-in-out ${open.smallScreenHeader ? "translate-x-0" : "translate-x-full"} z-30 text-white bg-custom-blue`}
+                        className={`fixed top-0 right-0 w-1/3 h-full flex flex-col p-3 gap-4 transform transition-transform duration-500 ease-in-out ${open.smallScreenHeader ? "translate-x-0" : "translate-x-full"} z-40 text-white bg-custom-blue`}
                     >
                         <span
                             onClick={() => setOpen(prev => ({ ...prev, smallScreenHeader: false }))}
