@@ -1,5 +1,6 @@
 import { Routes } from "@constants/Routes"
 import { useFetch } from "@hooks/useFetch";
+import { usePageMeta } from "@hooks/usePageMeta";
 import { useScrollFade } from "@hooks/useScrollFade";
 import { InnerContainer } from "@layouts/InnerContainer"
 import { HeroSection } from "@components/compound/HeroSection"
@@ -11,10 +12,15 @@ import { DetailSection } from "@components/compound/detailsection-related/Detail
 import { HeadingWithDescription } from "@components/compound/headings/HeadingWithDescription";
 
 const Services = () => {
-    const { data } = useFetch("/data/Services.json");
     const fadeWeDeliver = useScrollFade("left");
     const fadeExpectUs = useScrollFade("right");
     const fadeOurLogistics = useScrollFade("left");
+    const { data: servicesData } = useFetch("/data/Services.json");
+
+    usePageMeta(
+        Routes.SERVICES.meta.title,
+        Routes.SERVICES.meta.description
+    );
 
     return (
         <InnerContainer>
@@ -150,7 +156,7 @@ const Services = () => {
                 />
 
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 md:gap-6 lg:gap-7 xl:grid-cols-3 xl:gap-8 2xl:gap-10">
-                    {data?.map((item, index) => (
+                    {servicesData?.map((item, index) => (
                         <ServiceCard
                             key={index}
                             cardContainerStyle='h-56 xs:w-[80%] xs:mx-auto xs:h-60 sm:w-full md:h-72 xl:h-80 2xl:h-96'

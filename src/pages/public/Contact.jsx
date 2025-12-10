@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router"
 import { Routes } from "@constants/Routes"
+import { usePageMeta } from "@hooks/usePageMeta"
 import { ReactIcons } from "@constants/ReactIcons"
 import { useScrollFade } from "@hooks/useScrollFade"
 import { InnerContainer } from "@layouts/InnerContainer"
@@ -38,6 +39,11 @@ const Contact = () => {
         message: '',
     });
     const fadeContactUs = useScrollFade("left")
+
+    usePageMeta(
+        Routes.CONTACT.meta.title,
+        Routes.CONTACT.meta.description
+    );
 
     return (
         <InnerContainer>

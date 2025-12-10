@@ -1,4 +1,5 @@
 import { Routes } from "@constants/Routes";
+import { usePageMeta } from "@hooks/usePageMeta";
 import { InnerContainer } from "@layouts/InnerContainer";
 import { HeroSection } from "@components/compound/HeroSection";
 import { HeadingWithDescription } from "@components/compound/headings/HeadingWithDescription";
@@ -12,6 +13,11 @@ const certificationsList = [
 ];
 
 const Certification = () => {
+    usePageMeta(
+        Routes.CERTIFICATION.meta.title,
+        Routes.CERTIFICATION.meta.description
+    );
+
     return (
         <InnerContainer>
             {/* Hero Section */}

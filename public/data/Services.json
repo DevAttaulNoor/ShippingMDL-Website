@@ -7,12 +7,16 @@
             "alt": "Image of Land Freight"
         },
         "title": "Land Freight",
-        "description": "'Reliable overland transportation solutions ensuring secure, cost-effective, and on-time delivery of your goods across major national and regional routes.",
+        "description": "Reliable overland transportation solutions ensuring secure, cost-effective, and on-time delivery of your goods across major national and regional routes.",
         "paragraphs": [
             "Our Land Freight service provides reliable and cost-effective ground transportation solutions across cities, borders, and regions. Whether you need to move full truckloads (FTL) or less-than-truckload (LTL) shipments, we offer a flexible network designed to handle a wide range of cargo types. With a focus on efficiency and safety, we ensure that your goods arrive at their destination on time and in perfect condition.",
             "We leverage an extensive fleet of vehicles and a team of experienced drivers to deliver consistent service quality. Our integrated tracking systems allow real-time shipment visibility, giving clients peace of mind throughout every stage of transportation. Each route is optimized for cost, safety, and performance — making us a trusted partner for businesses seeking dependable domestic and regional logistics support.",
             "At the core of our Land Freight operations lies a commitment to sustainability and customer satisfaction. By using fuel-efficient vehicles, consolidating routes, and reducing idle time, we help minimize the environmental impact of transport while maintaining competitive pricing. From small businesses to large enterprises, we customize our logistics strategies to match your supply chain needs."
-        ]
+        ],
+        "meta": {
+            "title": "Land Freight | Services | Marine Dynamics Logistics",
+            "description": "Marine Dynamics Logistics offers dependable land freight services, ensuring safe, timely, and cost-efficient transportation solutions."
+        }
     },
     {
         "id": 2,
@@ -27,7 +31,11 @@
             "Our Sea Freight solutions provide global ocean transportation services for shipments of any size. With direct partnerships with major shipping lines, we offer flexible scheduling, competitive rates, and access to key international ports. Whether you’re shipping full container loads (FCL) or less-than-container loads (LCL), we guarantee efficient handling and reliable delivery.",
             "We manage the complete end-to-end process — from cargo booking and documentation to customs clearance and last-mile delivery. Our experienced team monitors every stage to ensure that your goods are transported safely, comply with international regulations, and arrive as planned. We also offer consolidation and deconsolidation services to optimize shipping costs and time.",
             "By combining global reach with local expertise, our Sea Freight service simplifies complex international trade logistics. Our digital tracking tools keep you informed about your shipment’s status in real time, while our customer support team ensures a smooth communication flow. With an emphasis on transparency, reliability, and sustainability, we make global shipping easier than ever."
-        ]
+        ],
+        "meta": {
+            "title": "Sea Freight | Services | Marine Dynamics Logistics",
+            "description": "Reliable and cost-effective sea freight solutions for international shipping with end-to-end cargo handling."
+        }
     },
     {
         "id": 3,
@@ -42,7 +50,11 @@
             "Our Air Freight service is designed for businesses that demand speed, precision, and reliability. Partnering with leading global airlines, we provide access to a vast network of destinations for urgent shipments and high-value cargo. From express deliveries to scheduled consolidations, our air freight solutions are tailored to meet every timeline and budget.",
             "We manage the entire air logistics process, including documentation, customs handling, and ground coordination, ensuring seamless door-to-door transport. Our logistics specialists use advanced tracking technologies to provide real-time visibility and proactive updates on your shipments. This attention to detail minimizes delays and helps maintain full supply chain transparency.",
             "With a strong focus on efficiency and compliance, our Air Freight operations are optimized to deliver your goods safely and swiftly anywhere in the world. We also offer temperature-controlled options for perishable goods, as well as secure handling for sensitive materials. When time is critical, our air freight solutions are your fastest and most reliable choice."
-        ]
+        ],
+        "meta": {
+            "title": "Air Freight | Services | Marine Dynamics Logistics",
+            "description": "Fast and secure air freight services delivering time-critical cargo globally with optimized routing."
+        }
     },
     {
         "id": 4,
@@ -57,7 +69,11 @@
             "Our Customs Clearance service helps businesses navigate the complexities of international trade with confidence. We handle all import and export documentation, tariff classifications, and compliance requirements, ensuring your shipments move through customs smoothly and without unnecessary delays. With years of experience in global trade laws, we minimize risks and prevent costly errors.",
             "Our team maintains strong relationships with customs authorities, enabling faster processing and more accurate declarations. Whether dealing with standard goods, restricted materials, or specialized cargo, we ensure all procedures are handled according to the latest regulatory standards. We also assist in resolving disputes, duty refunds, and compliance audits efficiently.",
             "By combining technology with expertise, we simplify your customs experience and enhance your supply chain visibility. Our proactive approach means we handle potential issues before they become obstacles, ensuring your goods reach their destination on time. With our Customs Clearance service, you gain a partner dedicated to smooth and compliant international trade."
-        ]
+        ],
+        "meta": {
+            "title": "Customs Clearance | Services | Marine Dynamics Logistics",
+            "description": "Professional customs clearance services to ensure smooth border processing and regulatory compliance."
+        }
     },
     {
         "id": 5,
@@ -72,7 +88,11 @@
             "Handling Dangerous Goods (DG Cargo) requires precision, compliance, and specialized expertise — all of which define our DG Cargo service. We are fully certified and equipped to transport hazardous materials across air, sea, and land routes, ensuring safety and adherence to international regulations such as IATA, IMDG, and ADR standards. From chemical substances to flammable materials, we handle each shipment with the utmost care and professionalism.",
             "Our dedicated DG Cargo team is trained in packaging, labeling, documentation, and emergency response procedures. We ensure every shipment is properly classified, marked, and packed according to legal and safety requirements. Through careful route planning and secure containment measures, we reduce risks and guarantee that your sensitive cargo reaches its destination safely and on time.",
             "Beyond compliance, we focus on transparency and trust. Our clients receive detailed documentation and real-time tracking to stay informed throughout the logistics process. Whether you are shipping industrial chemicals, laboratory reagents, or medical supplies, our DG Cargo services ensure your products move safely through the supply chain — without compromise."
-        ]
+        ],
+        "meta": {
+            "title": "DG Cargo | Services | Marine Dynamics Logistics",
+            "description": "Certified and compliant dangerous goods logistics with secure handling and international safety standards."
+        }
     },
     {
         "id": 6,
@@ -87,6 +107,10 @@
             "Our Transit Trade service is designed to facilitate seamless cross-border movement of goods through strategic trade corridors. We provide efficient and compliant solutions for shipments transiting through ports, customs zones, and border gateways, ensuring uninterrupted flow between origin and destination countries. With deep regional knowledge and reliable partnerships, we connect major trade hubs across Asia, the Middle East, and beyond.",
             "We handle all logistics aspects — from customs documentation and cargo clearance to bonded warehousing and re-export management. Our expertise in free trade agreements and regulatory compliance ensures that your shipments maintain duty-free status during transit. Each operation is closely monitored to avoid bottlenecks and optimize delivery times.",
             "Whether your goods are moving between neighboring countries or across continents, our Transit Trade solutions provide speed, reliability, and cost efficiency. We tailor our services to meet the specific needs of traders, manufacturers, and logistics operators, empowering them to expand their reach while maintaining full supply chain control."
-        ]
+        ],
+        "meta": {
+            "title": "Transit Trade | Services | Marine Dynamics Logistics",
+            "description": "Efficient transit trade and cross-border logistics services with expert documentation and route optimization."
+        }
     }
 ]

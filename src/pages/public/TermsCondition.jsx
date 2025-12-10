@@ -1,4 +1,5 @@
 import { Routes } from "@constants/Routes";
+import { usePageMeta } from "@hooks/usePageMeta";
 import { InnerContainer } from "@layouts/InnerContainer";
 import { HeroSection } from "@components/compound/HeroSection";
 import { HeadingWithLine } from "@components/compound/headings/HeadingWithLine";
@@ -80,6 +81,11 @@ const termsData = [
 ];
 
 const TermsCondition = () => {
+    usePageMeta(
+        Routes.TERMS_CONDITION.meta.title,
+        Routes.TERMS_CONDITION.meta.description
+    );
+
     return (
         <InnerContainer>
             {/* Hero Section */}

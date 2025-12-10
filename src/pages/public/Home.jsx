@@ -1,5 +1,6 @@
 import { Routes } from "@constants/Routes"
 import { useFetch } from "@hooks/useFetch"
+import { usePageMeta } from "@hooks/usePageMeta"
 import { useScrollFade } from "@hooks/useScrollFade"
 import { InnerContainer } from "@layouts/InnerContainer"
 import { BasicBtn } from "@components/atomic/buttons/BasicBtn"
@@ -27,10 +28,15 @@ const heroSectionData = [
 ]
 
 const Home = () => {
-    const { data: servicesData } = useFetch("/data/Services.json");
-    const { data: qualitiesData } = useFetch("/data/Qualities.json");
     const fadeExpectUs = useScrollFade("right");
     const fadeOurLogistics = useScrollFade("left");
+    const { data: servicesData } = useFetch("/data/Services.json");
+    const { data: qualitiesData } = useFetch("/data/Qualities.json");
+
+    usePageMeta(
+        Routes.HOME.meta.title,
+        Routes.HOME.meta.description
+    );
 
     return (
         <InnerContainer>

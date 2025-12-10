@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Routes } from "@constants/Routes";
+import { usePageMeta } from "@hooks/usePageMeta";
 import { ReactIcons } from "@constants/ReactIcons";
 import { useScrollFade } from "@hooks/useScrollFade";
 import { InnerContainer } from "@layouts/InnerContainer";
@@ -24,6 +25,11 @@ const GetAQuote = () => {
     });
     const fadeQoute = useScrollFade("left");
     const fadeQouteProcess = useScrollFade("right");
+
+    usePageMeta(
+        Routes.GET_A_QUOTE.meta.title,
+        Routes.GET_A_QUOTE.meta.description
+    );
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });

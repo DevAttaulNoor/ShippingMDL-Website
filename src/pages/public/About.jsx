@@ -1,5 +1,6 @@
 import { Routes } from "@constants/Routes"
 import { useFetch } from "@hooks/useFetch"
+import { usePageMeta } from "@hooks/usePageMeta"
 import { useScrollFade } from "@hooks/useScrollFade"
 import { InnerContainer } from "@layouts/InnerContainer"
 import { HeroSection } from "@components/compound/HeroSection"
@@ -11,11 +12,16 @@ import { DetailSection } from "@components/compound/detailsection-related/Detail
 import { HeadingWithDescription } from "@components/compound/headings/HeadingWithDescription"
 
 const About = () => {
-    const { data } = useFetch("/data/Qualities.json");
     const fadeAboutCompany = useScrollFade("left");
     const fadeOurVision = useScrollFade("right");
     const fadeOurMission = useScrollFade("left");
     const fadeAboutPresident = useScrollFade("right");
+    const { data: qualitiesData } = useFetch("/data/Qualities.json");
+
+    usePageMeta(
+        Routes.ABOUT.meta.title,
+        Routes.ABOUT.meta.description
+    );
 
     return (
         <InnerContainer>
@@ -127,7 +133,7 @@ const About = () => {
                         }
                     }}
                 >
-                    {data?.map((item, index) => (
+                    {qualitiesData?.map((item, index) => (
                         <QualityCard
                             key={index}
                             cardData={{

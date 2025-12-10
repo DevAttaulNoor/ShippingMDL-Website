@@ -1,4 +1,5 @@
 import { Routes } from "@constants/Routes";
+import { usePageMeta } from "@hooks/usePageMeta";
 import { InnerContainer } from "@layouts/InnerContainer";
 import { HeroSection } from "@components/compound/HeroSection";
 import { HeadingWithLine } from "@components/compound/headings/HeadingWithLine";
@@ -74,6 +75,11 @@ const policyData = [
 ];
 
 const Policy = () => {
+    usePageMeta(
+        Routes.PRIVACY_POLICY.meta.title,
+        Routes.PRIVACY_POLICY.meta.description
+    );
+
     return (
         <InnerContainer>
             {/* Hero Section */}

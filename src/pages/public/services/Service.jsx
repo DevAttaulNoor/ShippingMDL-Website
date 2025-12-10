@@ -1,6 +1,7 @@
 import { useParams } from "react-router"
 import { Routes } from "@constants/Routes"
 import { useFetch } from "@hooks/useFetch"
+import { usePageMeta } from "@hooks/usePageMeta"
 import { InnerContainer } from "@layouts/InnerContainer"
 import { HeroSection } from "@components/compound/HeroSection"
 import { HeadingWithLine } from "@components/compound/headings/HeadingWithLine"
@@ -9,6 +10,11 @@ const Service = () => {
     const { slug } = useParams();
     const { data } = useFetch("/data/Services.json");
     const serviceData = data?.find(item => item.path === `/services/${slug}`);
+
+    usePageMeta(
+        serviceData?.meta?.title,
+        serviceData?.meta?.description
+    );
 
     return (
         <InnerContainer>

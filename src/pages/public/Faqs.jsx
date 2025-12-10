@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Routes } from "@constants/Routes";
 import { useFetch } from "@hooks/useFetch";
+import { usePageMeta } from "@hooks/usePageMeta";
 import { useScrollFade } from "@hooks/useScrollFade";
 import { InnerContainer } from "@layouts/InnerContainer";
 import { Accordion } from "@components/atomic/Accordion";
@@ -14,10 +15,10 @@ import { HeadingWithDescription } from "@components/compound/headings/HeadingWit
 
 const Faqs = () => {
     const { data } = useFetch("/data/Faqs.json");
+    const fadeAboutCompany = useScrollFade("left");
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("All");
     const categories = ["All", "Services", "Shipping & Delivery", "Customs & Documentation", "Payment & Charges", "Tracking & Technology", "General Questions"];
-    const fadeAboutCompany = useScrollFade("left");
 
     const filteredData = data?.map(item => {
         const matchedQuestions = item.content.filter(que =>
@@ -31,6 +32,11 @@ const Faqs = () => {
     }).filter(item =>
         (selectedCategory === "All" || item.category === selectedCategory) &&
         item.content.length > 0
+    );
+
+    usePageMeta(
+        Routes.FAQ.meta.title,
+        Routes.FAQ.meta.description
     );
 
     return (

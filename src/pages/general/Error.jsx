@@ -1,9 +1,15 @@
 import { Routes } from "@constants/Routes";
+import { usePageMeta } from "@hooks/usePageMeta";
 import { InnerContainer } from "@layouts/InnerContainer";
 import { HeroSection } from "@components/compound/HeroSection";
 import { AnimatedBtn } from "@components/atomic/buttons/AnimatedBtn";
 
 const Error = ({ errorData }) => {
+    usePageMeta(
+        errorData?.status + '| Marine Dynamic Logistics',
+        errorData?.statusText
+    );
+
     return (
         <InnerContainer>
             {/* Hero Section */}

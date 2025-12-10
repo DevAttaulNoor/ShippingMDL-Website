@@ -48,12 +48,7 @@ export const Routes = {
         }
     },
     BLOG: {
-        title: 'Blog',
         path: '/blogs/:slug',
-        meta: {
-            title: 'Blog | Marine Dynamics Logistics',
-            description: 'Explore in-depth articles and updates from Marine Dynamics Logistics covering international shipping, freight forwarding, and logistics solutions.'
-        }
     },
     SERVICES: {
         title: 'Services',
@@ -64,60 +59,7 @@ export const Routes = {
         }
     },
     SERVICE: {
-        title: 'Service',
         path: '/services/:slug',
-        meta: {
-            title: 'Service | Marine Dynamics Logistics',
-            description: 'Discover detailed information about the specific logistics and shipping services offered by Marine Dynamics Logistics for your business needs.'
-        }
-    },
-    SERVICE_LAND_FREIGHT: {
-        title: 'Land Freight',
-        path: '/services/land-freight',
-        meta: {
-            title: 'Land Freight Services | Marine Dynamics Logistics',
-            description: 'Marine Dynamic Logistics offers dependable land freight services, ensuring safe, timely, and cost-efficient transportation solutions across major routes and destinations.',
-        }
-    },
-    SERVICE_SEA_FREIGHT: {
-        title: 'Sea Freight',
-        path: '/services/sea-freight',
-        meta: {
-            title: 'Sea Freight Services | Marine Dynamics Logistics',
-            description: 'Marine Dynamic Logistics provides comprehensive sea freight solutions, handling international shipping with efficiency, reliability, and competitive pricing.',
-        }
-    },
-    SERVICE_AIR_FREIGHT: {
-        title: 'Air Freight',
-        path: '/services/air-freight',
-        meta: {
-            title: 'Air Freight Services | Marine Dynamics Logistics',
-            description: 'Marine Dynamic Logistics delivers fast and secure air freight solutions, ensuring your goods reach global destinations on time with optimized delivery schedules.',
-        }
-    },
-    SERVICE_CUSTOM_CLEARANCE: {
-        title: 'Custom Clearance',
-        path: '/services/custom-clearance',
-        meta: {
-            title: 'Custom Clearance Services | Marine Dynamics Logistics',
-            description: 'Marine Dynamic Logistics simplifies customs clearance processes with expert handling, ensuring your shipments move smoothly across borders without delays.',
-        }
-    },
-    SERVICE_DG_CARGO: {
-        title: 'DG Cargo',
-        path: '/services/dg-cargo',
-        meta: {
-            title: 'DG Cargo Services | Marine Dynamics Logistics',
-            description: 'Marine Dynamic Logistics provides safe and compliant DG Cargo transportation, ensuring the secure handling and delivery of hazardous and dangerous goods.',
-        }
-    },
-    SERVICE_TRANSIT_TRADE: {
-        title: 'Transit Trade',
-        path: '/services/transit-trade',
-        meta: {
-            title: 'Transit Trade Services | Marine Dynamics Logistics',
-            description: 'Marine Dynamic Logistics offers reliable transit trade services, facilitating smooth cross-border movement of goods through efficient coordination and documentation.',
-        }
     },
     FAQ: {
         title: 'FAQs',

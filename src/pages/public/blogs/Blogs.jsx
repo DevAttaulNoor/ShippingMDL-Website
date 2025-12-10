@@ -1,11 +1,17 @@
 import { Routes } from "@constants/Routes"
 import { useFetch } from "@hooks/useFetch";
+import { usePageMeta } from "@hooks/usePageMeta";
 import { InnerContainer } from "@layouts/InnerContainer"
 import { HeroSection } from "@components/compound/HeroSection"
 import { BlogCard } from "@components/compound/cards/BlogCard"
 
 const Blogs = () => {
     const { data } = useFetch("/data/Blogs.json")
+
+    usePageMeta(
+        Routes.BLOGS.meta.title,
+        Routes.BLOGS.meta.description
+    );
 
     return (
         <InnerContainer>
